@@ -22,5 +22,17 @@
   "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s DISABLE_EXCEPTION_CATCHING=1 -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Graphics/scene.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/scene.cpp\"",
   "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/scene.cpp",
   "output": "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/scene.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s DISABLE_EXCEPTION_CATCHING=1 -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Graphics/objectManager.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/objectManager.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/objectManager.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/objectManager.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s DISABLE_EXCEPTION_CATCHING=1 -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/DataStructures/matrix4.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/DataStructures/matrix4.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/DataStructures/matrix4.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/DataStructures/matrix4.cpp.o"
 }
 ]

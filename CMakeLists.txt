@@ -15,6 +15,8 @@ add_executable(MyGameEngine
     src/engine/renderer.cpp
     src/engine/Graphics/gameObject.cpp
     src/engine/Graphics/scene.cpp
+    src/engine/Graphics/objectManager.cpp
+    src/engine/DataStructures/matrix4.cpp
 )
 
 target_include_directories(MyGameEngine PRIVATE include)

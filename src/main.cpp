@@ -1,44 +1,53 @@
 #include <emscripten/emscripten.h>
 #include "engine/renderer.h"
-#include "../include/engine/Graphics/scene.h"
-#include "../include/engine/Graphics/gameObject.h"
+#include "../include/engine/Graphics/objectManager.h"
 
 Scene scene;
+ObjectManager objectManager(scene);
 
 void main_loop() {
+    // Обновление и отрисовка сцены
     RenderFrame(scene);
 }
 
 int main() {
     initRenderer();
 
-    // Создаём игровой объект
-    GameObject* obj = new GameObject("Triangle");
-    obj->setShader(
-        R"(
-            attribute vec4 a_position;
-            void main() {
-                gl_Position = a_position;
-            }
-        )",
-        R"(
-            void main() {
-                gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0); // Красный цвет
-            }
-        )"
-    );
+    // Создание игрового объекта
+    GameObject* obj = objectManager.createObject("Object");
 
-    obj->setGeometry({
-        0.0f,  0.5f,  // Вершина 1
-       -0.5f, -0.5f,  // Вершина 2
-        0.5f, -0.5f   // Вершина 3
-    });
+    // Настройка шейдеров
+    std::string vertexShader = R"(
+        attribute vec3 aPosition;
+        uniform mat4 uModelMatrix;
+        void main() {
+            gl_Position = uModelMatrix * vec4(aPosition, 1.0);
+        }
+    )";
 
-    // Добавляем объект на сцену
+    std::string fragmentShader = R"(
+        void main() {
+            gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+        }
+    )";
+
+    obj->setShader(vertexShader, fragmentShader);
+
+    // Настройка геометрии
+    std::vector<float> vertices = {
+        0.0f,  0.5f, 0.0f,
+       -0.5f, -0.5f, 0.0f,
+        0.5f, -0.5f, 0.0f
+    };
+    obj->setGeometry(vertices);
+
+    // Настройка трансформации
+    obj->setPosition(Vector3(0.0f, 0.0f, 0.0f));
+    obj->setRotation(Vector3(0.0f, 0.0f, 0.0f));
+    obj->setScale(Vector3(1.0f, 1.0f, 1.0f));
+
+    // Добавляем объект в сцену
     scene.addObject(obj);
-
-    // Запускаем основной цикл
     emscripten_set_main_loop(main_loop, 0, 1);
-
     return 0;
 }

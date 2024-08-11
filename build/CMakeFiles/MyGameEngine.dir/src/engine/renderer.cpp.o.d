@@ -780,4 +780,6 @@ CMakeFiles/MyGameEngine.dir/src/engine/renderer.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cstdarg \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/temp_value.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__split_buffer \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/gameObject.h
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/gameObject.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../DataStructures/vector3.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../DataStructures/matrix4.h

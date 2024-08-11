@@ -129,6 +129,30 @@ MyGameEngine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/build
 .PHONY : MyGameEngine/fast
 
+src/engine/DataStructures/matrix4.o: src/engine/DataStructures/matrix4.cpp.o
+.PHONY : src/engine/DataStructures/matrix4.o
+
+# target to build an object file
+src/engine/DataStructures/matrix4.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/DataStructures/matrix4.cpp.o
+.PHONY : src/engine/DataStructures/matrix4.cpp.o
+
+src/engine/DataStructures/matrix4.i: src/engine/DataStructures/matrix4.cpp.i
+.PHONY : src/engine/DataStructures/matrix4.i
+
+# target to preprocess a source file
+src/engine/DataStructures/matrix4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/DataStructures/matrix4.cpp.i
+.PHONY : src/engine/DataStructures/matrix4.cpp.i
+
+src/engine/DataStructures/matrix4.s: src/engine/DataStructures/matrix4.cpp.s
+.PHONY : src/engine/DataStructures/matrix4.s
+
+# target to generate assembly for a file
+src/engine/DataStructures/matrix4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/DataStructures/matrix4.cpp.s
+.PHONY : src/engine/DataStructures/matrix4.cpp.s
+
 src/engine/Graphics/gameObject.o: src/engine/Graphics/gameObject.cpp.o
 .PHONY : src/engine/Graphics/gameObject.o
 
@@ -152,6 +176,30 @@ src/engine/Graphics/gameObject.s: src/engine/Graphics/gameObject.cpp.s
 src/engine/Graphics/gameObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/gameObject.cpp.s
 .PHONY : src/engine/Graphics/gameObject.cpp.s
+
+src/engine/Graphics/objectManager.o: src/engine/Graphics/objectManager.cpp.o
+.PHONY : src/engine/Graphics/objectManager.o
+
+# target to build an object file
+src/engine/Graphics/objectManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/objectManager.cpp.o
+.PHONY : src/engine/Graphics/objectManager.cpp.o
+
+src/engine/Graphics/objectManager.i: src/engine/Graphics/objectManager.cpp.i
+.PHONY : src/engine/Graphics/objectManager.i
+
+# target to preprocess a source file
+src/engine/Graphics/objectManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/objectManager.cpp.i
+.PHONY : src/engine/Graphics/objectManager.cpp.i
+
+src/engine/Graphics/objectManager.s: src/engine/Graphics/objectManager.cpp.s
+.PHONY : src/engine/Graphics/objectManager.s
+
+# target to generate assembly for a file
+src/engine/Graphics/objectManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/objectManager.cpp.s
+.PHONY : src/engine/Graphics/objectManager.cpp.s
 
 src/engine/Graphics/scene.o: src/engine/Graphics/scene.cpp.o
 .PHONY : src/engine/Graphics/scene.o
@@ -234,9 +282,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyGameEngine"
+	@echo "... src/engine/DataStructures/matrix4.o"
+	@echo "... src/engine/DataStructures/matrix4.i"
+	@echo "... src/engine/DataStructures/matrix4.s"
 	@echo "... src/engine/Graphics/gameObject.o"
 	@echo "... src/engine/Graphics/gameObject.i"
 	@echo "... src/engine/Graphics/gameObject.s"
+	@echo "... src/engine/Graphics/objectManager.o"
+	@echo "... src/engine/Graphics/objectManager.i"
+	@echo "... src/engine/Graphics/objectManager.s"
 	@echo "... src/engine/Graphics/scene.o"
 	@echo "... src/engine/Graphics/scene.i"
 	@echo "... src/engine/Graphics/scene.s"

@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/DataStructures/matrix4.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/DataStructures/matrix4.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/DataStructures/matrix4.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/gameObject.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/gameObject.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/gameObject.cpp.o.d"
+  "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/objectManager.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/objectManager.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/objectManager.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/scene.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/scene.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/scene.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/renderer.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/renderer.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/renderer.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/main.cpp" "CMakeFiles/MyGameEngine.dir/src/main.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/main.cpp.o.d"
