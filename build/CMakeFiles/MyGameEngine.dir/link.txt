@@ -1,0 +1,1 @@
+/Users/ivankiricenko/emsdk/upstream/emscripten/em++  -O3 -s DISABLE_EXCEPTION_CATCHING=1 -g  -s USE_WEBGL2=1 -s WASM=1 -s ALLOW_MEMORY_GROWTH=1 -O3 -s DISABLE_EXCEPTION_CATCHING=1 @CMakeFiles/MyGameEngine.dir/objects1.rsp -o build_output/my_game_engine.html 
