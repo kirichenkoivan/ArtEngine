@@ -13,6 +13,8 @@ include_directories(${EMSCRIPTEN_ROOT_PATH}/cache/sysroot/include)
 add_executable(MyGameEngine
     src/main.cpp
     src/engine/renderer.cpp
+    src/engine/Graphics/gameObject.cpp
+    src/engine/Graphics/scene.cpp
 )
 
 target_include_directories(MyGameEngine PRIVATE include)

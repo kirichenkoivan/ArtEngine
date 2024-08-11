@@ -1,1 +1,1 @@
-CMakeFiles/MyGameEngine.dir/src/main.cpp.o CMakeFiles/MyGameEngine.dir/src/engine/renderer.cpp.o
+CMakeFiles/MyGameEngine.dir/src/main.cpp.o CMakeFiles/MyGameEngine.dir/src/engine/renderer.cpp.o CMakeFiles/MyGameEngine.dir/src/engine/Graphics/gameObject.cpp.o CMakeFiles/MyGameEngine.dir/src/engine/Graphics/scene.cpp.o

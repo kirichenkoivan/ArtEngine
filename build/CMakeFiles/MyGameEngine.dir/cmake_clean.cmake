@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/gameObject.cpp.o"
+  "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/gameObject.cpp.o.d"
+  "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/scene.cpp.o"
+  "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/scene.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/engine/renderer.cpp.o"
   "CMakeFiles/MyGameEngine.dir/src/engine/renderer.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/main.cpp.o"

@@ -129,6 +129,54 @@ MyGameEngine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/build
 .PHONY : MyGameEngine/fast
 
+src/engine/Graphics/gameObject.o: src/engine/Graphics/gameObject.cpp.o
+.PHONY : src/engine/Graphics/gameObject.o
+
+# target to build an object file
+src/engine/Graphics/gameObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/gameObject.cpp.o
+.PHONY : src/engine/Graphics/gameObject.cpp.o
+
+src/engine/Graphics/gameObject.i: src/engine/Graphics/gameObject.cpp.i
+.PHONY : src/engine/Graphics/gameObject.i
+
+# target to preprocess a source file
+src/engine/Graphics/gameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/gameObject.cpp.i
+.PHONY : src/engine/Graphics/gameObject.cpp.i
+
+src/engine/Graphics/gameObject.s: src/engine/Graphics/gameObject.cpp.s
+.PHONY : src/engine/Graphics/gameObject.s
+
+# target to generate assembly for a file
+src/engine/Graphics/gameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/gameObject.cpp.s
+.PHONY : src/engine/Graphics/gameObject.cpp.s
+
+src/engine/Graphics/scene.o: src/engine/Graphics/scene.cpp.o
+.PHONY : src/engine/Graphics/scene.o
+
+# target to build an object file
+src/engine/Graphics/scene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/scene.cpp.o
+.PHONY : src/engine/Graphics/scene.cpp.o
+
+src/engine/Graphics/scene.i: src/engine/Graphics/scene.cpp.i
+.PHONY : src/engine/Graphics/scene.i
+
+# target to preprocess a source file
+src/engine/Graphics/scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/scene.cpp.i
+.PHONY : src/engine/Graphics/scene.cpp.i
+
+src/engine/Graphics/scene.s: src/engine/Graphics/scene.cpp.s
+.PHONY : src/engine/Graphics/scene.s
+
+# target to generate assembly for a file
+src/engine/Graphics/scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/scene.cpp.s
+.PHONY : src/engine/Graphics/scene.cpp.s
+
 src/engine/renderer.o: src/engine/renderer.cpp.o
 .PHONY : src/engine/renderer.o
 
@@ -186,6 +234,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyGameEngine"
+	@echo "... src/engine/Graphics/gameObject.o"
+	@echo "... src/engine/Graphics/gameObject.i"
+	@echo "... src/engine/Graphics/gameObject.s"
+	@echo "... src/engine/Graphics/scene.o"
+	@echo "... src/engine/Graphics/scene.i"
+	@echo "... src/engine/Graphics/scene.s"
 	@echo "... src/engine/renderer.o"
 	@echo "... src/engine/renderer.i"
 	@echo "... src/engine/renderer.s"
