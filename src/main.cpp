@@ -1,53 +1,42 @@
 #include <emscripten/emscripten.h>
-#include "engine/renderer.h"
-#include "../include/engine/Graphics/objectManager.h"
-
-Scene scene;
-ObjectManager objectManager(scene);
+#include "../include/engine/Graphics/renderer.h"
+#include "../include/engine/Entities/gameObject.h"
+#include "../include/engine/Entities/material.h"
+#include "../include/engine/Tools/fileLoader.h"
+#include <GLES2/gl2.h>
+#include <EGL/egl.h>
+#include <string>
+#include <fstream>
+#include <sstream>
+#include <iostream>
+#include <vector>
 
 void main_loop() {
-    // Обновление и отрисовка сцены
-    RenderFrame(scene);
+    RenderFrame();
 }
 
+
 int main() {
-    initRenderer();
+    const std::string name = "MyMaterial";
 
-    // Создание игрового объекта
-    GameObject* obj = objectManager.createObject("Object");
+    std::string vertexShaderSourceStr = readFile("/shaders/vertex/vertex_shader.glsl");
+    std::string fragmentShaderSourceStr = readFile("/shaders/fragment/fragment_shader.glsl");
 
-    // Настройка шейдеров
-    std::string vertexShader = R"(
-        attribute vec3 aPosition;
-        uniform mat4 uModelMatrix;
-        void main() {
-            gl_Position = uModelMatrix * vec4(aPosition, 1.0);
-        }
-    )";
+    const char* vertexShaderSource = vertexShaderSourceStr.c_str();
+    std::cout << vertexShaderSource << std::endl;
+    const char* fragmentShaderSource = fragmentShaderSourceStr.c_str();
+    std::cout << fragmentShaderSource << std::endl;
 
-    std::string fragmentShader = R"(
-        void main() {
-            gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
-        }
-    )";
-
-    obj->setShader(vertexShader, fragmentShader);
-
-    // Настройка геометрии
-    std::vector<float> vertices = {
-        0.0f,  0.5f, 0.0f,
-       -0.5f, -0.5f, 0.0f,
-        0.5f, -0.5f, 0.0f
+    // Использование объекта, а не указателя
+    Material mat(name, vertexShaderSource, fragmentShaderSource);
+    std::vector<GLfloat> vert = {
+        -0.5f, -0.5f, 0.0f,
+        0.5f, -0.5f, 0.0f,
+        0.0f,  0.5f, 0.0f
     };
-    obj->setGeometry(vertices);
+    GameObject obj(name, mat, vert);
 
-    // Настройка трансформации
-    obj->setPosition(Vector3(0.0f, 0.0f, 0.0f));
-    obj->setRotation(Vector3(0.0f, 0.0f, 0.0f));
-    obj->setScale(Vector3(1.0f, 1.0f, 1.0f));
-
-    // Добавляем объект в сцену
-    scene.addObject(obj);
+    initRenderer(obj);
     emscripten_set_main_loop(main_loop, 0, 1);
     return 0;
 }

@@ -1,5 +1,5 @@
-CMakeFiles/MyGameEngine.dir/src/engine/renderer.cpp.o: \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/renderer.cpp \
+CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o: \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/Graphics/renderer.cpp \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/GLES2/gl2.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/GLES2/gl2platform.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/KHR/khrplatform.h \
@@ -837,4 +837,6 @@ CMakeFiles/MyGameEngine.dir/src/engine/renderer.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/formatter_tuple.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/print \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/unistd.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/renderer.h
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/renderer.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/gameObject.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/material.h

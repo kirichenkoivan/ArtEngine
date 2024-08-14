@@ -129,125 +129,101 @@ MyGameEngine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/build
 .PHONY : MyGameEngine/fast
 
-src/engine/DataStructures/matrix4.o: src/engine/DataStructures/matrix4.cpp.o
-.PHONY : src/engine/DataStructures/matrix4.o
+src/engine/Entities/gameObject.o: src/engine/Entities/gameObject.cpp.o
+.PHONY : src/engine/Entities/gameObject.o
 
 # target to build an object file
-src/engine/DataStructures/matrix4.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/DataStructures/matrix4.cpp.o
-.PHONY : src/engine/DataStructures/matrix4.cpp.o
+src/engine/Entities/gameObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.o
+.PHONY : src/engine/Entities/gameObject.cpp.o
 
-src/engine/DataStructures/matrix4.i: src/engine/DataStructures/matrix4.cpp.i
-.PHONY : src/engine/DataStructures/matrix4.i
+src/engine/Entities/gameObject.i: src/engine/Entities/gameObject.cpp.i
+.PHONY : src/engine/Entities/gameObject.i
 
 # target to preprocess a source file
-src/engine/DataStructures/matrix4.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/DataStructures/matrix4.cpp.i
-.PHONY : src/engine/DataStructures/matrix4.cpp.i
+src/engine/Entities/gameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.i
+.PHONY : src/engine/Entities/gameObject.cpp.i
 
-src/engine/DataStructures/matrix4.s: src/engine/DataStructures/matrix4.cpp.s
-.PHONY : src/engine/DataStructures/matrix4.s
+src/engine/Entities/gameObject.s: src/engine/Entities/gameObject.cpp.s
+.PHONY : src/engine/Entities/gameObject.s
 
 # target to generate assembly for a file
-src/engine/DataStructures/matrix4.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/DataStructures/matrix4.cpp.s
-.PHONY : src/engine/DataStructures/matrix4.cpp.s
+src/engine/Entities/gameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.s
+.PHONY : src/engine/Entities/gameObject.cpp.s
 
-src/engine/Graphics/gameObject.o: src/engine/Graphics/gameObject.cpp.o
-.PHONY : src/engine/Graphics/gameObject.o
+src/engine/Entities/material.o: src/engine/Entities/material.cpp.o
+.PHONY : src/engine/Entities/material.o
 
 # target to build an object file
-src/engine/Graphics/gameObject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/gameObject.cpp.o
-.PHONY : src/engine/Graphics/gameObject.cpp.o
+src/engine/Entities/material.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o
+.PHONY : src/engine/Entities/material.cpp.o
 
-src/engine/Graphics/gameObject.i: src/engine/Graphics/gameObject.cpp.i
-.PHONY : src/engine/Graphics/gameObject.i
+src/engine/Entities/material.i: src/engine/Entities/material.cpp.i
+.PHONY : src/engine/Entities/material.i
 
 # target to preprocess a source file
-src/engine/Graphics/gameObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/gameObject.cpp.i
-.PHONY : src/engine/Graphics/gameObject.cpp.i
+src/engine/Entities/material.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.i
+.PHONY : src/engine/Entities/material.cpp.i
 
-src/engine/Graphics/gameObject.s: src/engine/Graphics/gameObject.cpp.s
-.PHONY : src/engine/Graphics/gameObject.s
+src/engine/Entities/material.s: src/engine/Entities/material.cpp.s
+.PHONY : src/engine/Entities/material.s
 
 # target to generate assembly for a file
-src/engine/Graphics/gameObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/gameObject.cpp.s
-.PHONY : src/engine/Graphics/gameObject.cpp.s
+src/engine/Entities/material.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.s
+.PHONY : src/engine/Entities/material.cpp.s
 
-src/engine/Graphics/objectManager.o: src/engine/Graphics/objectManager.cpp.o
-.PHONY : src/engine/Graphics/objectManager.o
+src/engine/Graphics/renderer.o: src/engine/Graphics/renderer.cpp.o
+.PHONY : src/engine/Graphics/renderer.o
 
 # target to build an object file
-src/engine/Graphics/objectManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/objectManager.cpp.o
-.PHONY : src/engine/Graphics/objectManager.cpp.o
+src/engine/Graphics/renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o
+.PHONY : src/engine/Graphics/renderer.cpp.o
 
-src/engine/Graphics/objectManager.i: src/engine/Graphics/objectManager.cpp.i
-.PHONY : src/engine/Graphics/objectManager.i
+src/engine/Graphics/renderer.i: src/engine/Graphics/renderer.cpp.i
+.PHONY : src/engine/Graphics/renderer.i
 
 # target to preprocess a source file
-src/engine/Graphics/objectManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/objectManager.cpp.i
-.PHONY : src/engine/Graphics/objectManager.cpp.i
+src/engine/Graphics/renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.i
+.PHONY : src/engine/Graphics/renderer.cpp.i
 
-src/engine/Graphics/objectManager.s: src/engine/Graphics/objectManager.cpp.s
-.PHONY : src/engine/Graphics/objectManager.s
+src/engine/Graphics/renderer.s: src/engine/Graphics/renderer.cpp.s
+.PHONY : src/engine/Graphics/renderer.s
 
 # target to generate assembly for a file
-src/engine/Graphics/objectManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/objectManager.cpp.s
-.PHONY : src/engine/Graphics/objectManager.cpp.s
+src/engine/Graphics/renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.s
+.PHONY : src/engine/Graphics/renderer.cpp.s
 
-src/engine/Graphics/scene.o: src/engine/Graphics/scene.cpp.o
-.PHONY : src/engine/Graphics/scene.o
+src/engine/Tools/shaderLoader.o: src/engine/Tools/shaderLoader.cpp.o
+.PHONY : src/engine/Tools/shaderLoader.o
 
 # target to build an object file
-src/engine/Graphics/scene.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/scene.cpp.o
-.PHONY : src/engine/Graphics/scene.cpp.o
+src/engine/Tools/shaderLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o
+.PHONY : src/engine/Tools/shaderLoader.cpp.o
 
-src/engine/Graphics/scene.i: src/engine/Graphics/scene.cpp.i
-.PHONY : src/engine/Graphics/scene.i
-
-# target to preprocess a source file
-src/engine/Graphics/scene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/scene.cpp.i
-.PHONY : src/engine/Graphics/scene.cpp.i
-
-src/engine/Graphics/scene.s: src/engine/Graphics/scene.cpp.s
-.PHONY : src/engine/Graphics/scene.s
-
-# target to generate assembly for a file
-src/engine/Graphics/scene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/scene.cpp.s
-.PHONY : src/engine/Graphics/scene.cpp.s
-
-src/engine/renderer.o: src/engine/renderer.cpp.o
-.PHONY : src/engine/renderer.o
-
-# target to build an object file
-src/engine/renderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/renderer.cpp.o
-.PHONY : src/engine/renderer.cpp.o
-
-src/engine/renderer.i: src/engine/renderer.cpp.i
-.PHONY : src/engine/renderer.i
+src/engine/Tools/shaderLoader.i: src/engine/Tools/shaderLoader.cpp.i
+.PHONY : src/engine/Tools/shaderLoader.i
 
 # target to preprocess a source file
-src/engine/renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/renderer.cpp.i
-.PHONY : src/engine/renderer.cpp.i
+src/engine/Tools/shaderLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.i
+.PHONY : src/engine/Tools/shaderLoader.cpp.i
 
-src/engine/renderer.s: src/engine/renderer.cpp.s
-.PHONY : src/engine/renderer.s
+src/engine/Tools/shaderLoader.s: src/engine/Tools/shaderLoader.cpp.s
+.PHONY : src/engine/Tools/shaderLoader.s
 
 # target to generate assembly for a file
-src/engine/renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/renderer.cpp.s
-.PHONY : src/engine/renderer.cpp.s
+src/engine/Tools/shaderLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.s
+.PHONY : src/engine/Tools/shaderLoader.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -282,21 +258,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyGameEngine"
-	@echo "... src/engine/DataStructures/matrix4.o"
-	@echo "... src/engine/DataStructures/matrix4.i"
-	@echo "... src/engine/DataStructures/matrix4.s"
-	@echo "... src/engine/Graphics/gameObject.o"
-	@echo "... src/engine/Graphics/gameObject.i"
-	@echo "... src/engine/Graphics/gameObject.s"
-	@echo "... src/engine/Graphics/objectManager.o"
-	@echo "... src/engine/Graphics/objectManager.i"
-	@echo "... src/engine/Graphics/objectManager.s"
-	@echo "... src/engine/Graphics/scene.o"
-	@echo "... src/engine/Graphics/scene.i"
-	@echo "... src/engine/Graphics/scene.s"
-	@echo "... src/engine/renderer.o"
-	@echo "... src/engine/renderer.i"
-	@echo "... src/engine/renderer.s"
+	@echo "... src/engine/Entities/gameObject.o"
+	@echo "... src/engine/Entities/gameObject.i"
+	@echo "... src/engine/Entities/gameObject.s"
+	@echo "... src/engine/Entities/material.o"
+	@echo "... src/engine/Entities/material.i"
+	@echo "... src/engine/Entities/material.s"
+	@echo "... src/engine/Graphics/renderer.o"
+	@echo "... src/engine/Graphics/renderer.i"
+	@echo "... src/engine/Graphics/renderer.s"
+	@echo "... src/engine/Tools/shaderLoader.o"
+	@echo "... src/engine/Tools/shaderLoader.i"
+	@echo "... src/engine/Tools/shaderLoader.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
