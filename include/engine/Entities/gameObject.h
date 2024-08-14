@@ -15,11 +15,23 @@ public:
     std::string GetName();
     Material GetMaterial();
     std::vector<GLfloat> GetVertices();
+    float GetSize();
+    void SetSize(float newSize);
+    void SetPosX(float x);
+    void SetPosY(float y);
+    void SetPos(float x, float y);
+    float GetPosX();
+    float GetPosY();
 
 private:
     std::string name;
     Material material;
+    
+    //Object params
     std::vector<GLfloat> vertices;
+    float size;
+    float posX;
+    float posY;
 };
 
 #endif // GAMEOBJECT_H

@@ -4,6 +4,6 @@
 #include "../Entities/gameObject.h"
 
 void initRenderer(GameObject& gameObject);
-void RenderFrame();
+void RenderFrame(GameObject& gameObject);
 
 #endif // RENDERER_H

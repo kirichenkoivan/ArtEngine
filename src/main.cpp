@@ -11,8 +11,16 @@
 #include <iostream>
 #include <vector>
 
+GameObject* gameObject;
+
 void main_loop() {
-    RenderFrame();
+    static float time = 0.0f;
+    time += 0.01f;
+
+    // Move the object from -0.5 to 0.5 along the X axis
+    float xPosition = 0.5f * sin(time);
+    gameObject->SetPosX(xPosition);
+    RenderFrame(*gameObject);
 }
 
 
@@ -34,9 +42,11 @@ int main() {
         0.5f, -0.5f, 0.0f,
         0.0f,  0.5f, 0.0f
     };
-    GameObject obj(name, mat, vert);
+    gameObject = new GameObject(name, mat, vert);
+    gameObject->SetPos(0.5, 0.0);
+    gameObject->SetSize(0.5);
 
-    initRenderer(obj);
+    initRenderer(*gameObject);
     emscripten_set_main_loop(main_loop, 0, 1);
     return 0;
 }
