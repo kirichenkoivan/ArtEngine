@@ -4,6 +4,7 @@ GameObject::GameObject(const std::string& name, const Material& material, const 
     : name(name), material(material), vertices(verts) {
         this->posX = 0.0;
         this->posY = 0.0;
+        this->rotation = 0.0;
     }
 
 
@@ -48,4 +49,12 @@ void GameObject::SetPosY(float y){
 void GameObject::SetPos(float x, float y){
     this->posX = x;
     this->posY = y;
+}
+
+float GameObject::GetRotation(){
+    return rotation;
+}
+
+void GameObject::SetRotation(float angle){
+    this->rotation = angle;
 }

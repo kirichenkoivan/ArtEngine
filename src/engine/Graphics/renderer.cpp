@@ -45,7 +45,7 @@ GLuint createShaderProgram(const char* vertexSource, const char* fragmentSource)
 }
 
 GLuint VAO, VBO, shaderProgram;
-GLuint uSizeLocation, uPositionLocation;
+GLuint uSizeLocation, uPositionLocation, uRotationLocation;
 
 void initRenderer(GameObject& gameObject) {
     // Initialize WebGL context
@@ -70,6 +70,11 @@ void initRenderer(GameObject& gameObject) {
         std::cerr << "Could not find uniform variable 'uPosition'" << std::endl;
     }
 
+    uRotationLocation = glGetUniformLocation(shaderProgram, "uRotation");
+    if (uRotationLocation == -1) {
+        std::cerr << "Could not find uniform variable 'uRotation'" << std::endl;
+    }
+
     // Create VAO and VBO
     glGenBuffers(1, &VBO);
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
@@ -89,6 +94,7 @@ void updateUniforms(GameObject& gameObject) {
     glUseProgram(shaderProgram);
     glUniform1f(uSizeLocation, gameObject.GetSize());
     glUniform2f(uPositionLocation, gameObject.GetPosX(), gameObject.GetPosY());
+    glUniform1f(uRotationLocation, gameObject.GetRotation());
 }
 
 void RenderFrame(GameObject& gameObject) {

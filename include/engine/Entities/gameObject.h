@@ -22,6 +22,8 @@ public:
     void SetPos(float x, float y);
     float GetPosX();
     float GetPosY();
+    void SetRotation(float angle);
+    float GetRotation();
 
 private:
     std::string name;
@@ -32,6 +34,7 @@ private:
     float size;
     float posX;
     float posY;
+    float rotation;
 };
 
 #endif // GAMEOBJECT_H

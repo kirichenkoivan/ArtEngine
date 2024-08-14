@@ -20,6 +20,7 @@ void main_loop() {
     // Move the object from -0.5 to 0.5 along the X axis
     float xPosition = 0.5f * sin(time);
     gameObject->SetPosX(xPosition);
+    gameObject->SetRotation(time);
     RenderFrame(*gameObject);
 }
 
