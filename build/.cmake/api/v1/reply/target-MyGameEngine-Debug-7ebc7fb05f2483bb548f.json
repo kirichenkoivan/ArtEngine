@@ -31,7 +31,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 23,
+				"line" : 25,
 				"parent" : 0
 			}
 		]
@@ -68,7 +68,9 @@
 				2,
 				3,
 				4,
-				5
+				5,
+				6,
+				7
 			]
 		}
 	],
@@ -106,7 +108,9 @@
 				2,
 				3,
 				4,
-				5
+				5,
+				6,
+				7
 			]
 		}
 	],
@@ -134,6 +138,18 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/engine/Entities/scene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/Inputs/inputManager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/Entities/Actors/dynamicActor.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

@@ -25,6 +25,18 @@
 },
 {
   "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Inputs/inputManager.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Inputs/inputManager.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/Actors/dynamicActor.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/Actors/dynamicActor.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
   "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/material.cpp\"",
   "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/material.cpp",
   "output": "CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o"

@@ -3,7 +3,9 @@
 
 #include <unordered_map>
 #include <string>
+#include <type_traits>
 #include "gameObject.h"
+#include "Actors/dynamicActor.h"
 
 class Scene {
 public:

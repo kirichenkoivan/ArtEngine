@@ -1,32 +1,16 @@
-CMakeFiles/MyGameEngine.dir/src/main.cpp.o: \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/main.cpp \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/emscripten.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_asm.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_macros.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_types.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdbool.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__config \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__config_site \
-  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/stdbool.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stdbool.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_js.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/promise.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdlib.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/features.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/wget.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/version.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Graphics/renderer.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Graphics/../Entities/gameObject.h \
+CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.o: \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/Entities/Actors/dynamicActor.cpp \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Entities/Actors/dynamicActor.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Entities/Actors/../gameObject.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/GLES2/gl2.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/GLES2/gl2platform.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/KHR/khrplatform.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdint.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__config \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__config_site \
   /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/stdint.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/EGL/egl.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/EGL/eglplatform.h \
@@ -234,6 +218,11 @@ CMakeFiles/MyGameEngine.dir/src/main.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/new \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__exception/exception.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cstdlib \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdlib.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/features.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__type_traits/datasizeof.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__type_traits/is_always_bitcastable.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__type_traits/is_equality_comparable.h \
@@ -718,7 +707,7 @@ CMakeFiles/MyGameEngine.dir/src/main.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__bit/byteswap.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__bit/endian.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__bit/has_single_bit.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Graphics/../Entities/material.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Entities/Actors/../material.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/vector \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__bit_reference \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/formatter.h \
@@ -782,93 +771,25 @@ CMakeFiles/MyGameEngine.dir/src/main.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cstdarg \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/temp_value.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__split_buffer \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Graphics/../Entities/scene.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Entities/Actors/../../Inputs/inputManager.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/unordered_map \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/is_transparent.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__hash_table \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/ranges_iterator_traits.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__node_handle \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Graphics/../Entities/Actors/dynamicActor.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Graphics/../Entities/Actors/../gameObject.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Graphics/../Entities/Actors/../../Inputs/inputManager.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/html5.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_types.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdbool.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/stdbool.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stdbool.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/emscripten.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_asm.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_macros.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_js.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/promise.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/wget.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/version.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/eventloop.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/console.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/html5_webgl.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Graphics/../Entities/Actors/../../Inputs/KeyCodes/keyboard.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Entities/gameObject.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Entities/material.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Tools/fileLoader.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/fstream \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/filesystem \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/copy_options.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/directory_entry.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/file_status.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/file_type.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/perms.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/file_time_type.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/file_clock.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/filesystem_error.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/path.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/iomanip \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/istream \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/ostream \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/bitset \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/format \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/container_adaptor.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/range_default_formatter.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/statically_widen.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/range_formatter.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/format_context.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/format_arg_store.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/format_args.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__ranges/ref_view.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/queue \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/deque \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/functional \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/binary_negate.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/bind.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/bind_back.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/perfect_forward.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/bind_front.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/binder1st.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/binder2nd.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/boyer_moore_searcher.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/compose.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/default_searcher.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/function.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/builtin_new_allocator.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__type_traits/strip_signature.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/mem_fn.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/mem_fun_ref.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/not_fn.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/pointer_to_binary_function.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/pointer_to_unary_function.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/unary_negate.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stack \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/format_functions.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/formatter_char.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/write_escaped.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/escaped_output_table.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/formatter_floating_point.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__charconv/chars_format.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__charconv/to_chars_floating_point.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/formatter_integer.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/formatter_pointer.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/formatter_string.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/formatter_tuple.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/print \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/unistd.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/operations.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/perm_options.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/space_info.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/directory_iterator.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/directory_options.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/path_iterator.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/recursive_directory_iterator.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/u8path.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/sstream \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/iostream \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Entities/scene.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Inputs/inputManager.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Entities/Actors/dynamicActor.h
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Entities/Actors/../../Inputs/KeyCodes/keyboard.h

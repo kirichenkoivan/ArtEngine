@@ -11,6 +11,9 @@ class GameObject {
 public:
     // Constructor
     GameObject(const std::string& name, const Material& material, const std::vector<GLfloat> verts);
+    virtual ~GameObject() = default;
+
+    virtual void Move(float deltaTime);
 
     std::string GetName();
     Material GetMaterial();

@@ -775,4 +775,23 @@ CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stdarg_va_copy.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cstdarg \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/temp_value.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__split_buffer
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__split_buffer \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Entities/Actors/dynamicActor.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Entities/Actors/../gameObject.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Entities/Actors/../../Inputs/inputManager.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/html5.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_types.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdbool.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/stdbool.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stdbool.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/emscripten.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_asm.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_macros.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_js.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/promise.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/wget.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/version.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/eventloop.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/console.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/html5_webgl.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Entities/Actors/../../Inputs/KeyCodes/keyboard.h

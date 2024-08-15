@@ -129,6 +129,30 @@ MyGameEngine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/build
 .PHONY : MyGameEngine/fast
 
+src/engine/Entities/Actors/dynamicActor.o: src/engine/Entities/Actors/dynamicActor.cpp.o
+.PHONY : src/engine/Entities/Actors/dynamicActor.o
+
+# target to build an object file
+src/engine/Entities/Actors/dynamicActor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.o
+.PHONY : src/engine/Entities/Actors/dynamicActor.cpp.o
+
+src/engine/Entities/Actors/dynamicActor.i: src/engine/Entities/Actors/dynamicActor.cpp.i
+.PHONY : src/engine/Entities/Actors/dynamicActor.i
+
+# target to preprocess a source file
+src/engine/Entities/Actors/dynamicActor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.i
+.PHONY : src/engine/Entities/Actors/dynamicActor.cpp.i
+
+src/engine/Entities/Actors/dynamicActor.s: src/engine/Entities/Actors/dynamicActor.cpp.s
+.PHONY : src/engine/Entities/Actors/dynamicActor.s
+
+# target to generate assembly for a file
+src/engine/Entities/Actors/dynamicActor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.s
+.PHONY : src/engine/Entities/Actors/dynamicActor.cpp.s
+
 src/engine/Entities/gameObject.o: src/engine/Entities/gameObject.cpp.o
 .PHONY : src/engine/Entities/gameObject.o
 
@@ -225,6 +249,30 @@ src/engine/Graphics/renderer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.s
 .PHONY : src/engine/Graphics/renderer.cpp.s
 
+src/engine/Inputs/inputManager.o: src/engine/Inputs/inputManager.cpp.o
+.PHONY : src/engine/Inputs/inputManager.o
+
+# target to build an object file
+src/engine/Inputs/inputManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.o
+.PHONY : src/engine/Inputs/inputManager.cpp.o
+
+src/engine/Inputs/inputManager.i: src/engine/Inputs/inputManager.cpp.i
+.PHONY : src/engine/Inputs/inputManager.i
+
+# target to preprocess a source file
+src/engine/Inputs/inputManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.i
+.PHONY : src/engine/Inputs/inputManager.cpp.i
+
+src/engine/Inputs/inputManager.s: src/engine/Inputs/inputManager.cpp.s
+.PHONY : src/engine/Inputs/inputManager.s
+
+# target to generate assembly for a file
+src/engine/Inputs/inputManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.s
+.PHONY : src/engine/Inputs/inputManager.cpp.s
+
 src/engine/Tools/shaderLoader.o: src/engine/Tools/shaderLoader.cpp.o
 .PHONY : src/engine/Tools/shaderLoader.o
 
@@ -282,6 +330,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyGameEngine"
+	@echo "... src/engine/Entities/Actors/dynamicActor.o"
+	@echo "... src/engine/Entities/Actors/dynamicActor.i"
+	@echo "... src/engine/Entities/Actors/dynamicActor.s"
 	@echo "... src/engine/Entities/gameObject.o"
 	@echo "... src/engine/Entities/gameObject.i"
 	@echo "... src/engine/Entities/gameObject.s"
@@ -294,6 +345,9 @@ help:
 	@echo "... src/engine/Graphics/renderer.o"
 	@echo "... src/engine/Graphics/renderer.i"
 	@echo "... src/engine/Graphics/renderer.s"
+	@echo "... src/engine/Inputs/inputManager.o"
+	@echo "... src/engine/Inputs/inputManager.i"
+	@echo "... src/engine/Inputs/inputManager.s"
 	@echo "... src/engine/Tools/shaderLoader.o"
 	@echo "... src/engine/Tools/shaderLoader.i"
 	@echo "... src/engine/Tools/shaderLoader.s"

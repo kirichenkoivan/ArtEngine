@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.o"
+  "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.o"
   "CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o"
@@ -7,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o"
   "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o.d"
+  "CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.o"
+  "CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o"
   "CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/main.cpp.o"

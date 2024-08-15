@@ -16,6 +16,8 @@ add_executable(MyGameEngine
     src/engine/Graphics/renderer.cpp
     src/engine/Entities/gameObject.cpp
     src/engine/Entities/scene.cpp
+    src/engine/Inputs/inputManager.cpp
+    src/engine/Entities/Actors/dynamicActor.cpp
     src/engine/Entities/material.cpp
     src/engine/Tools/shaderLoader.cpp
 )

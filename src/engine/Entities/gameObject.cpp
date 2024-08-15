@@ -8,6 +8,10 @@ GameObject::GameObject(const std::string& name, const Material& material, const 
     }
 
 
+void GameObject::Move(float deltaTime) {
+    // abstract
+}
+
 std::string GameObject::GetName(){
     return name;
 }
