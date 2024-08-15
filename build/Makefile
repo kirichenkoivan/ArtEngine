@@ -177,6 +177,30 @@ src/engine/Entities/material.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.s
 .PHONY : src/engine/Entities/material.cpp.s
 
+src/engine/Entities/scene.o: src/engine/Entities/scene.cpp.o
+.PHONY : src/engine/Entities/scene.o
+
+# target to build an object file
+src/engine/Entities/scene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o
+.PHONY : src/engine/Entities/scene.cpp.o
+
+src/engine/Entities/scene.i: src/engine/Entities/scene.cpp.i
+.PHONY : src/engine/Entities/scene.i
+
+# target to preprocess a source file
+src/engine/Entities/scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.i
+.PHONY : src/engine/Entities/scene.cpp.i
+
+src/engine/Entities/scene.s: src/engine/Entities/scene.cpp.s
+.PHONY : src/engine/Entities/scene.s
+
+# target to generate assembly for a file
+src/engine/Entities/scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.s
+.PHONY : src/engine/Entities/scene.cpp.s
+
 src/engine/Graphics/renderer.o: src/engine/Graphics/renderer.cpp.o
 .PHONY : src/engine/Graphics/renderer.o
 
@@ -264,6 +288,9 @@ help:
 	@echo "... src/engine/Entities/material.o"
 	@echo "... src/engine/Entities/material.i"
 	@echo "... src/engine/Entities/material.s"
+	@echo "... src/engine/Entities/scene.o"
+	@echo "... src/engine/Entities/scene.i"
+	@echo "... src/engine/Entities/scene.s"
 	@echo "... src/engine/Graphics/renderer.o"
 	@echo "... src/engine/Graphics/renderer.i"
 	@echo "... src/engine/Graphics/renderer.s"

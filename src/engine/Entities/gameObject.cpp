@@ -58,3 +58,31 @@ float GameObject::GetRotation(){
 void GameObject::SetRotation(float angle){
     this->rotation = angle;
 }
+
+GLuint GameObject::GetShaderProgram() const {
+    return shaderProgram;
+}
+
+void GameObject::SetShaderProgram(GLuint shaderProgram) {
+    this->shaderProgram = shaderProgram;
+}
+
+GameObject::UniformLocations GameObject::GetUniformLocations() const {
+    return uniformLocations;
+}
+
+void GameObject::SetUniformLocations(GLuint uSizeLocation, GLuint uPositionLocation, GLuint uRotationLocation, GLuint uColorLocation) {
+    uniformLocations.uSizeLocation = uSizeLocation;
+    uniformLocations.uPositionLocation = uPositionLocation;
+    uniformLocations.uRotationLocation = uRotationLocation;
+    uniformLocations.uColorLocation = uColorLocation;
+}
+
+
+void GameObject::SetVBO(GLuint VBO) {
+    this->VBO = VBO;
+}
+
+GLuint GameObject::GetVBO() const {
+    return VBO;
+}

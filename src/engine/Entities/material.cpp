@@ -18,3 +18,15 @@ const char* Material::GetVertexShader() const {
 const char* Material::GetFragmentShader() const {
     return fragmentShader;
 }
+
+void Material::GetColor(GLfloat color[4]) const {
+    for (int i = 0; i < 4; ++i) {
+        color[i] = this->color[i];
+    }
+}
+
+void Material::SetColor(const GLfloat color[4]) {
+    for (int i = 0; i < 4; ++i) {
+        this->color[i] = color[i];
+    }
+}

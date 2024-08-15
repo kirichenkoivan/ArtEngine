@@ -114,11 +114,26 @@ CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.s"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/gameObject.cpp" -o CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.s
 
+CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o: CMakeFiles/MyGameEngine.dir/flags.make
+CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o: CMakeFiles/MyGameEngine.dir/includes_CXX.rsp
+CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/Entities/scene.cpp
+CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o -MF CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o.d -o CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/scene.cpp"
+
+CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.i"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/scene.cpp" > CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.i
+
+CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.s"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/scene.cpp" -o CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.s
+
 CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o: CMakeFiles/MyGameEngine.dir/flags.make
 CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o: CMakeFiles/MyGameEngine.dir/includes_CXX.rsp
 CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/Entities/material.cpp
 CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o -MF CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o.d -o CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/material.cpp"
 
 CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.i: cmake_force
@@ -133,7 +148,7 @@ CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o: CMakeFiles/MyGa
 CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o: CMakeFiles/MyGameEngine.dir/includes_CXX.rsp
 CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/Tools/shaderLoader.cpp
 CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o -MF CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o.d -o CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/shaderLoader.cpp"
 
 CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.i: cmake_force
@@ -149,6 +164,7 @@ MyGameEngine_OBJECTS = \
 "CMakeFiles/MyGameEngine.dir/src/main.cpp.o" \
 "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o" \
 "CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.o" \
+"CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o" \
 "CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o" \
 "CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o"
 
@@ -158,12 +174,13 @@ MyGameEngine_EXTERNAL_OBJECTS =
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/main.cpp.o
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.o
+build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/build.make
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/objects1.rsp
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable build_output/my_game_engine.html"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable build_output/my_game_engine.html"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyGameEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -839,4 +839,5 @@ CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/unistd.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/renderer.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/gameObject.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/material.h
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/material.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/scene.h

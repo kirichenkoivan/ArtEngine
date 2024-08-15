@@ -14,10 +14,14 @@ public:
     const char* GetVertexShader() const;
     const char* GetFragmentShader() const;
 
+    void GetColor(GLfloat color[4]) const;
+    void SetColor(const GLfloat color[4]);
+
 private:
     std::string name;
     const char* vertexShader;
     const char* fragmentShader;
+    GLfloat color[4];
 };
 
 

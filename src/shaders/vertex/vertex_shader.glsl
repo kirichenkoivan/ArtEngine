@@ -1,5 +1,5 @@
 #version 100
-
+precision mediump float;
 uniform float uSize;
 uniform vec2 uPosition;
 uniform float uRotation;

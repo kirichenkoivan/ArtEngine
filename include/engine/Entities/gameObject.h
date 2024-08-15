@@ -24,6 +24,20 @@ public:
     float GetPosY();
     void SetRotation(float angle);
     float GetRotation();
+    
+    //Shaders params
+    GLuint GetShaderProgram() const;
+    void SetShaderProgram(GLuint shaderProgram);
+    struct UniformLocations {
+        GLuint uSizeLocation;
+        GLuint uPositionLocation;
+        GLuint uRotationLocation;
+        GLuint uColorLocation;
+    };
+    UniformLocations GetUniformLocations() const;
+    void SetVBO(GLuint VBO);
+    GLuint GetVBO() const;
+    void SetUniformLocations(GLuint uSizeLocation, GLuint uPositionLocation, GLuint uRotationLocation, GLuint uColorLocation);
 
 private:
     std::string name;
@@ -35,6 +49,11 @@ private:
     float posX;
     float posY;
     float rotation;
+
+    //Shaders params
+    GLuint shaderProgram;
+    UniformLocations uniformLocations;
+    GLuint VBO;
 };
 
 #endif // GAMEOBJECT_H
