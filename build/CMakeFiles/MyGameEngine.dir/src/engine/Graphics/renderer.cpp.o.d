@@ -844,4 +844,5 @@ CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o: \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/Actors/dynamicActor.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/Actors/../gameObject.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/Actors/../../Inputs/inputManager.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/Actors/../../Inputs/KeyCodes/keyboard.h
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/Actors/../../Inputs/KeyCodes/keyboard.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/Actors/../../Inputs/KeyCodes/mouse.h

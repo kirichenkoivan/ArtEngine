@@ -794,4 +794,5 @@ CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/eventloop.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/console.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/html5_webgl.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Entities/Actors/../../Inputs/KeyCodes/keyboard.h
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Entities/Actors/../../Inputs/KeyCodes/keyboard.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Entities/Actors/../../Inputs/KeyCodes/mouse.h

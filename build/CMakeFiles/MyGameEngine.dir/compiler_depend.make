@@ -5603,6 +5603,7 @@ CMakeFiles/MyGameEngine.dir/src/main.cpp.o: /Users/ivankiricenko/Desktop/Main\ p
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Entities/material.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Entities/scene.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Inputs/KeyCodes/keyboard.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Inputs/KeyCodes/mouse.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Inputs/inputManager.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Entities/gameObject.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Entities/Actors/dynamicActor.h \
@@ -8091,6 +8092,8 @@ CMakeFiles/MyGameEngine.dir/src/main.cpp.o: /Users/ivankiricenko/Desktop/Main\ p
 /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/fstream:
 
 /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/find_first_of.h:
+
+/Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Inputs/KeyCodes/mouse.h:
 
 /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/pstl_backends/cpu_backends/find_if.h:
 

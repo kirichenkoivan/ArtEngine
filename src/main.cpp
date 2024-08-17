@@ -28,6 +28,10 @@ void main_loop() {
     for (auto& pair : scene->GetGameObjects()) {
         GameObject* gameObject = pair.second;
         gameObject->Move(deltaTime);
+        if (InputManager::GetInstance().IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
+            GLfloat color1[4] = {1.0f, 0.0f, 0.0f, 1.0f};
+            gameObject->GetMaterial().SetColor(color1);
+        }
     }
     RenderScene(*scene);
 }
