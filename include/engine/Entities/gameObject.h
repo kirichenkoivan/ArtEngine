@@ -10,7 +10,7 @@
 class GameObject {
 public:
     // Constructor
-    GameObject(const std::string& name, const Material& material, const std::vector<GLfloat> verts);
+    GameObject(const std::string& name, const Material& material, const std::vector<GLfloat> verts, const std::vector<GLfloat> texCoords);
     virtual ~GameObject() = default;
 
     virtual void Move(float deltaTime);
@@ -18,6 +18,7 @@ public:
     std::string GetName();
     Material GetMaterial();
     std::vector<GLfloat> GetVertices();
+    std::vector<GLfloat> GetTexCoords();
     float GetSize();
     void SetSize(float newSize);
     void SetPosX(float x);
@@ -28,7 +29,7 @@ public:
     void SetRotation(float angle);
     float GetRotation();
     
-    //Shaders params
+    // Shaders params
     GLuint GetShaderProgram() const;
     void SetShaderProgram(GLuint shaderProgram);
     struct UniformLocations {
@@ -36,24 +37,31 @@ public:
         GLuint uPositionLocation;
         GLuint uRotationLocation;
         GLuint uColorLocation;
+        GLuint uTextureLocation;
+        GLuint uUseTextureLocation;
     };
     UniformLocations GetUniformLocations() const;
     void SetVBO(GLuint VBO);
     GLuint GetVBO() const;
-    void SetUniformLocations(GLuint uSizeLocation, GLuint uPositionLocation, GLuint uRotationLocation, GLuint uColorLocation);
+    void SetUniformLocations(GLuint uSizeLocation, GLuint uPositionLocation, GLuint uRotationLocation, GLuint uColorLocation, GLuint uTextureLocation, GLuint uUseTextureLocation);
+
+    void SetTextureID(GLuint id) {this->textureId = id;};
+    GLuint GetTextureID() const {return textureId;}
 
 private:
     std::string name;
     Material material;
     
-    //Object params
+    // Object params
     std::vector<GLfloat> vertices;
+    std::vector<GLfloat> texCoords;
+    GLuint textureId;
     float size;
     float posX;
     float posY;
     float rotation;
 
-    //Shaders params
+    // Shaders params
     GLuint shaderProgram;
     UniformLocations uniformLocations;
     GLuint VBO;

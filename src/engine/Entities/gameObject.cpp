@@ -1,12 +1,11 @@
 #include "../include/engine/Entities/gameObject.h"
 
-GameObject::GameObject(const std::string& name, const Material& material, const std::vector<GLfloat> verts)
-    : name(name), material(material), vertices(verts) {
+GameObject::GameObject(const std::string& name, const Material& material, const std::vector<GLfloat> verts, const std::vector<GLfloat> texCoords)
+    : name(name), material(material), vertices(verts), texCoords(texCoords) {
         this->posX = 0.0;
         this->posY = 0.0;
         this->rotation = 0.0;
     }
-
 
 void GameObject::Move(float deltaTime) {
     // abstract
@@ -22,6 +21,10 @@ Material GameObject::GetMaterial(){
 
 std::vector<GLfloat> GameObject::GetVertices(){
     return vertices;
+}
+
+std::vector<GLfloat> GameObject::GetTexCoords() {
+    return texCoords;
 }
 
 float GameObject::GetSize()
@@ -75,13 +78,14 @@ GameObject::UniformLocations GameObject::GetUniformLocations() const {
     return uniformLocations;
 }
 
-void GameObject::SetUniformLocations(GLuint uSizeLocation, GLuint uPositionLocation, GLuint uRotationLocation, GLuint uColorLocation) {
+void GameObject::SetUniformLocations(GLuint uSizeLocation, GLuint uPositionLocation, GLuint uRotationLocation, GLuint uColorLocation, GLuint uTextureLocation, GLuint uUseTextureLocation) {
     uniformLocations.uSizeLocation = uSizeLocation;
     uniformLocations.uPositionLocation = uPositionLocation;
     uniformLocations.uRotationLocation = uRotationLocation;
     uniformLocations.uColorLocation = uColorLocation;
+    uniformLocations.uTextureLocation = uTextureLocation;
+    uniformLocations.uUseTextureLocation = uUseTextureLocation;
 }
-
 
 void GameObject::SetVBO(GLuint VBO) {
     this->VBO = VBO;

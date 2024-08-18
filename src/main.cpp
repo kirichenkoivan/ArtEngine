@@ -32,7 +32,6 @@ void main_loop() {
     RenderScene(*scene);
 }
 
-
 int main() {
     InputManager::GetInstance().Initialize();
     scene = new Scene();
@@ -45,26 +44,32 @@ int main() {
     const char* vertexShaderSource = vertexShaderSourceStr.c_str();
     const char* fragmentShaderSource = fragmentShaderSourceStr.c_str();
 
-    Material mat(name, vertexShaderSource, fragmentShaderSource);
+    Material mat(name, vertexShaderSource, fragmentShaderSource, "/textures/amog.png");
     Material mat2(name2, vertexShaderSource, fragmentShaderSource);
 
     GLfloat color1[4] = {1.0f, 0.0f, 0.0f, 1.0f};
     GLfloat color2[4] = {0.0f, 1.0f, 0.0f, 1.0f};
-    mat.SetColor(color1);
     mat2.SetColor(color2);
+
     std::vector<GLfloat> vert = {
-        -0.5f, -0.5f, 0.0f, 0.0f, 0.0f, 1.0f,
-        0.5f, -0.5f, 0.0f, 0.0f, 0.0f, 1.0f,
-        0.0f,  0.5f, 0.0f, 0.0f, 0.0f, 1.0f
+        -0.5f, -0.5f, 0.0f,
+        0.5f, -0.5f, 0.0f, 
+        0.0f,  0.5f, 0.0f, 
     };
-    
-    GameObject* obj = new GameObject("obj1", mat, vert);
+
+    std::vector<GLfloat> texCoords = {
+        0.0f, 0.0f,
+        1.0f, 0.0f,
+        0.5f, 1.0f
+    };
+
+    GameObject* obj = new GameObject("obj1", mat, vert, texCoords);
     obj->SetSize(0.5f);
     obj->SetPos(0.5f, 0.0f); // Set position to (0.0, 0.0)
     obj->SetRotation(0.0f);  // Set rotation to 0.0
     scene->AddGameObject(obj);
 
-    actor = new DynamicActor("actor", mat2, vert);
+    actor = new DynamicActor("actor", mat2, vert, texCoords);
     actor->SetSize(-0.5f);
     actor->SetPos(0.0f, 0.0f);
     actor->SetRotation(0.0f);

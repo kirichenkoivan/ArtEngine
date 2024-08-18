@@ -7,7 +7,7 @@
 
 class DynamicActor : public GameObject {
     public:
-        DynamicActor(const std::string& name, Material& material, const std::vector<GLfloat>& vertices);
+        DynamicActor(const std::string& name, Material& material, const std::vector<GLfloat>& vertices, const std::vector<GLfloat>& texCoords);
 
         void Move(float deltaTime) override;
     private:

@@ -3074,6 +3074,7 @@ CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o: /Users/ivankiricenk
   /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/stdint.h
 
 CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/Graphics/renderer.cpp \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Entities/material.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Inputs/KeyCodes/keyboard.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Inputs/inputManager.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Entities/gameObject.h \
@@ -3082,12 +3083,14 @@ CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o: /Users/ivankiric
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Entities/material.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Entities/scene.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/renderer.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/libs/stb_image.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/EGL/egl.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/EGL/eglplatform.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/GLES2/gl2.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/GLES2/gl2platform.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/KHR/khrplatform.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/assert.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/bits/errno.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/bits/limits.h \
@@ -7246,6 +7249,8 @@ CMakeFiles/MyGameEngine.dir/src/main.cpp.o: /Users/ivankiricenko/Desktop/Main\ p
 
 /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/iterator.h:
 
+/Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/assert.h:
+
 /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/ranges_generate.h:
 
 /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__assert:
@@ -7995,6 +8000,8 @@ CMakeFiles/MyGameEngine.dir/src/main.cpp.o: /Users/ivankiricenko/Desktop/Main\ p
 /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__atomic/kill_dependency.h:
 
 /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/formatter_bool.h:
+
+/Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/libs/stb_image.h:
 
 /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/ranges_for_each.h:
 

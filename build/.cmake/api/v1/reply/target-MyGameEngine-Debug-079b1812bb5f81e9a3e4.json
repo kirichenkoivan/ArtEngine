@@ -84,7 +84,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-s USE_WEBGL2=1 -s WASM=1 -s ALLOW_MEMORY_GROWTH=1 -O3 -s --preload-file ../src/shaders@/shaders",
+				"fragment" : "-s USE_WEBGL2=1 -s WASM=1 -s ALLOW_MEMORY_GROWTH=1 -O3 -s --preload-file ../src/shaders@/shaders --preload-file ../src/textures@/textures",
 				"role" : "flags"
 			}
 		],

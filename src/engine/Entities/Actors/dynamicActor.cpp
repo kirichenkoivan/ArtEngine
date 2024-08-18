@@ -1,7 +1,7 @@
 #include "../include/engine/Entities/Actors/dynamicActor.h"
 
-DynamicActor::DynamicActor(const std::string& name, Material& material, const std::vector<GLfloat>& vertices)
-    : GameObject(name, material, vertices) {
+DynamicActor::DynamicActor(const std::string& name, Material& material, const std::vector<GLfloat>& vertices, const std::vector<GLfloat>& texCoords)
+    : GameObject(name, material, vertices, texCoords) {
 }
 
 void DynamicActor::Move(float deltaTime){
