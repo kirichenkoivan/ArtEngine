@@ -845,6 +845,10 @@ CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o: \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/Actors/../gameObject.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/Actors/../../Inputs/inputManager.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/Actors/../../Inputs/KeyCodes/keyboard.h \
+<<<<<<< HEAD
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Entities/material.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/libs/stb_image.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/assert.h
+=======
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/Actors/../../Inputs/KeyCodes/mouse.h
+>>>>>>> eac1af84de8289e16e8b418bc55164c5d07f73c9
