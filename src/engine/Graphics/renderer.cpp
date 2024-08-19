@@ -81,6 +81,10 @@ void initRenderer(Scene& scene) {
     attrs.minorVersion = 0;
     EMSCRIPTEN_WEBGL_CONTEXT_HANDLE context = emscripten_webgl_create_context("#canvas", &attrs);
     emscripten_webgl_make_context_current(context);
+    
+    // Enable blending
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
     for (auto& pair : scene.GetGameObjects()) {
         GameObject* gameObject = pair.second;
@@ -101,21 +105,21 @@ void initRenderer(Scene& scene) {
         gameObject->SetShaderProgram(shaderProgram);
 
         // Get the location of the uniform variables
-        GLuint uSizeLocation = glGetUniformLocation(shaderProgram, "uSize");
+        GLuint uSizeXLocation = glGetUniformLocation(shaderProgram, "uSizeX");
+        GLuint uSizeYLocation = glGetUniformLocation(shaderProgram, "uSizeY");
         GLuint uPositionLocation = glGetUniformLocation(shaderProgram, "uPosition");
         GLuint uRotationLocation = glGetUniformLocation(shaderProgram, "uRotation");
         GLuint uColorLocation = glGetUniformLocation(shaderProgram, "uColor");
         GLuint uTextureLocation = glGetUniformLocation(shaderProgram, "uTexture");
         GLuint uUseTextureLocation = glGetUniformLocation(shaderProgram, "uUseTexture");
 
-        gameObject->SetUniformLocations(uSizeLocation, uPositionLocation, uRotationLocation, uColorLocation, uTextureLocation, uUseTextureLocation);
+        gameObject->SetUniformLocations(uSizeXLocation, uSizeYLocation, uPositionLocation, uRotationLocation, uColorLocation, uTextureLocation, uUseTextureLocation);
 
         // Create VAO and VBO
         GLuint VBO;
         glGenBuffers(1, &VBO);
         glBindBuffer(GL_ARRAY_BUFFER, VBO);
         glBufferData(GL_ARRAY_BUFFER, gameObject->GetVertices().size() * sizeof(GLfloat), gameObject->GetVertices().data(), GL_STATIC_DRAW);
-
 
         GLuint positionAttrib = glGetAttribLocation(shaderProgram, "aPosition");
         glEnableVertexAttribArray(positionAttrib);
@@ -131,6 +135,12 @@ void initRenderer(Scene& scene) {
         glEnableVertexAttribArray(texCoordAttrib);
         glVertexAttribPointer(texCoordAttrib, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(GLfloat), (void*)0);
 
+        // Create EBO for indices
+        GLuint EBO;
+        glGenBuffers(1, &EBO);
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+        glBufferData(GL_ELEMENT_ARRAY_BUFFER, gameObject->GetIndices().size() * sizeof(GLuint), gameObject->GetIndices().data(), GL_STATIC_DRAW);
+
         glBindBuffer(GL_ARRAY_BUFFER, 0);
     }
 }
@@ -138,7 +148,8 @@ void initRenderer(Scene& scene) {
 void updateUniforms(GameObject& gameObject) {
     // Update the uniform variables with the size, position, and rotation of the game object
     glUseProgram(gameObject.GetShaderProgram());
-    glUniform1f(gameObject.GetUniformLocations().uSizeLocation, gameObject.GetSize());
+     glUniform1f(gameObject.GetUniformLocations().uSizeXLocation, gameObject.GetSizeX());
+    glUniform1f(gameObject.GetUniformLocations().uSizeYLocation, gameObject.GetSizeY());
     glUniform2f(gameObject.GetUniformLocations().uPositionLocation, gameObject.GetPosX(), gameObject.GetPosY());
     glUniform1f(gameObject.GetUniformLocations().uRotationLocation, gameObject.GetRotation());
 
@@ -155,7 +166,6 @@ void updateUniforms(GameObject& gameObject) {
 
     // Update the useTexture uniform
     bool useTexture = texture != 0;
-    std::cout << "use texture = " << useTexture << std::endl;
     glUniform1i(gameObject.GetUniformLocations().uUseTextureLocation, useTexture);
 }
 
@@ -164,7 +174,7 @@ void RenderFrame(GameObject& gameObject) {
     updateUniforms(gameObject);
 
     glUseProgram(gameObject.GetShaderProgram());
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+    glDrawElements(GL_TRIANGLES, gameObject.GetIndices().size(), GL_UNSIGNED_INT, 0);
 }
 
 void RenderScene(Scene& scene) {

@@ -51,27 +51,37 @@ int main() {
     GLfloat color2[4] = {0.0f, 1.0f, 0.0f, 1.0f};
     mat2.SetColor(color2);
 
-    std::vector<GLfloat> vert = {
-        -0.5f, -0.5f, 0.0f,
-        0.5f, -0.5f, 0.0f, 
-        0.0f,  0.5f, 0.0f, 
-    };
+    std::vector<GLfloat> vertices = {
+    -0.5f, -0.5f, -1.0f, // Bottom-left
+     0.5f, -0.5f, -1.0f, // Bottom-right
+     0.5f,  0.5f, -1.0f, // Top-right
+    -0.5f,  0.5f, -1.0f  // Top-left
+};
+
 
     std::vector<GLfloat> texCoords = {
-        0.0f, 0.0f,
-        1.0f, 0.0f,
-        0.5f, 1.0f
+        0.0f, 0.0f, // Bottom-left
+        1.0f, 0.0f, // Bottom-right
+        1.0f, 1.0f, // Top-right
+        0.0f, 1.0f  // Top-left
     };
 
-    GameObject* obj = new GameObject("obj1", mat, vert, texCoords);
-    obj->SetSize(0.5f);
-    obj->SetPos(0.5f, 0.0f); // Set position to (0.0, 0.0)
+    std::vector<GLuint> indices = {
+        0, 1, 2, // Первый треугольник
+        2, 3, 0  // Второй треугольник
+    };
+
+    GameObject* obj = new GameObject("obj1", mat, vertices, texCoords, indices);
+    obj->SetSizeX(0.5f);
+    obj->SetSizeY(0.5f);
+    obj->SetPos(0.5f, 0.0f); // Устанавливаем глубину
     obj->SetRotation(0.0f);  // Set rotation to 0.0
     scene->AddGameObject(obj);
 
-    actor = new DynamicActor("actor", mat2, vert, texCoords);
-    actor->SetSize(-0.5f);
-    actor->SetPos(0.0f, 0.0f);
+    actor = new DynamicActor("actor", mat2, vertices, texCoords, indices);
+    actor->SetSizeX(0.5f);
+    actor->SetSizeY(0.25f);
+    actor->SetPos(0.0f, 0.0f); // Устанавливаем другую глубину
     actor->SetRotation(0.0f);
     scene->AddGameObject(actor);
 

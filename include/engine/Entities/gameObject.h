@@ -10,7 +10,7 @@
 class GameObject {
 public:
     // Constructor
-    GameObject(const std::string& name, const Material& material, const std::vector<GLfloat> verts, const std::vector<GLfloat> texCoords);
+    GameObject(const std::string& name, const Material& material, const std::vector<GLfloat> verts, const std::vector<GLfloat> texCoords, const std::vector<GLuint> indices);
     virtual ~GameObject() = default;
 
     virtual void Move(float deltaTime);
@@ -19,8 +19,11 @@ public:
     Material GetMaterial();
     std::vector<GLfloat> GetVertices();
     std::vector<GLfloat> GetTexCoords();
-    float GetSize();
-    void SetSize(float newSize);
+    std::vector<GLuint> GetIndices();
+    float GetSizeX();
+    float GetSizeY();
+    void SetSizeX(float newSizeX);
+    void SetSizeY(float newSizeY);
     void SetPosX(float x);
     void SetPosY(float y);
     void SetPos(float x, float y);
@@ -33,7 +36,8 @@ public:
     GLuint GetShaderProgram() const;
     void SetShaderProgram(GLuint shaderProgram);
     struct UniformLocations {
-        GLuint uSizeLocation;
+        GLuint uSizeXLocation;
+        GLuint uSizeYLocation;
         GLuint uPositionLocation;
         GLuint uRotationLocation;
         GLuint uColorLocation;
@@ -43,8 +47,7 @@ public:
     UniformLocations GetUniformLocations() const;
     void SetVBO(GLuint VBO);
     GLuint GetVBO() const;
-    void SetUniformLocations(GLuint uSizeLocation, GLuint uPositionLocation, GLuint uRotationLocation, GLuint uColorLocation, GLuint uTextureLocation, GLuint uUseTextureLocation);
-
+    void SetUniformLocations(GLuint uSizeXLocation, GLuint uSizeYLocation, GLuint uPositionLocation, GLuint uRotationLocation, GLuint uColorLocation, GLuint uTextureLocation, GLuint uUseTextureLocation);
     void SetTextureID(GLuint id) {this->textureId = id;};
     GLuint GetTextureID() const {return textureId;}
 
@@ -55,8 +58,10 @@ private:
     // Object params
     std::vector<GLfloat> vertices;
     std::vector<GLfloat> texCoords;
+    std::vector<GLuint> indices;
     GLuint textureId;
-    float size;
+    float sizeX;
+    float sizeY;
     float posX;
     float posY;
     float rotation;

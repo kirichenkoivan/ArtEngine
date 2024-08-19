@@ -1,11 +1,14 @@
 #include "../include/engine/Entities/gameObject.h"
 
-GameObject::GameObject(const std::string& name, const Material& material, const std::vector<GLfloat> verts, const std::vector<GLfloat> texCoords)
-    : name(name), material(material), vertices(verts), texCoords(texCoords) {
+GameObject::GameObject(const std::string& name, const Material& material, const std::vector<GLfloat> verts, const std::vector<GLfloat> texCoords, const std::vector<GLuint> indices)
+    : name(name), material(material), vertices(verts), texCoords(texCoords), indices(indices) {
         this->posX = 0.0;
         this->posY = 0.0;
         this->rotation = 0.0;
+        this->sizeX = 1.0;
+        this->sizeY = 1.0;
     }
+
 
 void GameObject::Move(float deltaTime) {
     // abstract
@@ -27,14 +30,20 @@ std::vector<GLfloat> GameObject::GetTexCoords() {
     return texCoords;
 }
 
-float GameObject::GetSize()
-{
-    return size;
+float GameObject::GetSizeX() {
+    return sizeX;
 }
 
-void GameObject::SetSize(float newSize)
-{
-    size = newSize;
+float GameObject::GetSizeY() {
+    return sizeY;
+}
+
+void GameObject::SetSizeX(float newSizeX) {
+    sizeX = newSizeX;
+}
+
+void GameObject::SetSizeY(float newSizeY) {
+    sizeY = newSizeY;
 }
 
 float GameObject::GetPosX(){
@@ -78,8 +87,9 @@ GameObject::UniformLocations GameObject::GetUniformLocations() const {
     return uniformLocations;
 }
 
-void GameObject::SetUniformLocations(GLuint uSizeLocation, GLuint uPositionLocation, GLuint uRotationLocation, GLuint uColorLocation, GLuint uTextureLocation, GLuint uUseTextureLocation) {
-    uniformLocations.uSizeLocation = uSizeLocation;
+void GameObject::SetUniformLocations(GLuint uSizeXLocation, GLuint uSizeYLocation, GLuint uPositionLocation, GLuint uRotationLocation, GLuint uColorLocation, GLuint uTextureLocation, GLuint uUseTextureLocation) {
+    uniformLocations.uSizeXLocation = uSizeXLocation;
+    uniformLocations.uSizeYLocation = uSizeYLocation;
     uniformLocations.uPositionLocation = uPositionLocation;
     uniformLocations.uRotationLocation = uRotationLocation;
     uniformLocations.uColorLocation = uColorLocation;
@@ -93,4 +103,8 @@ void GameObject::SetVBO(GLuint VBO) {
 
 GLuint GameObject::GetVBO() const {
     return VBO;
+}
+
+std::vector<GLuint> GameObject::GetIndices() {
+    return indices;
 }

@@ -75,6 +75,13 @@
 		}
 	],
 	"id" : "MyGameEngine::@6890427a1f51a3e7e1df",
+	"launchers" : 
+	[
+		{
+			"command" : "/Users/ivankiricenko/emsdk/node/18.20.3_64bit/bin/node",
+			"type" : "emulator"
+		}
+	],
 	"link" : 
 	{
 		"commandFragments" : 

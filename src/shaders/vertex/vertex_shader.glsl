@@ -1,28 +1,30 @@
 #version 100
 precision mediump float;
 
-uniform float uSize;
-uniform vec2 uPosition;
+uniform float uSizeX;
+uniform float uSizeY;
+uniform vec2 uPosition; // uniform для позиции теперь vec2
 uniform float uRotation;
 
-attribute vec3 aPosition;
+attribute vec2 aPosition; // attribute для позиции теперь vec2
 attribute vec2 aTexCoord;
 
 varying vec2 vTexCoord;
 
 void main() {
-    vec3 position = aPosition * uSize;
+    vec2 position = aPosition;
+    position.x *= uSizeX;
+    position.y *= uSizeY;
     float cosAngle = cos(uRotation);
     float sinAngle = sin(uRotation);
 
     vec2 center = vec2(0.0, 0.0);
-    position.xy -= center;
-    position.x = position.x * cosAngle - position.y * sinAngle;
-    position.y = position.x * sinAngle + position.y * cosAngle;
-    position.xy += center;
+    position -= center;
+    position = vec2(position.x * cosAngle - position.y * sinAngle, position.x * sinAngle + position.y * cosAngle);
+    position += center;
 
-    position.xy += uPosition;
-    gl_Position = vec4(position, 1.0);
+    position += uPosition;
+    gl_Position = vec4(position, 0.0, 1.0); // Устанавливаем Z в 0.0
 
     vTexCoord = aTexCoord;
 }
