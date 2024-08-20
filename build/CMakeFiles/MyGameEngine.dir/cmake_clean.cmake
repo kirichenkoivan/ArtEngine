@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o"
   "CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o.d"
+  "CMakeFiles/MyGameEngine.dir/src/engine/Tools/tinyxml2.cpp.o"
+  "CMakeFiles/MyGameEngine.dir/src/engine/Tools/tinyxml2.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/main.cpp.o"
   "CMakeFiles/MyGameEngine.dir/src/main.cpp.o.d"
   "build_output/my_game_engine.html"

@@ -6,6 +6,7 @@
 #include "../include/engine/Entities/scene.h"
 #include "../include/engine/Inputs/inputManager.h"
 #include "../include/engine/Entities/Actors/dynamicActor.h"
+#include "../include/engine/Tools/xmlReader.h"
 #include <GLES2/gl2.h>
 #include <EGL/egl.h>
 #include <string>
@@ -39,6 +40,9 @@ void main_loop() {
 int main() {
     InputManager::GetInstance().Initialize();
     scene = new Scene();
+
+    std::filesystem::path directory = "/FileSystem";
+    find_and_process_xml_files(directory);
     const std::string name = "MyMaterial";
     const std::string name2 = "MyMaterial2";
 
@@ -49,7 +53,7 @@ int main() {
     const char* fragmentShaderSource = fragmentShaderSourceStr.c_str();
 
     Material mat(name, vertexShaderSource, fragmentShaderSource, "/textures/amog.png");
-    Material mat2(name2, vertexShaderSource, fragmentShaderSource);
+    Material mat2(name2, vertexShaderSource, fragmentShaderSource, "");
 
     GLfloat color1[4] = {1.0f, 0.0f, 0.0f, 1.0f};
     GLfloat color2[4] = {0.0f, 1.0f, 0.0f, 1.0f};
@@ -76,8 +80,8 @@ int main() {
     };
 
     GameObject* obj = new GameObject("obj1", mat, vertices, texCoords, indices);
-    obj->SetSizeX(0.5f);
-    obj->SetSizeY(0.5f);
+    obj->SetSizeX(-0.5f);
+    obj->SetSizeY(-0.5f);
     obj->SetPos(0.5f, 0.0f); // Устанавливаем глубину
     obj->SetRotation(0.0f);  // Set rotation to 0.0
     scene->AddGameObject(obj);

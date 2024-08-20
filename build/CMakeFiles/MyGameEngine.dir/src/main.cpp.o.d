@@ -872,4 +872,6 @@ CMakeFiles/MyGameEngine.dir/src/main.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/iostream \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Entities/scene.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Inputs/inputManager.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Entities/Actors/dynamicActor.h
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Entities/Actors/dynamicActor.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Tools/xmlReader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Tools/tinyxml2.h

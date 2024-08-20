@@ -46,5 +46,11 @@
   "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/shaderLoader.cpp\"",
   "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/shaderLoader.cpp",
   "output": "CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Tools/tinyxml2.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/tinyxml2.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/tinyxml2.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Tools/tinyxml2.cpp.o"
 }
 ]

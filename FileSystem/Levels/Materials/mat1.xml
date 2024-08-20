@@ -1,0 +1,10 @@
+<GameEntity>
+    <info 
+        name = "mat1"
+        vertexShader = ""
+        fragmentShader = ""
+        color = ""
+        texture = ""
+    
+    ></info>
+</GameEntity>

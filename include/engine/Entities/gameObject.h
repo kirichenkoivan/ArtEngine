@@ -11,10 +11,20 @@ class GameObject {
 public:
     // Constructor
     GameObject(const std::string& name, const Material& material, const std::vector<GLfloat> verts, const std::vector<GLfloat> texCoords, const std::vector<GLuint> indices);
+    
+    //Abstract methods
     virtual ~GameObject() = default;
-
     virtual void Move(float deltaTime);
 
+    //Setters
+    void SetSizeX(float newSizeX);
+    void SetSizeY(float newSizeY);
+    void SetPosX(float x);
+    void SetPosY(float y);
+    void SetPos(float x, float y);
+    void SetRotation(float angle);
+
+    //Getters
     std::string GetName();
     Material GetMaterial();
     std::vector<GLfloat> GetVertices();
@@ -22,14 +32,8 @@ public:
     std::vector<GLuint> GetIndices();
     float GetSizeX();
     float GetSizeY();
-    void SetSizeX(float newSizeX);
-    void SetSizeY(float newSizeY);
-    void SetPosX(float x);
-    void SetPosY(float y);
-    void SetPos(float x, float y);
     float GetPosX();
     float GetPosY();
-    void SetRotation(float angle);
     float GetRotation();
     
     // Shaders params
@@ -52,6 +56,7 @@ public:
     GLuint GetTextureID() const {return textureId;}
 
 private:
+    //Base Params
     std::string name;
     Material material;
     

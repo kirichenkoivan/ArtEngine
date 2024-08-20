@@ -10,15 +10,18 @@ public:
     // Constructor
     Material(const std::string& name, const char* vertexShader, const char* fragmentShader, const std::string& texturePath = "");
 
+    //Setters
+    void SetTexture(GLuint texture);
+    void SetColor(const GLfloat color[4]);
+    void SetTexturePath(const std::string& texturePath);
+
+    //Getters
     std::string GetMaterialName() const;
     const char* GetVertexShader() const;
     const char* GetFragmentShader() const;
     GLuint GetTexture() const;
-    void SetTexture(GLuint texture);
     std::string GetTexturePath() const;
-    void SetTexturePath(const std::string& texturePath);
     void GetColor(GLfloat color[4]) const;
-    void SetColor(const GLfloat color[4]);
 
 private:
     std::string name;

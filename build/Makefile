@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build"
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.28.3/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.30.2/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -297,6 +297,30 @@ src/engine/Tools/shaderLoader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.s
 .PHONY : src/engine/Tools/shaderLoader.cpp.s
 
+src/engine/Tools/tinyxml2.o: src/engine/Tools/tinyxml2.cpp.o
+.PHONY : src/engine/Tools/tinyxml2.o
+
+# target to build an object file
+src/engine/Tools/tinyxml2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/tinyxml2.cpp.o
+.PHONY : src/engine/Tools/tinyxml2.cpp.o
+
+src/engine/Tools/tinyxml2.i: src/engine/Tools/tinyxml2.cpp.i
+.PHONY : src/engine/Tools/tinyxml2.i
+
+# target to preprocess a source file
+src/engine/Tools/tinyxml2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/tinyxml2.cpp.i
+.PHONY : src/engine/Tools/tinyxml2.cpp.i
+
+src/engine/Tools/tinyxml2.s: src/engine/Tools/tinyxml2.cpp.s
+.PHONY : src/engine/Tools/tinyxml2.s
+
+# target to generate assembly for a file
+src/engine/Tools/tinyxml2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/tinyxml2.cpp.s
+.PHONY : src/engine/Tools/tinyxml2.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -351,6 +375,9 @@ help:
 	@echo "... src/engine/Tools/shaderLoader.o"
 	@echo "... src/engine/Tools/shaderLoader.i"
 	@echo "... src/engine/Tools/shaderLoader.s"
+	@echo "... src/engine/Tools/tinyxml2.o"
+	@echo "... src/engine/Tools/tinyxml2.i"
+	@echo "... src/engine/Tools/tinyxml2.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

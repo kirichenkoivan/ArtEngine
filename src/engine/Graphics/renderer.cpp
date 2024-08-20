@@ -148,7 +148,7 @@ void initRenderer(Scene& scene) {
 void updateUniforms(GameObject& gameObject) {
     // Update the uniform variables with the size, position, and rotation of the game object
     glUseProgram(gameObject.GetShaderProgram());
-     glUniform1f(gameObject.GetUniformLocations().uSizeXLocation, gameObject.GetSizeX());
+    glUniform1f(gameObject.GetUniformLocations().uSizeXLocation, gameObject.GetSizeX());
     glUniform1f(gameObject.GetUniformLocations().uSizeYLocation, gameObject.GetSizeY());
     glUniform2f(gameObject.GetUniformLocations().uPositionLocation, gameObject.GetPosX(), gameObject.GetPosY());
     glUniform1f(gameObject.GetUniformLocations().uRotationLocation, gameObject.GetRotation());

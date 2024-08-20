@@ -359,7 +359,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/local/Cellar/cmake/3.28.3/bin/ccmake"
+			"value" : "/usr/local/Cellar/cmake/3.30.2/bin/ccmake"
 		},
 		{
 			"name" : "CMAKE_EXE_LINKER_FLAGS",
@@ -1120,6 +1120,30 @@
 			],
 			"type" : "STATIC",
 			"value" : "/Users/ivankiricenko/Desktop/Main project/ArtEngine"
+		},
+		{
+			"name" : "pugixml_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for pugixml."
+				}
+			],
+			"type" : "PATH",
+			"value" : "pugixml_DIR-NOTFOUND"
+		},
+		{
+			"name" : "tinyxml2_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for tinyxml2."
+				}
+			],
+			"type" : "PATH",
+			"value" : "tinyxml2_DIR-NOTFOUND"
 		}
 	],
 	"kind" : "cache",

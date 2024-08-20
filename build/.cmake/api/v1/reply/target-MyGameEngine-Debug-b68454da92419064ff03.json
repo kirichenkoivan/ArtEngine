@@ -11,6 +11,7 @@
 		"commands" : 
 		[
 			"add_executable",
+			"include_directories",
 			"target_include_directories"
 		],
 		"files" : 
@@ -25,13 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 14,
+				"line" : 17,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 25,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 29,
 				"parent" : 0
 			}
 		]
@@ -49,6 +56,10 @@
 			[
 				{
 					"backtrace" : 2,
+					"path" : "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools"
+				},
+				{
+					"backtrace" : 3,
 					"path" : "/Users/ivankiricenko/Desktop/Main project/ArtEngine/include"
 				}
 			],
@@ -70,7 +81,8 @@
 				4,
 				5,
 				6,
-				7
+				7,
+				8
 			]
 		}
 	],
@@ -91,7 +103,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-s USE_WEBGL2=1 -s WASM=1 -s ALLOW_MEMORY_GROWTH=1 -O3 -s --preload-file ../src/shaders@/shaders --preload-file ../src/textures@/textures",
+				"fragment" : "-s USE_WEBGL2=1 -s WASM=1 -s ALLOW_MEMORY_GROWTH=1 -O3 -s --preload-file ../src/shaders@/shaders --preload-file ../src/textures@/textures --preload-file ../FileSystem@/FileSystem",
 				"role" : "flags"
 			}
 		],
@@ -117,7 +129,8 @@
 				4,
 				5,
 				6,
-				7
+				7,
+				8
 			]
 		}
 	],
@@ -169,6 +182,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/engine/Tools/shaderLoader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/Tools/tinyxml2.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
