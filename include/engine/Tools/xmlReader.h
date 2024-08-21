@@ -5,59 +5,26 @@
 #include "tinyxml2.h"
 #include <filesystem>
 #include <string>
+#include <vector>
+#include <utility>
+#include <GLES2/gl2.h>
+#include <EGL/egl.h>
+#include <sstream>
+#include <algorithm>
+#include <stdexcept>
 
 namespace fs = std::filesystem;
-using namespace tinyxml2;
 
-void process_xml_file(const fs::path& file_path) {
-    XMLDocument doc;
-    XMLError result = doc.LoadFile(file_path.c_str());
+fs::path FindXMLFile(const std::string& fileName, const fs::path& searchDirectory);
 
-    if (result != XML_SUCCESS) {
-        std::cerr << "Failed to load file: " << file_path << " - " << doc.ErrorStr() << std::endl;
-        return;
-    }
+std::unique_ptr<tinyxml2::XMLDocument> LoadXMLFile(const fs::path& filePath);
 
-    // Получение корневого элемента
-    XMLElement* root = doc.FirstChildElement("GameEntity");
-    if (!root) {
-        std::cerr << "Root element not found in file: " << file_path << std::endl;
-        return;
-    }
+std::vector<std::pair<std::string, std::string>> GetAttributesValues(const tinyxml2::XMLDocument& document, const std::vector<std::string>& attributes);
 
-    // Перебор дочерних элементов
-    for (XMLElement* child = root->FirstChildElement(); child; child = child->NextSiblingElement()) {
-        std::cout << "Node name: " << child->Name() << std::endl;
+float XMLToFloat(const std::string value);
+int XMLToInt(const std::string value);
+void XMLToGLloatArr(const std::string value, GLfloat(&array)[4]);
+const char* ConvertStringToCStr(const std::string& input);
 
-        // Чтение атрибутов элемента
-        for (const XMLAttribute* attr = child->FirstAttribute(); attr; attr = attr->Next()) {
-            std::cout << "Attribute name: " << attr->Name() << ", value: " << attr->Value() << std::endl;
-        }
 
-        // Чтение текстового содержимого элемента
-        if (child->GetText() != nullptr) {
-            std::cout << "Node text: " << child->GetText() << std::endl;
-        }
-    }
-}
-
-void find_and_process_xml_files(const fs::path& directory) {
-    try {
-        if (fs::exists(directory) && fs::is_directory(directory)) {
-            for (const auto& entry : fs::recursive_directory_iterator(directory)) {
-                if (fs::is_regular_file(entry) && entry.path().extension() == ".xml") {
-                    std::cout << "Processing file: " << entry.path() << std::endl;
-                    process_xml_file(entry.path());
-                }
-            }
-        } else {
-            std::cerr << "Directory does not exist or is not a directory: " << directory << std::endl;
-        }
-    } catch (const fs::filesystem_error& e) {
-        std::cerr << "Filesystem error: " << e.what() << std::endl;
-    } catch (const std::exception& e) {
-        std::cerr << "General error: " << e.what() << std::endl;
-    }
-}
-
-#endif
+#endif // XMLREADER_H

@@ -52,5 +52,23 @@
   "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Tools/tinyxml2.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/tinyxml2.cpp\"",
   "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/tinyxml2.cpp",
   "output": "CMakeFiles/MyGameEngine.dir/src/engine/Tools/tinyxml2.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Factories/materialFactory.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/materialFactory.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/materialFactory.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Factories/materialFactory.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/xmlReader.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/xmlReader.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/fileLoader.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/fileLoader.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o"
 }
 ]

@@ -8,8 +8,8 @@
 class Material {
 public:
     // Constructor
-    Material(const std::string& name, const char* vertexShader, const char* fragmentShader, const std::string& texturePath = "");
-
+    Material(const std::string& name, const std::string& vertexShader, const std::string& fragmentShader, const std::string& texturePath = "");
+    Material();
     //Setters
     void SetTexture(GLuint texture);
     void SetColor(const GLfloat color[4]);
@@ -25,8 +25,8 @@ public:
 
 private:
     std::string name;
-    const char* vertexShader;
-    const char* fragmentShader;
+    std::string vertexShaderSource;
+    std::string fragmentShaderSource;
     GLuint texture;
     std::string texturePath;
     GLfloat color[4];

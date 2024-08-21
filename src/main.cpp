@@ -7,6 +7,7 @@
 #include "../include/engine/Inputs/inputManager.h"
 #include "../include/engine/Entities/Actors/dynamicActor.h"
 #include "../include/engine/Tools/xmlReader.h"
+#include "../include/engine/Factories/materialFactory.h"
 #include <GLES2/gl2.h>
 #include <EGL/egl.h>
 #include <string>
@@ -41,8 +42,6 @@ int main() {
     InputManager::GetInstance().Initialize();
     scene = new Scene();
 
-    std::filesystem::path directory = "/FileSystem";
-    find_and_process_xml_files(directory);
     const std::string name = "MyMaterial";
     const std::string name2 = "MyMaterial2";
 
@@ -52,8 +51,10 @@ int main() {
     const char* vertexShaderSource = vertexShaderSourceStr.c_str();
     const char* fragmentShaderSource = fragmentShaderSourceStr.c_str();
 
-    Material mat(name, vertexShaderSource, fragmentShaderSource, "/textures/amog.png");
-    Material mat2(name2, vertexShaderSource, fragmentShaderSource, "");
+    Material mat = MaterialFactory::CreateMaterialFromXML("mat1.xml");
+    Material mat2 = MaterialFactory::CreateMaterialFromXML("mat1.xml");
+
+    std::cout << "TestMat\n" << mat2.GetVertexShader() << std::endl;
 
     GLfloat color1[4] = {1.0f, 0.0f, 0.0f, 1.0f};
     GLfloat color2[4] = {0.0f, 1.0f, 0.0f, 1.0f};

@@ -12,10 +12,13 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/gameObject.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/material.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/scene.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o.d"
+  "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/materialFactory.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Factories/materialFactory.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Factories/materialFactory.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/renderer.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Inputs/inputManager.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.o.d"
+  "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/fileLoader.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/shaderLoader.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/tinyxml2.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Tools/tinyxml2.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Tools/tinyxml2.cpp.o.d"
+  "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/xmlReader.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/main.cpp" "CMakeFiles/MyGameEngine.dir/src/main.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/main.cpp.o.d"
   )
 

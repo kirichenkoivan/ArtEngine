@@ -73,6 +73,8 @@
         "execution": "cpp",
         "print": "cpp",
         "queue": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "charconv": "cpp",
+        "forward_list": "cpp"
     }
 }

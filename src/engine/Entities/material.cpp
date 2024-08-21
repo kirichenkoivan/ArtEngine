@@ -1,9 +1,13 @@
 #include "../include/engine/Entities/material.h"
 
-Material::Material(const std::string& name, const char* vertexShader, const char* fragmentShader, const std::string& texturePath)
-    : name(name), vertexShader(vertexShader), fragmentShader(fragmentShader), texturePath(texturePath), texture(0) {
+Material::Material(const std::string& name, const std::string& vertexShader, const std::string& fragmentShader, const std::string& texturePath)
+    : name(name), vertexShaderSource(vertexShader), fragmentShaderSource(fragmentShader), texturePath(texturePath), texture(0) {
     GLfloat defaultColor[4] = {1.0f, 1.0f, 1.0f, 1.0f};
     SetColor(defaultColor);
+}
+
+Material::Material(){
+
 }
 
 std::string Material::GetMaterialName() const {
@@ -11,11 +15,11 @@ std::string Material::GetMaterialName() const {
 }
 
 const char* Material::GetVertexShader() const {
-    return vertexShader;
+    return vertexShaderSource.c_str();
 }
 
 const char* Material::GetFragmentShader() const {
-    return fragmentShader;
+    return fragmentShaderSource.c_str();
 }
 
 GLuint Material::GetTexture() const {

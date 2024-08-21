@@ -225,6 +225,30 @@ src/engine/Entities/scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.s
 .PHONY : src/engine/Entities/scene.cpp.s
 
+src/engine/Factories/materialFactory.o: src/engine/Factories/materialFactory.cpp.o
+.PHONY : src/engine/Factories/materialFactory.o
+
+# target to build an object file
+src/engine/Factories/materialFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/materialFactory.cpp.o
+.PHONY : src/engine/Factories/materialFactory.cpp.o
+
+src/engine/Factories/materialFactory.i: src/engine/Factories/materialFactory.cpp.i
+.PHONY : src/engine/Factories/materialFactory.i
+
+# target to preprocess a source file
+src/engine/Factories/materialFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/materialFactory.cpp.i
+.PHONY : src/engine/Factories/materialFactory.cpp.i
+
+src/engine/Factories/materialFactory.s: src/engine/Factories/materialFactory.cpp.s
+.PHONY : src/engine/Factories/materialFactory.s
+
+# target to generate assembly for a file
+src/engine/Factories/materialFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/materialFactory.cpp.s
+.PHONY : src/engine/Factories/materialFactory.cpp.s
+
 src/engine/Graphics/renderer.o: src/engine/Graphics/renderer.cpp.o
 .PHONY : src/engine/Graphics/renderer.o
 
@@ -272,6 +296,30 @@ src/engine/Inputs/inputManager.s: src/engine/Inputs/inputManager.cpp.s
 src/engine/Inputs/inputManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.s
 .PHONY : src/engine/Inputs/inputManager.cpp.s
+
+src/engine/Tools/fileLoader.o: src/engine/Tools/fileLoader.cpp.o
+.PHONY : src/engine/Tools/fileLoader.o
+
+# target to build an object file
+src/engine/Tools/fileLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o
+.PHONY : src/engine/Tools/fileLoader.cpp.o
+
+src/engine/Tools/fileLoader.i: src/engine/Tools/fileLoader.cpp.i
+.PHONY : src/engine/Tools/fileLoader.i
+
+# target to preprocess a source file
+src/engine/Tools/fileLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.i
+.PHONY : src/engine/Tools/fileLoader.cpp.i
+
+src/engine/Tools/fileLoader.s: src/engine/Tools/fileLoader.cpp.s
+.PHONY : src/engine/Tools/fileLoader.s
+
+# target to generate assembly for a file
+src/engine/Tools/fileLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.s
+.PHONY : src/engine/Tools/fileLoader.cpp.s
 
 src/engine/Tools/shaderLoader.o: src/engine/Tools/shaderLoader.cpp.o
 .PHONY : src/engine/Tools/shaderLoader.o
@@ -321,6 +369,30 @@ src/engine/Tools/tinyxml2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/tinyxml2.cpp.s
 .PHONY : src/engine/Tools/tinyxml2.cpp.s
 
+src/engine/Tools/xmlReader.o: src/engine/Tools/xmlReader.cpp.o
+.PHONY : src/engine/Tools/xmlReader.o
+
+# target to build an object file
+src/engine/Tools/xmlReader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o
+.PHONY : src/engine/Tools/xmlReader.cpp.o
+
+src/engine/Tools/xmlReader.i: src/engine/Tools/xmlReader.cpp.i
+.PHONY : src/engine/Tools/xmlReader.i
+
+# target to preprocess a source file
+src/engine/Tools/xmlReader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.i
+.PHONY : src/engine/Tools/xmlReader.cpp.i
+
+src/engine/Tools/xmlReader.s: src/engine/Tools/xmlReader.cpp.s
+.PHONY : src/engine/Tools/xmlReader.s
+
+# target to generate assembly for a file
+src/engine/Tools/xmlReader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.s
+.PHONY : src/engine/Tools/xmlReader.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -366,18 +438,27 @@ help:
 	@echo "... src/engine/Entities/scene.o"
 	@echo "... src/engine/Entities/scene.i"
 	@echo "... src/engine/Entities/scene.s"
+	@echo "... src/engine/Factories/materialFactory.o"
+	@echo "... src/engine/Factories/materialFactory.i"
+	@echo "... src/engine/Factories/materialFactory.s"
 	@echo "... src/engine/Graphics/renderer.o"
 	@echo "... src/engine/Graphics/renderer.i"
 	@echo "... src/engine/Graphics/renderer.s"
 	@echo "... src/engine/Inputs/inputManager.o"
 	@echo "... src/engine/Inputs/inputManager.i"
 	@echo "... src/engine/Inputs/inputManager.s"
+	@echo "... src/engine/Tools/fileLoader.o"
+	@echo "... src/engine/Tools/fileLoader.i"
+	@echo "... src/engine/Tools/fileLoader.s"
 	@echo "... src/engine/Tools/shaderLoader.o"
 	@echo "... src/engine/Tools/shaderLoader.i"
 	@echo "... src/engine/Tools/shaderLoader.s"
 	@echo "... src/engine/Tools/tinyxml2.o"
 	@echo "... src/engine/Tools/tinyxml2.i"
 	@echo "... src/engine/Tools/tinyxml2.s"
+	@echo "... src/engine/Tools/xmlReader.o"
+	@echo "... src/engine/Tools/xmlReader.i"
+	@echo "... src/engine/Tools/xmlReader.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
