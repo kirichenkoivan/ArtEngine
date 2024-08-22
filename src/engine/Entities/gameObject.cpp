@@ -121,3 +121,11 @@ void GameObject::UpdateColliderPos(){
     this->collider.SetPosX(posX);
     this->collider.SetPosY(posY);
 }
+
+void GameObject::SetPosZ(float z) {
+    this->posZ = z;
+}
+
+float GameObject::GetPosZ() const {
+    return posZ;
+}

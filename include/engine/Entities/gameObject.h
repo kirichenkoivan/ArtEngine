@@ -22,6 +22,7 @@ public:
     void SetSizeY(float newSizeY);
     void SetPosX(float x);
     void SetPosY(float y);
+     void SetPosZ(float z);
     void SetPos(float x, float y);
     void SetRotation(float angle);
     void SetCollider(CollisionBox newCollider);
@@ -36,6 +37,7 @@ public:
     float GetSizeY();
     float GetPosX();
     float GetPosY();
+    float GetPosZ() const;
     float GetRotation();
     CollisionBox GetCollider();
     
@@ -74,6 +76,7 @@ private:
     float sizeY;
     float posX;
     float posY;
+    float posZ;
     float rotation;
 
     // Shaders params

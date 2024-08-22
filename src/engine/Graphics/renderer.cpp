@@ -86,6 +86,8 @@ void initRenderer(Scene& scene) {
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
+    glEnable(GL_DEPTH_TEST);
+
     for (auto& pair : scene.GetGameObjects()) {
         GameObject* gameObject = pair.second;
 
@@ -150,7 +152,7 @@ void updateUniforms(GameObject& gameObject) {
     glUseProgram(gameObject.GetShaderProgram());
     glUniform1f(gameObject.GetUniformLocations().uSizeXLocation, gameObject.GetSizeX());
     glUniform1f(gameObject.GetUniformLocations().uSizeYLocation, gameObject.GetSizeY());
-    glUniform2f(gameObject.GetUniformLocations().uPositionLocation, gameObject.GetPosX(), gameObject.GetPosY());
+    glUniform3f(gameObject.GetUniformLocations().uPositionLocation, gameObject.GetPosX(), gameObject.GetPosY(), gameObject.GetPosZ());
     glUniform1f(gameObject.GetUniformLocations().uRotationLocation, gameObject.GetRotation());
 
     // Update the color uniform
@@ -179,10 +181,21 @@ void RenderFrame(GameObject& gameObject) {
 
 void RenderScene(Scene& scene) {
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    for (auto& pair : scene.GetGameObjects()) {
-        GameObject* gameObject = pair.second;
+    auto& objects = scene.GetGameObjects();
+
+    // Сортировка объектов по Z-координате
+    std::vector<GameObject*> sortedObjects;
+    for (auto& pair : objects) {
+        sortedObjects.push_back(pair.second);
+    }
+
+    std::sort(sortedObjects.begin(), sortedObjects.end(), [](GameObject* a, GameObject* b) {
+        return a->GetPosZ() < b->GetPosZ();
+    });
+
+    for (auto* gameObject : sortedObjects) {
         RenderFrame(*gameObject);
     }
 }
