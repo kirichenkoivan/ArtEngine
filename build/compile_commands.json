@@ -82,5 +82,11 @@
   "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/Colliders/collisionBox.cpp\"",
   "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/Colliders/collisionBox.cpp",
   "output": "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Entities/camera.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/camera.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/camera.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Entities/camera.cpp.o"
 }
 ]

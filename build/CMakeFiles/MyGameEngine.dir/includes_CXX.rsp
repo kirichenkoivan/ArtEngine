@@ -1,1 +1,1 @@
--I"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools" -I"/Users/ivankiricenko/Desktop/Main project/ArtEngine/include"
+-I"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools" -I/usr/local/Cellar/glm/1.0.1/include -I"/Users/ivankiricenko/Desktop/Main project/ArtEngine/include"

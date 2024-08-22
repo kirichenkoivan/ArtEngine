@@ -7,6 +7,8 @@
 #include "../include/engine/Entities/material.h"
 #define STB_IMAGE_IMPLEMENTATION
 #include "../include/libs/stb_image.h"
+#include <glm/glm.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 GLuint createShader(GLenum shaderType, const char* source) {
     GLuint shader = glCreateShader(shaderType);
@@ -107,6 +109,8 @@ void initRenderer(Scene& scene) {
         gameObject->SetShaderProgram(shaderProgram);
 
         // Get the location of the uniform variables
+        GLuint uViewLocation = glGetUniformLocation(shaderProgram, "uView");
+        GLuint uProjectionLocation = glGetUniformLocation(shaderProgram, "uProjection");
         GLuint uSizeXLocation = glGetUniformLocation(shaderProgram, "uSizeX");
         GLuint uSizeYLocation = glGetUniformLocation(shaderProgram, "uSizeY");
         GLuint uPositionLocation = glGetUniformLocation(shaderProgram, "uPosition");
@@ -147,9 +151,11 @@ void initRenderer(Scene& scene) {
     }
 }
 
-void updateUniforms(GameObject& gameObject) {
+void updateUniforms(GameObject& gameObject, const glm::mat4& viewMatrix, const glm::mat4& projectionMatrix) {
     // Update the uniform variables with the size, position, and rotation of the game object
     glUseProgram(gameObject.GetShaderProgram());
+    glUniformMatrix4fv(glGetUniformLocation(gameObject.GetShaderProgram(), "uView"), 1, GL_FALSE, glm::value_ptr(viewMatrix));
+    glUniformMatrix4fv(glGetUniformLocation(gameObject.GetShaderProgram(), "uProjection"), 1, GL_FALSE, glm::value_ptr(projectionMatrix));
     glUniform1f(gameObject.GetUniformLocations().uSizeXLocation, gameObject.GetSizeX());
     glUniform1f(gameObject.GetUniformLocations().uSizeYLocation, gameObject.GetSizeY());
     glUniform3f(gameObject.GetUniformLocations().uPositionLocation, gameObject.GetPosX(), gameObject.GetPosY(), gameObject.GetPosZ());
@@ -171,9 +177,9 @@ void updateUniforms(GameObject& gameObject) {
     glUniform1i(gameObject.GetUniformLocations().uUseTextureLocation, useTexture);
 }
 
-void RenderFrame(GameObject& gameObject) {
+void RenderFrame(GameObject& gameObject, const glm::mat4& viewMatrix, const glm::mat4& projectionMatrix) {
     // Update uniforms
-    updateUniforms(gameObject);
+    updateUniforms(gameObject, viewMatrix, projectionMatrix);
 
     glUseProgram(gameObject.GetShaderProgram());
     glDrawElements(GL_TRIANGLES, gameObject.GetIndices().size(), GL_UNSIGNED_INT, 0);
@@ -195,7 +201,17 @@ void RenderScene(Scene& scene) {
         return a->GetPosZ() < b->GetPosZ();
     });
 
+    int canvasWidth, canvasHeight;
+    emscripten_get_canvas_element_size("#canvas", &canvasWidth, &canvasHeight);
+
+    // Установка размеров экрана камеры
+    std::cout << canvasWidth << " mewow " << canvasHeight;
+    scene.GetCamera()->SetScreenSize(static_cast<float>(canvasWidth), static_cast<float>(canvasHeight));
+
+    glm::mat4 viewMatrix = scene.GetCamera()->GetViewMatrix();
+    glm::mat4 projectionMatrix = scene.GetCamera()->GetProjectionMatrix();
+
     for (auto* gameObject : sortedObjects) {
-        RenderFrame(*gameObject);
+        RenderFrame(*gameObject, viewMatrix, projectionMatrix);
     }
 }

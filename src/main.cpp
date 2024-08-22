@@ -1,4 +1,5 @@
 #include <emscripten/emscripten.h>
+#include <emscripten/html5.h>
 #include "../include/engine/Graphics/renderer.h"
 #include "../include/engine/Entities/gameObject.h"
 #include "../include/engine/Entities/material.h"
@@ -9,6 +10,7 @@
 #include "../include/engine/Tools/xmlReader.h"
 #include "../include/engine/Factories/materialFactory.h"
 #include "../include/engine/Entities/Colliders/collisionBox.h"
+#include "../include/engine/Entities/camera.h"
 #include <GLES2/gl2.h>
 #include <EGL/egl.h>
 #include <string>
@@ -20,6 +22,22 @@
 GameObject* gameObject;
 DynamicActor* actor;
 Scene* scene;
+
+extern "C" {
+    void EMSCRIPTEN_KEEPALIVE GetCanvasSize(int* width, int* height) {
+        EMSCRIPTEN_RESULT result;
+        int canvasWidth, canvasHeight;
+        
+        result = emscripten_get_canvas_element_size("#canvas", &canvasWidth, &canvasHeight);
+        if (result == EMSCRIPTEN_RESULT_SUCCESS) {
+            *width = canvasWidth;
+            *height = canvasHeight;
+        } else {
+            *width = 300; // Значения по умолчанию
+            *height = 150;
+        }
+    }
+}
 
 void main_loop() {
     static float previousTime = emscripten_get_now();
@@ -50,10 +68,19 @@ void main_loop() {
         }
     }
 
+float cameraSpeed = 1.0f; // Скорость перемещения камеры
+    if (InputManager::GetInstance().IsKeyPressed(KEYBOARD_BTN_D)) {
+        scene->GetCamera()->SetPositionX(scene->GetCamera()->GetPositionX() + cameraSpeed * deltaTime);
+    }
+    if (InputManager::GetInstance().IsKeyPressed(KEYBOARD_BTN_A)) {
+        scene->GetCamera()->SetPositionX(scene->GetCamera()->GetPositionX() - cameraSpeed * deltaTime);
+    }
+
     RenderScene(*scene);
 }
 
 int main() {
+
     InputManager::GetInstance().Initialize();
     scene = new Scene();
 
@@ -92,13 +119,18 @@ int main() {
         0, 1, 2, // Первый треугольник
         2, 3, 0  // Второй треугольник
     };
+    int screenWidth = 300;  // ширина канваса
+    int screenHeight = 150; // высота канваса
 
+    // Создайте камеру с размерами канваса
+    Camera* cam = new Camera(static_cast<float>(screenWidth), static_cast<float>(screenHeight));
+    scene->AddCamera(cam);
     CollisionBox coll1(0.5f, 0.0f, 0.5, 0.5);
     GameObject* obj = new GameObject("obj1", mat, vertices, texCoords, indices);
     obj->SetSizeX(-0.5f);
     obj->SetSizeY(-0.5f);
     obj->SetPos(0.5f, 0.0f); 
-    obj->SetPosZ(0.11f);// Устанавливаем глубину
+    obj->SetPosZ(0.0f);// Устанавливаем глубину
     obj->SetRotation(0.0f);
     obj->SetCollider(coll1);  // Set rotation to 0.0
     scene->AddGameObject(obj);
@@ -108,10 +140,11 @@ int main() {
     actor->SetSizeX(0.5f);
     actor->SetSizeY(0.25f);
     actor->SetPos(0.0f, 0.0f);
-    actor->SetPosZ(0.1f); // Устанавливаем другую глубину
+    actor->SetPosZ(0.0f); // Устанавливаем другую глубину
     actor->SetRotation(0.0f);
     actor->SetCollider(coll2);
     scene->AddGameObject(actor);
+
 
     initRenderer(*scene);
     emscripten_set_main_loop(main_loop, 0, 1);

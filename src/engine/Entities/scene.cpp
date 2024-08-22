@@ -20,3 +20,11 @@ GameObject* Scene::GetGameObject(const std::string& name) {
 std::unordered_map<std::string, GameObject*>& Scene::GetGameObjects() {
     return gameObjects;
 }
+
+void Scene::AddCamera(Camera* cam){
+    this->camera = cam;
+}
+
+Camera* Scene::GetCamera(){
+    return camera;
+}

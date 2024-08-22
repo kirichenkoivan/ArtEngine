@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/Actors/dynamicActor.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/Colliders/collisionBox.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o.d"
+  "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/camera.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/camera.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/camera.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/gameObject.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/material.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/scene.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o.d"

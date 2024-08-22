@@ -14,6 +14,12 @@ include_directories(${EMSCRIPTEN_ROOT_PATH}/cache/sysroot/include)
 # Укажите путь к tinyxml2
 include_directories(${CMAKE_SOURCE_DIR}/src/engine/Tools)
 
+# Добавляем путь к glm
+set(glm_DIR /usr/local/Cellar/glm/1.0.1/lib/cmake/glm)
+
+# Подключаем заголовочные файлы glm
+include_directories(/usr/local/Cellar/glm/1.0.1/include)
+
 add_executable(MyGameEngine
     src/main.cpp
     src/engine/Graphics/renderer.cpp
@@ -29,6 +35,7 @@ add_executable(MyGameEngine
     src/engine/Tools/xmlReader.cpp
     src/engine/Tools/fileLoader.cpp
     src/engine/Entities/Colliders/collisionBox.cpp
+    src/engine/Entities/camera.cpp
 )
 
 target_include_directories(MyGameEngine PRIVATE include)

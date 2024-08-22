@@ -177,6 +177,30 @@ src/engine/Entities/Colliders/collisionBox.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.s
 .PHONY : src/engine/Entities/Colliders/collisionBox.cpp.s
 
+src/engine/Entities/camera.o: src/engine/Entities/camera.cpp.o
+.PHONY : src/engine/Entities/camera.o
+
+# target to build an object file
+src/engine/Entities/camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/camera.cpp.o
+.PHONY : src/engine/Entities/camera.cpp.o
+
+src/engine/Entities/camera.i: src/engine/Entities/camera.cpp.i
+.PHONY : src/engine/Entities/camera.i
+
+# target to preprocess a source file
+src/engine/Entities/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/camera.cpp.i
+.PHONY : src/engine/Entities/camera.cpp.i
+
+src/engine/Entities/camera.s: src/engine/Entities/camera.cpp.s
+.PHONY : src/engine/Entities/camera.s
+
+# target to generate assembly for a file
+src/engine/Entities/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/camera.cpp.s
+.PHONY : src/engine/Entities/camera.cpp.s
+
 src/engine/Entities/gameObject.o: src/engine/Entities/gameObject.cpp.o
 .PHONY : src/engine/Entities/gameObject.o
 
@@ -480,6 +504,9 @@ help:
 	@echo "... src/engine/Entities/Colliders/collisionBox.o"
 	@echo "... src/engine/Entities/Colliders/collisionBox.i"
 	@echo "... src/engine/Entities/Colliders/collisionBox.s"
+	@echo "... src/engine/Entities/camera.o"
+	@echo "... src/engine/Entities/camera.i"
+	@echo "... src/engine/Entities/camera.s"
 	@echo "... src/engine/Entities/gameObject.o"
 	@echo "... src/engine/Entities/gameObject.i"
 	@echo "... src/engine/Entities/gameObject.s"

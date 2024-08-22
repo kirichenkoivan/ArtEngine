@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o"
   "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o.d"
+  "CMakeFiles/MyGameEngine.dir/src/engine/Entities/camera.cpp.o"
+  "CMakeFiles/MyGameEngine.dir/src/engine/Entities/camera.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.o"
   "CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o"

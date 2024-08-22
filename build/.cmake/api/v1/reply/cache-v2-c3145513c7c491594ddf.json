@@ -1122,6 +1122,18 @@
 			"value" : "/Users/ivankiricenko/Desktop/Main project/ArtEngine"
 		},
 		{
+			"name" : "glm_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for glm."
+				}
+			],
+			"type" : "PATH",
+			"value" : "glm_DIR-NOTFOUND"
+		},
+		{
 			"name" : "pugixml_DIR",
 			"properties" : 
 			[

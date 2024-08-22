@@ -19,15 +19,34 @@ CMakeFiles/MyGameEngine.dir/src/main.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/wget.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/version.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/html5.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/pthread.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/sched.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/compat/time.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/time.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/eventloop.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/console.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stddef.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/stddef.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stddef.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_header_macro.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_size_t.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_wchar_t.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_null.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_nullptr_t.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_max_align_t.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_offsetof.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/html5_webgl.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdint.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/stdint.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Graphics/renderer.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Graphics/../Entities/gameObject.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/GLES2/gl2.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/GLES2/gl2platform.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/KHR/khrplatform.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdint.h \
-  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/stdint.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/EGL/egl.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/EGL/eglplatform.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/string \
@@ -60,17 +79,6 @@ CMakeFiles/MyGameEngine.dir/src/main.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cstddef \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__type_traits/enable_if.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/version \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stddef.h \
-  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/stddef.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stddef.h \
-  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_header_macro.h \
-  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_ptrdiff_t.h \
-  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_size_t.h \
-  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_wchar_t.h \
-  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_null.h \
-  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_nullptr_t.h \
-  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_max_align_t.h \
-  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_offsetof.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__type_traits/is_function.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__type_traits/is_const.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__type_traits/is_reference.h \
@@ -453,15 +461,11 @@ CMakeFiles/MyGameEngine.dir/src/main.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/time_point.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/system_clock.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/ctime \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/compat/time.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/time.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__threading_support \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/convert_to_timespec.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/errno.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/errno.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/bits/errno.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/pthread.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/sched.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__atomic/check_memory_order.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__functional/operations.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__atomic/atomic_lock_free.h \
@@ -792,12 +796,219 @@ CMakeFiles/MyGameEngine.dir/src/main.cpp.o: \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Graphics/../Entities/Actors/dynamicActor.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Graphics/../Entities/Actors/../gameObject.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Graphics/../Entities/Actors/../../Inputs/inputManager.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/html5.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/eventloop.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/console.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/html5_webgl.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Graphics/../Entities/Actors/../../Inputs/KeyCodes/keyboard.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Graphics/../Entities/Actors/../../Inputs/KeyCodes/mouse.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Graphics/../Entities/camera.h \
+  /usr/local/Cellar/glm/1.0.1/include/glm/glm.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/detail/_fixes.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/detail/setup.hpp \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cassert \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/assert.h \
+  /usr/local/Cellar/glm/1.0.1/include/glm/detail/../simd/platform.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cfloat \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/float.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/float.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/float.h \
+  /usr/local/Cellar/glm/1.0.1/include/glm/fwd.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/detail/qualifier.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/vec2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_bool2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/type_vec2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/qualifier.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/type_vec2.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/./compute_vector_relational.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/./setup.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_bool2_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_float2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_float2_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_double2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_double2_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_int2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_int2_sized.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../ext/vector_int2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../ext/scalar_int_sized.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../ext/../detail/setup.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_uint2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_uint2_sized.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../ext/vector_uint2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../ext/scalar_uint_sized.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/vec3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_bool3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/type_vec3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/type_vec3.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/compute_vector_relational.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_bool3_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_float3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_float3_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_double3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_double3_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_int3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_int3_sized.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../ext/vector_int3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_uint3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_uint3_sized.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../ext/vector_uint3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/vec4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_bool4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/type_vec4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/type_vec4.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_bool4_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_float4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_float4_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_double4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_double4_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/setup.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_int4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_int4_sized.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../ext/vector_int4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_uint4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/vector_uint4_sized.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../ext/vector_uint4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/mat2x2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/matrix_double2x2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/type_mat2x2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/type_mat2x2.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../matrix.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/qualifier.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/setup.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../vec2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../vec3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../vec4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../mat2x2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../mat2x3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_double2x3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_mat2x3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_vec2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_vec3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_mat2x3.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_double2x3_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_float2x3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_float2x3_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../mat2x4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_double2x4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_mat2x4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_vec4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_mat2x4.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_double2x4_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_float2x4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_float2x4_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../mat3x2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_double3x2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_mat3x2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_mat3x2.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_double3x2_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_float3x2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_float3x2_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../mat3x3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_double3x3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_mat3x3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_mat3x3.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/../matrix.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_double3x3_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_float3x3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_float3x3_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../mat3x4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_double3x4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_mat3x4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_mat3x4.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_double3x4_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_float3x4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_float3x4_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../mat4x2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_double4x2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_mat4x2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_mat4x2.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_double4x2_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_float4x2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_float4x2_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_mat2x2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../mat4x3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_double4x3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_mat4x3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_mat4x3.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_double4x3_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_float4x3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_float4x3_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../mat4x4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_double4x4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_mat4x4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/../detail/type_mat4x4.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_double4x4_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_float4x4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/.././ext/matrix_float4x4_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/func_matrix.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../geometric.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/type_vec3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/func_geometric.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../exponential.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../detail/type_vec1.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../detail/qualifier.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../detail/type_vec1.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../detail/./compute_vector_relational.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../detail/type_vec2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../detail/type_vec3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../detail/type_vec4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../detail/func_exponential.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../detail/../vector_relational.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../detail/../detail/qualifier.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../detail/../detail/setup.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../detail/../detail/func_vector_relational.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../detail/_vectorize.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../common.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../detail/_fixes.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../detail/func_common.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../detail/compute_common.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/../detail/../detail/../detail/../detail/setup.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/matrix_double2x2_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/matrix_float2x2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/./ext/matrix_float2x2_precision.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/mat2x3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/mat2x4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/mat3x2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/mat3x3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/mat3x4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/mat4x2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/mat4x3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/mat4x4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/trigonometric.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/detail/func_trigonometric.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/detail/_vectorize.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/exponential.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/common.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/packing.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/detail/func_packing.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/detail/../common.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/detail/type_half.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/detail/type_half.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/geometric.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/matrix.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/vector_relational.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/integer.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/detail/func_integer.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/matrix_transform.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../mat4x4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../vec2.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../vec3.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../vec4.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../ext/matrix_projection.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../ext/../gtc/constants.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../ext/../gtc/../ext/scalar_constants.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../ext/../gtc/../ext/../detail/setup.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../ext/../gtc/../ext/scalar_constants.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../ext/../gtc/constants.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../ext/../geometric.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../ext/../trigonometric.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../ext/../matrix.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../ext/matrix_projection.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../ext/matrix_clip_space.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../ext/../ext/scalar_constants.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../ext/matrix_clip_space.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../ext/matrix_transform.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../ext/matrix_transform.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/matrix_transform.inl \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../geometric.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../trigonometric.hpp \
+  /usr/local/Cellar/glm/1.0.1/include/glm/gtc/../matrix.hpp \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Entities/gameObject.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Entities/material.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Tools/fileLoader.h \
@@ -880,4 +1091,5 @@ CMakeFiles/MyGameEngine.dir/src/main.cpp.o: \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Factories/../Entities/material.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Factories/../Tools/xmlReader.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Factories/../Tools/fileLoader.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Entities/Colliders/collisionBox.h
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Entities/Colliders/collisionBox.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Entities/camera.h

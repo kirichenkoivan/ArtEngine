@@ -1,9 +1,12 @@
 #version 100
 precision mediump float;
 
+uniform mat4 uView;
+uniform mat4 uProjection;
+
 uniform float uSizeX;
 uniform float uSizeY;
-uniform vec3 uPosition; // Изменено на vec3 для поддержки Z-координаты
+uniform vec3 uPosition;
 uniform float uRotation;
 
 attribute vec3 aPosition;
@@ -25,8 +28,8 @@ void main() {
     position.y = position.x * sinAngle + position.y * cosAngle;
     position.xy += center;
 
-    position += uPosition; // Теперь учитываем Z-координату
+    position += uPosition;
 
-    gl_Position = vec4(position, 1.0);
+    gl_Position = uView * vec4(position, 1.0);
     vTexCoord = aTexCoord;
 }
