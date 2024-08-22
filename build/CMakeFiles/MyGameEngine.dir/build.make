@@ -219,11 +219,26 @@ CMakeFiles/MyGameEngine.dir/src/engine/Factories/materialFactory.cpp.s: cmake_fo
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyGameEngine.dir/src/engine/Factories/materialFactory.cpp.s"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/materialFactory.cpp" -o CMakeFiles/MyGameEngine.dir/src/engine/Factories/materialFactory.cpp.s
 
+CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.o: CMakeFiles/MyGameEngine.dir/flags.make
+CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.o: CMakeFiles/MyGameEngine.dir/includes_CXX.rsp
+CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/Factories/gameObjectFactory.cpp
+CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.o"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.o -MF CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.o.d -o CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/gameObjectFactory.cpp"
+
+CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.i"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/gameObjectFactory.cpp" > CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.i
+
+CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.s"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/gameObjectFactory.cpp" -o CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.s
+
 CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o: CMakeFiles/MyGameEngine.dir/flags.make
 CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o: CMakeFiles/MyGameEngine.dir/includes_CXX.rsp
 CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/Tools/xmlReader.cpp
 CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o -MF CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o.d -o CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/xmlReader.cpp"
 
 CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.i: cmake_force
@@ -238,7 +253,7 @@ CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o: CMakeFiles/MyGame
 CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o: CMakeFiles/MyGameEngine.dir/includes_CXX.rsp
 CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/Tools/fileLoader.cpp
 CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o -MF CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o.d -o CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/fileLoader.cpp"
 
 CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.i: cmake_force
@@ -248,6 +263,21 @@ CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.i: cmake_force
 CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.s"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/fileLoader.cpp" -o CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.s
+
+CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o: CMakeFiles/MyGameEngine.dir/flags.make
+CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o: CMakeFiles/MyGameEngine.dir/includes_CXX.rsp
+CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/Entities/Colliders/collisionBox.cpp
+CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o -MF CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o.d -o CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/Colliders/collisionBox.cpp"
+
+CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.i"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/Colliders/collisionBox.cpp" > CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.i
+
+CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.s"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/Colliders/collisionBox.cpp" -o CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.s
 
 # Object files for target MyGameEngine
 MyGameEngine_OBJECTS = \
@@ -261,8 +291,10 @@ MyGameEngine_OBJECTS = \
 "CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o" \
 "CMakeFiles/MyGameEngine.dir/src/engine/Tools/tinyxml2.cpp.o" \
 "CMakeFiles/MyGameEngine.dir/src/engine/Factories/materialFactory.cpp.o" \
+"CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.o" \
 "CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o" \
-"CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o"
+"CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o" \
+"CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o"
 
 # External object files for target MyGameEngine
 MyGameEngine_EXTERNAL_OBJECTS =
@@ -277,12 +309,14 @@ build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Entitie
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Tools/tinyxml2.cpp.o
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Factories/materialFactory.cpp.o
+build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.o
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o
+build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/build.make
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/objects1.rsp
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable build_output/my_game_engine.html"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable build_output/my_game_engine.html"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyGameEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

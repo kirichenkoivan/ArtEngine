@@ -713,6 +713,7 @@ CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/EGL/egl.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/EGL/eglplatform.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Entities/material.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Entities/Colliders/collisionBox.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/vector \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__bit_reference \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/formatter.h \

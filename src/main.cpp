@@ -8,6 +8,7 @@
 #include "../include/engine/Entities/Actors/dynamicActor.h"
 #include "../include/engine/Tools/xmlReader.h"
 #include "../include/engine/Factories/materialFactory.h"
+#include "../include/engine/Entities/Colliders/collisionBox.h"
 #include <GLES2/gl2.h>
 #include <EGL/egl.h>
 #include <string>
@@ -30,11 +31,25 @@ void main_loop() {
     for (auto& pair : scene->GetGameObjects()) {
         GameObject* gameObject = pair.second;
         gameObject->Move(deltaTime);
+        gameObject->UpdateColliderPos();
         if (InputManager::GetInstance().IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
             GLfloat color1[4] = {1.0f, 0.0f, 0.0f, 1.0f};
             gameObject->GetMaterial().SetColor(color1);
         }
     }
+
+    auto gameObjects = scene->GetGameObjects();
+    for (auto it1 = gameObjects.begin(); it1 != gameObjects.end(); ++it1) {
+        for (auto it2 = std::next(it1); it2 != gameObjects.end(); ++it2) {
+            GameObject* obj1 = it1->second;
+            GameObject* obj2 = it2->second;
+            if (obj1->GetCollider().Intersects(obj2->GetCollider())) {
+                std::cout << "Collision detected between " << obj1->GetName() << " and " << obj2->GetName() << std::endl;
+                // Здесь можно добавить обработку коллизии, например, изменение состояния объектов
+            }
+        }
+    }
+
     RenderScene(*scene);
 }
 
@@ -43,7 +58,7 @@ int main() {
     scene = new Scene();
 
     const std::string name = "MyMaterial";
-    const std::string name2 = "MyMaterial2";
+    std::string name2 = "MyMaterial2";
 
     std::string vertexShaderSourceStr = readFile("/shaders/vertex/vertex_shader.glsl");
     std::string fragmentShaderSourceStr = readFile("/shaders/fragment/fragment_shader.glsl");
@@ -52,9 +67,7 @@ int main() {
     const char* fragmentShaderSource = fragmentShaderSourceStr.c_str();
 
     Material mat = MaterialFactory::CreateMaterialFromXML("mat1.xml");
-    Material mat2 = MaterialFactory::CreateMaterialFromXML("mat1.xml");
-
-    std::cout << "TestMat\n" << mat2.GetVertexShader() << std::endl;
+    Material mat2 = MaterialFactory::CreateMaterialFromXML("mat2.xml");
 
     GLfloat color1[4] = {1.0f, 0.0f, 0.0f, 1.0f};
     GLfloat color2[4] = {0.0f, 1.0f, 0.0f, 1.0f};
@@ -80,18 +93,22 @@ int main() {
         2, 3, 0  // Второй треугольник
     };
 
+    CollisionBox coll1(0.5f, 0.0f, 0.5, 0.5);
     GameObject* obj = new GameObject("obj1", mat, vertices, texCoords, indices);
     obj->SetSizeX(-0.5f);
     obj->SetSizeY(-0.5f);
     obj->SetPos(0.5f, 0.0f); // Устанавливаем глубину
-    obj->SetRotation(0.0f);  // Set rotation to 0.0
+    obj->SetRotation(0.0f);
+    obj->SetCollider(coll1);  // Set rotation to 0.0
     scene->AddGameObject(obj);
 
+    CollisionBox coll2(0.0f, 0.0f, 0.5f, 0.25f);
     actor = new DynamicActor("actor", mat2, vertices, texCoords, indices);
     actor->SetSizeX(0.5f);
     actor->SetSizeY(0.25f);
     actor->SetPos(0.0f, 0.0f); // Устанавливаем другую глубину
     actor->SetRotation(0.0f);
+    actor->SetCollider(coll2);
     scene->AddGameObject(actor);
 
     initRenderer(*scene);

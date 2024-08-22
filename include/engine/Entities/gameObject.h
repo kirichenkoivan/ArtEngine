@@ -5,6 +5,7 @@
 #include <EGL/egl.h>
 #include <string>
 #include "material.h"
+#include "Colliders/collisionBox.h"
 #include <vector>
 
 class GameObject {
@@ -23,6 +24,7 @@ public:
     void SetPosY(float y);
     void SetPos(float x, float y);
     void SetRotation(float angle);
+    void SetCollider(CollisionBox newCollider);
 
     //Getters
     std::string GetName();
@@ -35,6 +37,7 @@ public:
     float GetPosX();
     float GetPosY();
     float GetRotation();
+    CollisionBox GetCollider();
     
     // Shaders params
     GLuint GetShaderProgram() const;
@@ -55,6 +58,8 @@ public:
     void SetTextureID(GLuint id) {this->textureId = id;};
     GLuint GetTextureID() const {return textureId;}
 
+    //Methods 
+    void UpdateColliderPos();
 private:
     //Base Params
     std::string name;
@@ -75,6 +80,8 @@ private:
     GLuint shaderProgram;
     UniformLocations uniformLocations;
     GLuint VBO;
+
+    CollisionBox collider;
 };
 
 #endif // GAMEOBJECT_H

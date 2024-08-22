@@ -108,3 +108,16 @@ GLuint GameObject::GetVBO() const {
 std::vector<GLuint> GameObject::GetIndices() {
     return indices;
 }
+
+CollisionBox GameObject::GetCollider(){
+    return collider;
+}
+
+void GameObject::SetCollider(CollisionBox newCollider){
+    this->collider = newCollider;
+}
+
+void GameObject::UpdateColliderPos(){
+    this->collider.SetPosX(posX);
+    this->collider.SetPosY(posY);
+}

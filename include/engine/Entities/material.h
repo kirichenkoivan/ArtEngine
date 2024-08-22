@@ -8,7 +8,8 @@
 class Material {
 public:
     // Constructor
-    Material(const std::string& name, const std::string& vertexShader, const std::string& fragmentShader, const std::string& texturePath = "");
+    Material(const std::string& name, const std::string& vertexShader, const std::string& fragmentShader, const std::string& texturePath);
+    Material(const std::string& name, const std::string& vertexShader, const std::string& fragmentShader);
     Material();
     //Setters
     void SetTexture(GLuint texture);

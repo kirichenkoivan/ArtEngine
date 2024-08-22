@@ -19,12 +19,11 @@ Material MaterialFactory::CreateMaterialFromXML(const std::string& fileName)
                 name = pair.second;
             } else if (pair.first == "vertexShader") {
                 vertexShaderSource = readFile(pair.second);
-                std::cout << "Vertex Shader Source:\n" << vertexShaderSource << std::endl;
             } else if (pair.first == "fragmentShader") {
                 fragmentShaderSource = readFile(pair.second);
-                std::cout << "Fragment Shader Source:\n" << fragmentShaderSource << std::endl;
             } else if (pair.first == "texture") {
                 texturePath = pair.second;
+                std::cout << "texture path: "<< texturePath << std::endl;
             }
         }
 
@@ -34,9 +33,16 @@ Material MaterialFactory::CreateMaterialFromXML(const std::string& fileName)
             return Material();
         }
 
-        Material mat(name, vertexShaderSource, fragmentShaderSource, texturePath);
+        if(texturePath == "" || texturePath.empty()){
+            std::cout << "meow" << std::endl;
+            Material mat(name, vertexShaderSource, fragmentShaderSource);
+            return mat;
+        }
+        else{
+            Material mat(name, vertexShaderSource, fragmentShaderSource, texturePath);
+            return mat; 
+        }
 
-        return mat;
     }
     else{
         std::cerr << "Material file path is NULL" << std::endl;

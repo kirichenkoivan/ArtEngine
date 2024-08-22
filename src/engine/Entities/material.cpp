@@ -3,11 +3,18 @@
 Material::Material(const std::string& name, const std::string& vertexShader, const std::string& fragmentShader, const std::string& texturePath)
     : name(name), vertexShaderSource(vertexShader), fragmentShaderSource(fragmentShader), texturePath(texturePath), texture(0) {
     GLfloat defaultColor[4] = {1.0f, 1.0f, 1.0f, 1.0f};
-    SetColor(defaultColor);
+    this->SetColor(defaultColor);
 }
 
-Material::Material(){
+Material::Material(const std::string& name, const std::string& vertexShader, const std::string& fragmentShader)
+    : name(name), vertexShaderSource(vertexShader), fragmentShaderSource(fragmentShader), texture(0) {
+    GLfloat defaultColor[4] = {1.0f, 1.0f, 1.0f, 1.0f};
+    this->SetColor(defaultColor);
+}
 
+Material::Material() : texture(0) {
+    GLfloat defaultColor[4] = {1.0f, 1.0f, 1.0f, 1.0f};
+    SetColor(defaultColor);
 }
 
 std::string Material::GetMaterialName() const {

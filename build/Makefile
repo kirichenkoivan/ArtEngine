@@ -153,6 +153,30 @@ src/engine/Entities/Actors/dynamicActor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.s
 .PHONY : src/engine/Entities/Actors/dynamicActor.cpp.s
 
+src/engine/Entities/Colliders/collisionBox.o: src/engine/Entities/Colliders/collisionBox.cpp.o
+.PHONY : src/engine/Entities/Colliders/collisionBox.o
+
+# target to build an object file
+src/engine/Entities/Colliders/collisionBox.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o
+.PHONY : src/engine/Entities/Colliders/collisionBox.cpp.o
+
+src/engine/Entities/Colliders/collisionBox.i: src/engine/Entities/Colliders/collisionBox.cpp.i
+.PHONY : src/engine/Entities/Colliders/collisionBox.i
+
+# target to preprocess a source file
+src/engine/Entities/Colliders/collisionBox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.i
+.PHONY : src/engine/Entities/Colliders/collisionBox.cpp.i
+
+src/engine/Entities/Colliders/collisionBox.s: src/engine/Entities/Colliders/collisionBox.cpp.s
+.PHONY : src/engine/Entities/Colliders/collisionBox.s
+
+# target to generate assembly for a file
+src/engine/Entities/Colliders/collisionBox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.s
+.PHONY : src/engine/Entities/Colliders/collisionBox.cpp.s
+
 src/engine/Entities/gameObject.o: src/engine/Entities/gameObject.cpp.o
 .PHONY : src/engine/Entities/gameObject.o
 
@@ -224,6 +248,30 @@ src/engine/Entities/scene.s: src/engine/Entities/scene.cpp.s
 src/engine/Entities/scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.s
 .PHONY : src/engine/Entities/scene.cpp.s
+
+src/engine/Factories/gameObjectFactory.o: src/engine/Factories/gameObjectFactory.cpp.o
+.PHONY : src/engine/Factories/gameObjectFactory.o
+
+# target to build an object file
+src/engine/Factories/gameObjectFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.o
+.PHONY : src/engine/Factories/gameObjectFactory.cpp.o
+
+src/engine/Factories/gameObjectFactory.i: src/engine/Factories/gameObjectFactory.cpp.i
+.PHONY : src/engine/Factories/gameObjectFactory.i
+
+# target to preprocess a source file
+src/engine/Factories/gameObjectFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.i
+.PHONY : src/engine/Factories/gameObjectFactory.cpp.i
+
+src/engine/Factories/gameObjectFactory.s: src/engine/Factories/gameObjectFactory.cpp.s
+.PHONY : src/engine/Factories/gameObjectFactory.s
+
+# target to generate assembly for a file
+src/engine/Factories/gameObjectFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.s
+.PHONY : src/engine/Factories/gameObjectFactory.cpp.s
 
 src/engine/Factories/materialFactory.o: src/engine/Factories/materialFactory.cpp.o
 .PHONY : src/engine/Factories/materialFactory.o
@@ -429,6 +477,9 @@ help:
 	@echo "... src/engine/Entities/Actors/dynamicActor.o"
 	@echo "... src/engine/Entities/Actors/dynamicActor.i"
 	@echo "... src/engine/Entities/Actors/dynamicActor.s"
+	@echo "... src/engine/Entities/Colliders/collisionBox.o"
+	@echo "... src/engine/Entities/Colliders/collisionBox.i"
+	@echo "... src/engine/Entities/Colliders/collisionBox.s"
 	@echo "... src/engine/Entities/gameObject.o"
 	@echo "... src/engine/Entities/gameObject.i"
 	@echo "... src/engine/Entities/gameObject.s"
@@ -438,6 +489,9 @@ help:
 	@echo "... src/engine/Entities/scene.o"
 	@echo "... src/engine/Entities/scene.i"
 	@echo "... src/engine/Entities/scene.s"
+	@echo "... src/engine/Factories/gameObjectFactory.o"
+	@echo "... src/engine/Factories/gameObjectFactory.i"
+	@echo "... src/engine/Factories/gameObjectFactory.s"
 	@echo "... src/engine/Factories/materialFactory.o"
 	@echo "... src/engine/Factories/materialFactory.i"
 	@echo "... src/engine/Factories/materialFactory.s"

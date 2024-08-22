@@ -840,6 +840,7 @@ CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o: \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/renderer.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/gameObject.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/material.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/Colliders/collisionBox.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/scene.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/Actors/dynamicActor.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Graphics/../Entities/Actors/../gameObject.h \
