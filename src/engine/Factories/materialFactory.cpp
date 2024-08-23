@@ -1,6 +1,8 @@
 #include "../include/engine/Factories/materialFactory.h"
 
-Material MaterialFactory::CreateMaterialFromXML(const std::string& fileName)
+MaterialFactory::MaterialFactory() {}
+
+Material* MaterialFactory::CreateMaterialFromXML(const std::string& fileName)
 {
     std::filesystem::path filePath = FindXMLFile(fileName, "/FileSystem");
 
@@ -29,23 +31,24 @@ Material MaterialFactory::CreateMaterialFromXML(const std::string& fileName)
 
         if (vertexShaderSource.empty() || fragmentShaderSource.empty()) {
             std::cerr << "Shader source code is empty!" << std::endl;
-            // В случае ошибки вернем пустой материал
-            return Material();
+            Material* mat = new Material();
+            return mat;
         }
 
         if(texturePath == "" || texturePath.empty()){
             std::cout << "meow" << std::endl;
-            Material mat(name, vertexShaderSource, fragmentShaderSource);
+            Material* mat = new Material(name, vertexShaderSource, fragmentShaderSource);
             return mat;
         }
         else{
-            Material mat(name, vertexShaderSource, fragmentShaderSource, texturePath);
+            Material* mat = new Material(name, vertexShaderSource, fragmentShaderSource, texturePath);
             return mat; 
         }
 
     }
     else{
         std::cerr << "Material file path is NULL" << std::endl;
-        return Material();
+        Material* mat = new Material();
+        return mat;
     }
 }

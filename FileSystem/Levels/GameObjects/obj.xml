@@ -1,8 +1,12 @@
 <GameEntity>
     <info 
         name = "obj1"
-        size = "(0.1, 0.2)"
-        position = "(1, 0.5)"
+        sizeX = ""
+        sizeY = ""
+        posX = ""
+        posY = ""
+        rotation=""
+        material = ""
     
     ></info>
 </GameEntity>

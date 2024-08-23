@@ -1,6 +1,6 @@
 #include "../include/engine/Entities/gameObject.h"
 
-GameObject::GameObject(const std::string& name, const Material& material, const std::vector<GLfloat> verts, const std::vector<GLfloat> texCoords, const std::vector<GLuint> indices)
+GameObject::GameObject(const std::string& name, Material* material, const std::vector<GLfloat> verts, const std::vector<GLfloat> texCoords, const std::vector<GLuint> indices)
     : name(name), material(material), vertices(verts), texCoords(texCoords), indices(indices) {
         this->posX = 0.0;
         this->posY = 0.0;
@@ -18,7 +18,7 @@ std::string GameObject::GetName(){
     return name;
 }
 
-Material GameObject::GetMaterial(){
+Material* GameObject::GetMaterial(){
     return material;
 }
 

@@ -22,22 +22,9 @@
 GameObject* gameObject;
 DynamicActor* actor;
 Scene* scene;
+MaterialFactory* matFactory;
 
-extern "C" {
-    void EMSCRIPTEN_KEEPALIVE GetCanvasSize(int* width, int* height) {
-        EMSCRIPTEN_RESULT result;
-        int canvasWidth, canvasHeight;
-        
-        result = emscripten_get_canvas_element_size("#canvas", &canvasWidth, &canvasHeight);
-        if (result == EMSCRIPTEN_RESULT_SUCCESS) {
-            *width = canvasWidth;
-            *height = canvasHeight;
-        } else {
-            *width = 300; // Значения по умолчанию
-            *height = 150;
-        }
-    }
-}
+
 
 void main_loop() {
     static float previousTime = emscripten_get_now();
@@ -52,7 +39,7 @@ void main_loop() {
         gameObject->UpdateColliderPos();
         if (InputManager::GetInstance().IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
             GLfloat color1[4] = {1.0f, 0.0f, 0.0f, 1.0f};
-            gameObject->GetMaterial().SetColor(color1);
+            gameObject->GetMaterial()->SetColor(color1);
         }
     }
 
@@ -75,6 +62,9 @@ float cameraSpeed = 1.0f; // Скорость перемещения камер�
     if (InputManager::GetInstance().IsKeyPressed(KEYBOARD_BTN_A)) {
         scene->GetCamera()->SetPositionX(scene->GetCamera()->GetPositionX() - cameraSpeed * deltaTime);
     }
+    if (InputManager::GetInstance().IsKeyPressed(KEYBOARD_BTN_G)) {
+        scene->RemoveGameObject("obj1");
+    }
 
     RenderScene(*scene);
 }
@@ -83,29 +73,17 @@ int main() {
 
     InputManager::GetInstance().Initialize();
     scene = new Scene();
+    matFactory = new MaterialFactory();
 
-    const std::string name = "MyMaterial";
-    std::string name2 = "MyMaterial2";
-
-    std::string vertexShaderSourceStr = readFile("/shaders/vertex/vertex_shader.glsl");
-    std::string fragmentShaderSourceStr = readFile("/shaders/fragment/fragment_shader.glsl");
-
-    const char* vertexShaderSource = vertexShaderSourceStr.c_str();
-    const char* fragmentShaderSource = fragmentShaderSourceStr.c_str();
-
-    Material mat = MaterialFactory::CreateMaterialFromXML("mat1.xml");
-    Material mat2 = MaterialFactory::CreateMaterialFromXML("mat2.xml");
-
-    GLfloat color1[4] = {1.0f, 0.0f, 0.0f, 1.0f};
-    GLfloat color2[4] = {0.0f, 1.0f, 0.0f, 1.0f};
-    mat2.SetColor(color2);
+    Material* mat = matFactory->CreateMaterialFromXML("mat1.xml");
+    Material* mat2 = matFactory->CreateMaterialFromXML("mat2.xml");
 
     std::vector<GLfloat> vertices = {
     -0.5f, -0.5f, -1.0f, // Bottom-left
      0.5f, -0.5f, -1.0f, // Bottom-right
      0.5f,  0.5f, -1.0f, // Top-right
     -0.5f,  0.5f, -1.0f  // Top-left
-};
+    };
 
 
     std::vector<GLfloat> texCoords = {

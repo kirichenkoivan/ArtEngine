@@ -1,6 +1,6 @@
 #include "../include/engine/Entities/Actors/dynamicActor.h"
 
-DynamicActor::DynamicActor(const std::string& name, Material& material, const std::vector<GLfloat>& vertices, const std::vector<GLfloat>& texCoords, const std::vector<GLuint>& indices)
+DynamicActor::DynamicActor(const std::string& name, Material* material, const std::vector<GLfloat>& vertices, const std::vector<GLfloat>& texCoords, const std::vector<GLuint>& indices)
     : GameObject(name, material, vertices, texCoords, indices) {
 }
 

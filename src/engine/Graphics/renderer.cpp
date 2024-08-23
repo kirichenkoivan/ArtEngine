@@ -95,17 +95,17 @@ void initRenderer(Scene& scene) {
 
         // Load texture if specified
         GLuint texture = 0;
-        if (!gameObject->GetMaterial().GetTexturePath().empty()) {
-             GLuint texture1 = loadTexture(gameObject->GetMaterial().GetTexturePath());
+        if (!gameObject->GetMaterial()->GetTexturePath().empty()) {
+             GLuint texture1 = loadTexture(gameObject->GetMaterial()->GetTexturePath());
             std::cout << "texture output " << texture1 << std::endl;
             gameObject->SetTextureID(texture1);
-            std::cout << "Texture set for material: " << gameObject->GetMaterial().GetMaterialName() << " (Texture ID: " << gameObject->GetTextureID() << ")" << std::endl;
+            std::cout << "Texture set for material: " << gameObject->GetMaterial()->GetMaterialName() << " (Texture ID: " << gameObject->GetTextureID() << ")" << std::endl;
         } else {
-            std::cout << "No texture path specified for material: " << gameObject->GetMaterial().GetMaterialName() << std::endl;
+            std::cout << "No texture path specified for material: " << gameObject->GetMaterial()->GetMaterialName() << std::endl;
         }
 
         // Create and compile shaders, then link them into a program
-        GLuint shaderProgram = createShaderProgram(gameObject->GetMaterial().GetVertexShader(), gameObject->GetMaterial().GetFragmentShader());
+        GLuint shaderProgram = createShaderProgram(gameObject->GetMaterial()->GetVertexShader(), gameObject->GetMaterial()->GetFragmentShader());
         gameObject->SetShaderProgram(shaderProgram);
 
         // Get the location of the uniform variables
@@ -163,7 +163,7 @@ void updateUniforms(GameObject& gameObject, const glm::mat4& viewMatrix, const g
 
     // Update the color uniform
     GLfloat color[4];
-    gameObject.GetMaterial().GetColor(color);
+    gameObject.GetMaterial()->GetColor(color);
     glUniform4fv(gameObject.GetUniformLocations().uColorLocation, 1, color);
 
     // Update the texture uniform
@@ -205,7 +205,6 @@ void RenderScene(Scene& scene) {
     emscripten_get_canvas_element_size("#canvas", &canvasWidth, &canvasHeight);
 
     // Установка размеров экрана камеры
-    std::cout << canvasWidth << " mewow " << canvasHeight;
     scene.GetCamera()->SetScreenSize(static_cast<float>(canvasWidth), static_cast<float>(canvasHeight));
 
     glm::mat4 viewMatrix = scene.GetCamera()->GetViewMatrix();

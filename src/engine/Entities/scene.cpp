@@ -6,7 +6,15 @@ void Scene::AddGameObject(GameObject* gameObject) {
 }
 
 void Scene::RemoveGameObject(const std::string& name) {
-    gameObjects.erase(name);
+    auto it = gameObjects.find(name);
+
+    // Если элемент найден
+    if (it != gameObjects.end()) {
+        // Удалить объект, на который указывает указатель
+        delete it->second;
+        // Удалить элемент из хеш-таблицы
+        gameObjects.erase(it);
+    }
 }
 
 GameObject* Scene::GetGameObject(const std::string& name) {

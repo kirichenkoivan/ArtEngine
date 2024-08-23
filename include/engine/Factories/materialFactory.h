@@ -9,8 +9,9 @@
 class MaterialFactory{
 
     public:
+    MaterialFactory();
 
-    static Material CreateMaterialFromXML(const std::string& fileName);
+    static Material* CreateMaterialFromXML(const std::string& fileName);
     
     private:
 

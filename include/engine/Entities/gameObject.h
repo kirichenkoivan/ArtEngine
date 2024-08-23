@@ -11,7 +11,7 @@
 class GameObject {
 public:
     // Constructor
-    GameObject(const std::string& name, const Material& material, const std::vector<GLfloat> verts, const std::vector<GLfloat> texCoords, const std::vector<GLuint> indices);
+    GameObject(const std::string& name, Material* material, const std::vector<GLfloat> verts, const std::vector<GLfloat> texCoords, const std::vector<GLuint> indices);
     
     //Abstract methods
     virtual ~GameObject() = default;
@@ -22,14 +22,14 @@ public:
     void SetSizeY(float newSizeY);
     void SetPosX(float x);
     void SetPosY(float y);
-     void SetPosZ(float z);
+    void SetPosZ(float z);
     void SetPos(float x, float y);
     void SetRotation(float angle);
     void SetCollider(CollisionBox newCollider);
 
     //Getters
     std::string GetName();
-    Material GetMaterial();
+    Material* GetMaterial();
     std::vector<GLfloat> GetVertices();
     std::vector<GLfloat> GetTexCoords();
     std::vector<GLuint> GetIndices();
@@ -65,7 +65,7 @@ public:
 private:
     //Base Params
     std::string name;
-    Material material;
+    Material* material;
     
     // Object params
     std::vector<GLfloat> vertices;
