@@ -9,10 +9,12 @@
 class GameObjectFactory{
     public:
 
-    static GameObject CreateGameObjectFromXML(std::string fileName);
+    GameObjectFactory();
+
+    GameObject* CreateGameObjectFromXML(std::string fileName);
 
     private:
-
+    MaterialFactory* matFactory;
 };
 
 #endif

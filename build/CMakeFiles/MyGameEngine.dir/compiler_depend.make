@@ -10688,9 +10688,11 @@ CMakeFiles/MyGameEngine.dir/src/main.cpp.o: /Users/ivankiricenko/Desktop/Main\ p
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Entities/gameObject.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Entities/material.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Entities/scene.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Entities/gameObject.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Entities/material.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Tools/fileLoader.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Tools/xmlReader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Factories/gameObjectFactory.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Factories/materialFactory.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Inputs/KeyCodes/keyboard.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Inputs/KeyCodes/mouse.h \

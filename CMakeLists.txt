@@ -40,6 +40,7 @@ add_executable(MyGameEngine
 
 target_include_directories(MyGameEngine PRIVATE include)
 
+
 # Установите параметры компиляции для WebAssembly, если используется Emscripten
 if (CMAKE_TOOLCHAIN_FILE MATCHES "Emscripten.cmake")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -s")

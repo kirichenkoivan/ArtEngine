@@ -1,1 +1,1 @@
-  -L/usr/local/opt/pugixml/lib  -lpugixml 
+ /usr/local/Cellar/lua/5.4.7/lib/liblua.a 

@@ -11,6 +11,7 @@
 #include "../include/engine/Factories/materialFactory.h"
 #include "../include/engine/Entities/Colliders/collisionBox.h"
 #include "../include/engine/Entities/camera.h"
+#include "../include/engine/Factories/gameObjectFactory.h"
 #include <GLES2/gl2.h>
 #include <EGL/egl.h>
 #include <string>
@@ -23,7 +24,7 @@ GameObject* gameObject;
 DynamicActor* actor;
 Scene* scene;
 MaterialFactory* matFactory;
-
+GameObjectFactory* objFactory;
 
 
 void main_loop() {
@@ -43,6 +44,7 @@ void main_loop() {
         }
     }
 
+    /*
     auto gameObjects = scene->GetGameObjects();
     for (auto it1 = gameObjects.begin(); it1 != gameObjects.end(); ++it1) {
         for (auto it2 = std::next(it1); it2 != gameObjects.end(); ++it2) {
@@ -53,7 +55,7 @@ void main_loop() {
                 // Здесь можно добавить обработку коллизии, например, изменение состояния объектов
             }
         }
-    }
+    } */
 
 float cameraSpeed = 1.0f; // Скорость перемещения камеры
     if (InputManager::GetInstance().IsKeyPressed(KEYBOARD_BTN_D)) {
@@ -74,6 +76,7 @@ int main() {
     InputManager::GetInstance().Initialize();
     scene = new Scene();
     matFactory = new MaterialFactory();
+    objFactory = new GameObjectFactory();
 
     Material* mat = matFactory->CreateMaterialFromXML("mat1.xml");
     Material* mat2 = matFactory->CreateMaterialFromXML("mat2.xml");
@@ -104,6 +107,10 @@ int main() {
     Camera* cam = new Camera(static_cast<float>(screenWidth), static_cast<float>(screenHeight));
     scene->AddCamera(cam);
     CollisionBox coll1(0.5f, 0.0f, 0.5, 0.5);
+    GameObject* obj1 = objFactory->CreateGameObjectFromXML("obj.xml");
+    scene->AddGameObject(obj1);
+
+    /*
     GameObject* obj = new GameObject("obj1", mat, vertices, texCoords, indices);
     obj->SetSizeX(-0.5f);
     obj->SetSizeY(-0.5f);
@@ -112,6 +119,7 @@ int main() {
     obj->SetRotation(0.0f);
     obj->SetCollider(coll1);  // Set rotation to 0.0
     scene->AddGameObject(obj);
+    */
 
     CollisionBox coll2(0.0f, 0.0f, 0.5f, 0.25f);
     actor = new DynamicActor("actor", mat2, vertices, texCoords, indices);
@@ -128,7 +136,7 @@ int main() {
     emscripten_set_main_loop(main_loop, 0, 1);
 
     delete scene;
-    delete obj;
+    delete obj1;
 
     return 0;
 }
