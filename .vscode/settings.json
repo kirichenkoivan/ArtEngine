@@ -75,6 +75,11 @@
         "queue": "cpp",
         "variant": "cpp",
         "charconv": "cpp",
-        "forward_list": "cpp"
+        "forward_list": "cpp",
+        "__tree": "cpp",
+        "codecvt": "cpp",
+        "future": "cpp",
+        "map": "cpp",
+        "set": "cpp"
     }
 }

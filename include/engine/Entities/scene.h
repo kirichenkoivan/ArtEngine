@@ -20,6 +20,8 @@ public:
 private:
     std::unordered_map<std::string, GameObject*> gameObjects;
     Camera* camera;
+
+    std::string name;
 };
 
 #endif // SCENE_H

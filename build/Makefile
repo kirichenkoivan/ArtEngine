@@ -273,6 +273,30 @@ src/engine/Entities/scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.s
 .PHONY : src/engine/Entities/scene.cpp.s
 
+src/engine/Factories/dynamicActorFactory.o: src/engine/Factories/dynamicActorFactory.cpp.o
+.PHONY : src/engine/Factories/dynamicActorFactory.o
+
+# target to build an object file
+src/engine/Factories/dynamicActorFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/dynamicActorFactory.cpp.o
+.PHONY : src/engine/Factories/dynamicActorFactory.cpp.o
+
+src/engine/Factories/dynamicActorFactory.i: src/engine/Factories/dynamicActorFactory.cpp.i
+.PHONY : src/engine/Factories/dynamicActorFactory.i
+
+# target to preprocess a source file
+src/engine/Factories/dynamicActorFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/dynamicActorFactory.cpp.i
+.PHONY : src/engine/Factories/dynamicActorFactory.cpp.i
+
+src/engine/Factories/dynamicActorFactory.s: src/engine/Factories/dynamicActorFactory.cpp.s
+.PHONY : src/engine/Factories/dynamicActorFactory.s
+
+# target to generate assembly for a file
+src/engine/Factories/dynamicActorFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/dynamicActorFactory.cpp.s
+.PHONY : src/engine/Factories/dynamicActorFactory.cpp.s
+
 src/engine/Factories/gameObjectFactory.o: src/engine/Factories/gameObjectFactory.cpp.o
 .PHONY : src/engine/Factories/gameObjectFactory.o
 
@@ -320,6 +344,30 @@ src/engine/Factories/materialFactory.s: src/engine/Factories/materialFactory.cpp
 src/engine/Factories/materialFactory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/materialFactory.cpp.s
 .PHONY : src/engine/Factories/materialFactory.cpp.s
+
+src/engine/Factories/sceneFactory.o: src/engine/Factories/sceneFactory.cpp.o
+.PHONY : src/engine/Factories/sceneFactory.o
+
+# target to build an object file
+src/engine/Factories/sceneFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/sceneFactory.cpp.o
+.PHONY : src/engine/Factories/sceneFactory.cpp.o
+
+src/engine/Factories/sceneFactory.i: src/engine/Factories/sceneFactory.cpp.i
+.PHONY : src/engine/Factories/sceneFactory.i
+
+# target to preprocess a source file
+src/engine/Factories/sceneFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/sceneFactory.cpp.i
+.PHONY : src/engine/Factories/sceneFactory.cpp.i
+
+src/engine/Factories/sceneFactory.s: src/engine/Factories/sceneFactory.cpp.s
+.PHONY : src/engine/Factories/sceneFactory.s
+
+# target to generate assembly for a file
+src/engine/Factories/sceneFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/sceneFactory.cpp.s
+.PHONY : src/engine/Factories/sceneFactory.cpp.s
 
 src/engine/Graphics/renderer.o: src/engine/Graphics/renderer.cpp.o
 .PHONY : src/engine/Graphics/renderer.o
@@ -516,12 +564,18 @@ help:
 	@echo "... src/engine/Entities/scene.o"
 	@echo "... src/engine/Entities/scene.i"
 	@echo "... src/engine/Entities/scene.s"
+	@echo "... src/engine/Factories/dynamicActorFactory.o"
+	@echo "... src/engine/Factories/dynamicActorFactory.i"
+	@echo "... src/engine/Factories/dynamicActorFactory.s"
 	@echo "... src/engine/Factories/gameObjectFactory.o"
 	@echo "... src/engine/Factories/gameObjectFactory.i"
 	@echo "... src/engine/Factories/gameObjectFactory.s"
 	@echo "... src/engine/Factories/materialFactory.o"
 	@echo "... src/engine/Factories/materialFactory.i"
 	@echo "... src/engine/Factories/materialFactory.s"
+	@echo "... src/engine/Factories/sceneFactory.o"
+	@echo "... src/engine/Factories/sceneFactory.i"
+	@echo "... src/engine/Factories/sceneFactory.s"
 	@echo "... src/engine/Graphics/renderer.o"
 	@echo "... src/engine/Graphics/renderer.i"
 	@echo "... src/engine/Graphics/renderer.s"

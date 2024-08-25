@@ -43,6 +43,23 @@ std::vector<std::pair<std::string, std::string>> GetAttributesValues(const tinyx
     return attributesValues;
 }
 
+std::vector<std::pair<std::string, std::string>> GetAttributesValues(tinyxml2::XMLElement* element, const std::vector<std::string>& attributes) {
+    std::vector<std::pair<std::string, std::string>> attributesValues;
+    
+    for (const std::string& attrName : attributes) {
+        const char* attrValue = element->Attribute(attrName.c_str());
+        if (attrValue) {
+            attributesValues.emplace_back(attrName, std::string(attrValue));
+        } else {
+            attributesValues.emplace_back(attrName, ""); // Пустая строка, если атрибут не найден
+            std::cerr << "Attribute '" << attrName << "' not found in element." << std::endl;
+        }
+    }
+    
+
+    return attributesValues;
+}
+
 float XMLToFloat(const std::string value)
 {
     return std::stof(value);

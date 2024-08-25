@@ -32,6 +32,8 @@ add_executable(MyGameEngine
     src/engine/Tools/tinyxml2.cpp # Добавляем tinyxml2.cpp в проект
     src/engine/Factories/materialFactory.cpp
     src/engine/Factories/gameObjectFactory.cpp
+    src/engine/Factories/dynamicActorFactory.cpp
+    src/engine/Factories/sceneFactory.cpp
     src/engine/Tools/xmlReader.cpp
     src/engine/Tools/fileLoader.cpp
     src/engine/Entities/Colliders/collisionBox.cpp

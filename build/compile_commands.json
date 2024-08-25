@@ -67,6 +67,18 @@
 },
 {
   "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Factories/dynamicActorFactory.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/dynamicActorFactory.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/dynamicActorFactory.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Factories/dynamicActorFactory.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Factories/sceneFactory.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/sceneFactory.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/sceneFactory.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Factories/sceneFactory.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
   "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/xmlReader.cpp\"",
   "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/xmlReader.cpp",
   "output": "CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o"

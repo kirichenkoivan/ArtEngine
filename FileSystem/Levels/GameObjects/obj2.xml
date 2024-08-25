@@ -1,11 +1,11 @@
 <GameEntity>
     <info 
-        name = "obj1"
-        sizeX = "-0.5"
-        sizeY = "-0.5"
+        name = "actor"
+        sizeX = "0.5"
+        sizeY = "0.25"
         posX = "0.0"
         posY = "0.0"
         rotation="0.0"
-        material = "mat1.xml"
+        material = "mat2.xml"
     />
 </GameEntity>

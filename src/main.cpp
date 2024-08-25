@@ -12,6 +12,7 @@
 #include "../include/engine/Entities/Colliders/collisionBox.h"
 #include "../include/engine/Entities/camera.h"
 #include "../include/engine/Factories/gameObjectFactory.h"
+#include "../include/engine/Factories/sceneFactory.h"
 #include <GLES2/gl2.h>
 #include <EGL/egl.h>
 #include <string>
@@ -25,6 +26,7 @@ DynamicActor* actor;
 Scene* scene;
 MaterialFactory* matFactory;
 GameObjectFactory* objFactory;
+SceneFactory* sceneFactory;
 
 
 void main_loop() {
@@ -74,32 +76,11 @@ float cameraSpeed = 1.0f; // Скорость перемещения камер�
 int main() {
 
     InputManager::GetInstance().Initialize();
-    scene = new Scene();
+    sceneFactory = new SceneFactory();
     matFactory = new MaterialFactory();
-    objFactory = new GameObjectFactory();
 
-    Material* mat = matFactory->CreateMaterialFromXML("mat1.xml");
-    Material* mat2 = matFactory->CreateMaterialFromXML("mat2.xml");
+    scene = sceneFactory->CreateSceneFromXML("scene1.xml");
 
-    std::vector<GLfloat> vertices = {
-    -0.5f, -0.5f, -1.0f, // Bottom-left
-     0.5f, -0.5f, -1.0f, // Bottom-right
-     0.5f,  0.5f, -1.0f, // Top-right
-    -0.5f,  0.5f, -1.0f  // Top-left
-    };
-
-
-    std::vector<GLfloat> texCoords = {
-        0.0f, 0.0f, // Bottom-left
-        1.0f, 0.0f, // Bottom-right
-        1.0f, 1.0f, // Top-right
-        0.0f, 1.0f  // Top-left
-    };
-
-    std::vector<GLuint> indices = {
-        0, 1, 2, // Первый треугольник
-        2, 3, 0  // Второй треугольник
-    };
     int screenWidth = 300;  // ширина канваса
     int screenHeight = 150; // высота канваса
 
@@ -107,36 +88,14 @@ int main() {
     Camera* cam = new Camera(static_cast<float>(screenWidth), static_cast<float>(screenHeight));
     scene->AddCamera(cam);
     CollisionBox coll1(0.5f, 0.0f, 0.5, 0.5);
-    GameObject* obj1 = objFactory->CreateGameObjectFromXML("obj.xml");
-    scene->AddGameObject(obj1);
-
-    /*
-    GameObject* obj = new GameObject("obj1", mat, vertices, texCoords, indices);
-    obj->SetSizeX(-0.5f);
-    obj->SetSizeY(-0.5f);
-    obj->SetPos(0.5f, 0.0f); 
-    obj->SetPosZ(0.0f);// Устанавливаем глубину
-    obj->SetRotation(0.0f);
-    obj->SetCollider(coll1);  // Set rotation to 0.0
-    scene->AddGameObject(obj);
-    */
+  
 
     CollisionBox coll2(0.0f, 0.0f, 0.5f, 0.25f);
-    actor = new DynamicActor("actor", mat2, vertices, texCoords, indices);
-    actor->SetSizeX(0.5f);
-    actor->SetSizeY(0.25f);
-    actor->SetPos(0.0f, 0.0f);
-    actor->SetPosZ(0.0f); // Устанавливаем другую глубину
-    actor->SetRotation(0.0f);
-    actor->SetCollider(coll2);
-    scene->AddGameObject(actor);
-
 
     initRenderer(*scene);
     emscripten_set_main_loop(main_loop, 0, 1);
 
     delete scene;
-    delete obj1;
 
     return 0;
 }

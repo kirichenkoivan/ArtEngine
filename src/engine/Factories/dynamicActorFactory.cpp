@@ -1,11 +1,10 @@
-#include "../include/engine/Factories/gameObjectFactory.h"
+#include "../include/engine/Factories/dynamicActorFactory.h"
 
-GameObjectFactory::GameObjectFactory(){
-    matFactory = new MaterialFactory(); 
+DynamicActorFactory::DynamicActorFactory(){
+    matFactory = new MaterialFactory();
 }
 
-GameObject* GameObjectFactory::CreateGameObjectFromXML(std::string fileName)
-{
+DynamicActor* DynamicActorFactory::CreateDynamicActorFromXML(std::string fileName){
     std::filesystem::path filePath = FindXMLFile(fileName, "/FileSystem");
 
     if(!filePath.empty()){
@@ -65,10 +64,8 @@ GameObject* GameObjectFactory::CreateGameObjectFromXML(std::string fileName)
         }
 
         Material* mat = matFactory->CreateMaterialFromXML(matPath);
-        
-        assert(mat != nullptr);
 
-        GameObject* obj = new GameObject(name, mat, vertices, texCoords, indices);
+        DynamicActor* obj = new DynamicActor(name, mat, vertices, texCoords, indices);
 
         if (sizeX != 0.0f){
             obj->SetSizeX(sizeX);

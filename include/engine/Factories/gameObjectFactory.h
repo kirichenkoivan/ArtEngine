@@ -5,6 +5,7 @@
 #include "../Entities/gameObject.h"
 #include "../Tools/xmlReader.h"
 #include "../Tools/fileLoader.h"
+#include <cassert>
 
 class GameObjectFactory{
     public:
