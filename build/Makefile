@@ -273,6 +273,30 @@ src/engine/Entities/scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.s
 .PHONY : src/engine/Entities/scene.cpp.s
 
+src/engine/Factories/cameraFactory.o: src/engine/Factories/cameraFactory.cpp.o
+.PHONY : src/engine/Factories/cameraFactory.o
+
+# target to build an object file
+src/engine/Factories/cameraFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/cameraFactory.cpp.o
+.PHONY : src/engine/Factories/cameraFactory.cpp.o
+
+src/engine/Factories/cameraFactory.i: src/engine/Factories/cameraFactory.cpp.i
+.PHONY : src/engine/Factories/cameraFactory.i
+
+# target to preprocess a source file
+src/engine/Factories/cameraFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/cameraFactory.cpp.i
+.PHONY : src/engine/Factories/cameraFactory.cpp.i
+
+src/engine/Factories/cameraFactory.s: src/engine/Factories/cameraFactory.cpp.s
+.PHONY : src/engine/Factories/cameraFactory.s
+
+# target to generate assembly for a file
+src/engine/Factories/cameraFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/cameraFactory.cpp.s
+.PHONY : src/engine/Factories/cameraFactory.cpp.s
+
 src/engine/Factories/dynamicActorFactory.o: src/engine/Factories/dynamicActorFactory.cpp.o
 .PHONY : src/engine/Factories/dynamicActorFactory.o
 
@@ -564,6 +588,9 @@ help:
 	@echo "... src/engine/Entities/scene.o"
 	@echo "... src/engine/Entities/scene.i"
 	@echo "... src/engine/Entities/scene.s"
+	@echo "... src/engine/Factories/cameraFactory.o"
+	@echo "... src/engine/Factories/cameraFactory.i"
+	@echo "... src/engine/Factories/cameraFactory.s"
 	@echo "... src/engine/Factories/dynamicActorFactory.o"
 	@echo "... src/engine/Factories/dynamicActorFactory.i"
 	@echo "... src/engine/Factories/dynamicActorFactory.s"

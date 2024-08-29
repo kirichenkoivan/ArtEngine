@@ -81,12 +81,7 @@ int main() {
 
     scene = sceneFactory->CreateSceneFromXML("scene1.xml");
 
-    int screenWidth = 300;  // ширина канваса
-    int screenHeight = 150; // высота канваса
 
-    // Создайте камеру с размерами канваса
-    Camera* cam = new Camera(static_cast<float>(screenWidth), static_cast<float>(screenHeight));
-    scene->AddCamera(cam);
     CollisionBox coll1(0.5f, 0.0f, 0.5, 0.5);
   
 

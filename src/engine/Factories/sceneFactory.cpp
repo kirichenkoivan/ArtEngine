@@ -3,6 +3,7 @@
 SceneFactory::SceneFactory(){
     gameObjectFactory = new GameObjectFactory();
     dynamicActorFactory = new DynamicActorFactory();
+    cameraFactory = new CameraFactory();
 }
 
 Scene* SceneFactory::CreateSceneFromXML(std::string fileName){
@@ -38,10 +39,14 @@ Scene* SceneFactory::CreateSceneFromXML(std::string fileName){
                     type = pair.second;
                 }
                 else if (pair.first == "posX") {
-                    posX = XMLToFloat(pair.second);
+                    if (pair.second != ""){
+                        posX = XMLToFloat(pair.second);
+                    }
                 } 
                 else if (pair.first == "posY") {
-                    posY = XMLToFloat(pair.second);
+                    if (pair.second != ""){
+                        posY = XMLToFloat(pair.second);
+                    }
                 } 
             }
 
@@ -68,13 +73,15 @@ Scene* SceneFactory::CreateSceneFromXML(std::string fileName){
                         scene->GetGameObject(obj->GetName())->SetPosY(posY);
                     }
                 }
+                else if (type == "Camera"){
+                    Camera* cam = cameraFactory->CreateCameraFromXML(object);
+                    scene->AddCamera(cam);
+                }
             }
             else{
                 std::cerr << "Object field is empty, GameObject was skipped" << std::endl;
             }
         }
-
-        return scene;
     }
     else{
         std::cerr << "Document Path is incorrect, created empty scene" << std::endl;

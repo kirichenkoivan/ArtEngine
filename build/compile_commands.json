@@ -73,6 +73,12 @@
 },
 {
   "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Factories/cameraFactory.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/cameraFactory.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/cameraFactory.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Factories/cameraFactory.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
   "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Factories/sceneFactory.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/sceneFactory.cpp\"",
   "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/sceneFactory.cpp",
   "output": "CMakeFiles/MyGameEngine.dir/src/engine/Factories/sceneFactory.cpp.o"

@@ -4,6 +4,7 @@
 #include "../Entities/scene.h"
 #include "gameObjectFactory.h"
 #include "dynamicActorFactory.h"
+#include "cameraFactory.h"
 #include "../Tools/xmlReader.h"
 
 class SceneFactory{
@@ -21,6 +22,7 @@ class SceneFactory{
 
     GameObjectFactory* gameObjectFactory;
     DynamicActorFactory* dynamicActorFactory;
+    CameraFactory* cameraFactory;
 
 };
 

@@ -33,6 +33,7 @@ add_executable(MyGameEngine
     src/engine/Factories/materialFactory.cpp
     src/engine/Factories/gameObjectFactory.cpp
     src/engine/Factories/dynamicActorFactory.cpp
+    src/engine/Factories/cameraFactory.cpp
     src/engine/Factories/sceneFactory.cpp
     src/engine/Tools/xmlReader.cpp
     src/engine/Tools/fileLoader.cpp

@@ -16,4 +16,10 @@
         posX = "0.0"
         posY = "0.0"
     />
+
+    <GameObject
+        type = "Camera"
+        object = "cam1.xml"
+    />
+    
 </GameEntity>

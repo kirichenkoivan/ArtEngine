@@ -1084,4 +1084,5 @@ CMakeFiles/MyGameEngine.dir/src/engine/Factories/sceneFactory.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/sstream \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Factories/../Tools/fileLoader.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/fstream \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Factories/dynamicActorFactory.h
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Factories/dynamicActorFactory.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Factories/cameraFactory.h
