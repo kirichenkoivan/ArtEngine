@@ -45,9 +45,9 @@ float CollisionBox::GetSizeY(){
 
 //Methods
 
-bool CollisionBox::Intersects(const CollisionBox& other) const {
-    return posX < other.posX + other.sizeX &&
-           posX + sizeX > other.posX &&
-           posY < other.posY + other.sizeY &&
-           posY + sizeY > other.posY;
+bool CollisionBox::Intersects(const CollisionBox* other) const {
+    return posX < other->posX + other->sizeX &&
+           posX + sizeX > other->posX &&
+           posY < other->posY + other->sizeY &&
+           posY + sizeY > other->posY;
 }

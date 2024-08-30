@@ -2,13 +2,14 @@
 
 DynamicActorFactory::DynamicActorFactory(){
     matFactory = new MaterialFactory();
+    collisionBoxFactory = new CollisionBoxFactory();
 }
 
 DynamicActor* DynamicActorFactory::CreateDynamicActorFromXML(std::string fileName){
     std::filesystem::path filePath = FindXMLFile(fileName, "/FileSystem");
 
     if(!filePath.empty()){
-        std::vector<std::string> attributes = {"name", "sizeX", "sizeY", "posX", "posY", "rotation", "material"};
+        std::vector<std::string> attributes = {"name", "sizeX", "sizeY", "posX", "posY", "rotation", "material", "needCollider"};
         std::unique_ptr<tinyxml2::XMLDocument> doc = LoadXMLFile(filePath);
         std::vector<std::pair<std::string, std::string>> attrs = GetAttributesValues(*doc, attributes);
 
@@ -19,6 +20,7 @@ DynamicActor* DynamicActorFactory::CreateDynamicActorFromXML(std::string fileNam
         float posY = 0.0f;
         float rotation = 0.0f;
         std::string matPath;
+        bool needCollider = false;
 
         std::vector<GLfloat> vertices = {
             -0.5f, -0.5f, -1.0f, // Bottom-left
@@ -61,6 +63,9 @@ DynamicActor* DynamicActorFactory::CreateDynamicActorFromXML(std::string fileNam
             else if (pair.first == "material") {
                 matPath = pair.second;
             }
+            else if (pair.first == "needCollider"){
+                needCollider = XMLToBool(pair.second);
+            }
         }
 
         Material* mat = matFactory->CreateMaterialFromXML(matPath);
@@ -85,6 +90,11 @@ DynamicActor* DynamicActorFactory::CreateDynamicActorFromXML(std::string fileNam
 
         if(rotation != 0.0f){
             obj->SetRotation(rotation);
+        }
+
+        if (needCollider){
+            CollisionBox* box = collisionBoxFactory->CreateCollisionBoxFromXML(obj->GetPosX(), obj->GetPosY(), std::fabs(obj->GetSizeX()), std::fabs(obj->GetSizeY()));
+            obj->SetCollider(box);
         }
 
         obj->SetPosZ(0.0f);

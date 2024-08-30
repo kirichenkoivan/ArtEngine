@@ -3,9 +3,10 @@
         name = "obj1"
         sizeX = "-0.5"
         sizeY = "-0.5"
-        posX = "0.0"
+        posX = "0.5"
         posY = "0.0"
         rotation="0.0"
+        needCollider = "true"
         material = "mat1.xml"
     />
 </GameEntity>

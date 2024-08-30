@@ -870,4 +870,6 @@ CMakeFiles/MyGameEngine.dir/src/engine/Factories/dynamicActorFactory.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/u8path.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/sstream \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Factories/../Tools/fileLoader.h \
-  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/fstream
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/fstream \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Factories/collisionBoxFactory.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Factories/../Entities/Colliders/collisionBox.h

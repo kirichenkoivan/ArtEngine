@@ -25,7 +25,7 @@ public:
     void SetPosZ(float z);
     void SetPos(float x, float y);
     void SetRotation(float angle);
-    void SetCollider(CollisionBox newCollider);
+    void SetCollider(CollisionBox* newCollider);
 
     //Getters
     std::string GetName();
@@ -39,7 +39,7 @@ public:
     float GetPosY();
     float GetPosZ() const;
     float GetRotation();
-    CollisionBox GetCollider();
+    CollisionBox* GetCollider();
     
     // Shaders params
     GLuint GetShaderProgram() const;
@@ -84,7 +84,7 @@ private:
     UniformLocations uniformLocations;
     GLuint VBO;
 
-    CollisionBox collider;
+    CollisionBox* collider;
 };
 
 #endif // GAMEOBJECT_H

@@ -81,12 +81,12 @@ clean: CMakeFiles/MyGameEngine.dir/clean
 CMakeFiles/MyGameEngine.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target MyGameEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target MyGameEngine"
 .PHONY : CMakeFiles/MyGameEngine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MyGameEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" 19
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MyGameEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" 0
 .PHONY : CMakeFiles/MyGameEngine.dir/rule

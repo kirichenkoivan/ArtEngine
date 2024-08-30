@@ -5,7 +5,9 @@
 #include "../Entities/gameObject.h"
 #include "../Tools/xmlReader.h"
 #include "../Tools/fileLoader.h"
+#include "collisionBoxFactory.h"
 #include <cassert>
+#include <cmath>
 
 class GameObjectFactory{
     public:
@@ -15,6 +17,8 @@ class GameObjectFactory{
     GameObject* CreateGameObjectFromXML(std::string fileName);
 
     private:
+
+    CollisionBoxFactory* collisionBoxFactory;
     MaterialFactory* matFactory;
 };
 

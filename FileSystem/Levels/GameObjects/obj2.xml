@@ -6,6 +6,7 @@
         posX = "0.0"
         posY = "0.0"
         rotation="0.0"
+        needCollider = "true"
         material = "mat2.xml"
     />
 </GameEntity>

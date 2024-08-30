@@ -3,6 +3,8 @@
 
 #include "../Entities/Actors/dynamicActor.h"
 #include "materialFactory.h"
+#include "collisionBoxFactory.h"
+#include <cmath>
 
 class DynamicActorFactory{
 
@@ -15,6 +17,7 @@ class DynamicActorFactory{
     private:
 
     MaterialFactory* matFactory;
+    CollisionBoxFactory* collisionBoxFactory;
 
 };
 

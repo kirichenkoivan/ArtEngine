@@ -70,6 +70,16 @@ int XMLToInt(const std::string value)
     return std::stoi(value);
 }
 
+bool XMLToBool(const std::string value){
+    if (value == "true"){
+        return true;
+    }
+    else if (value == "false"){
+        return false;
+    }
+    return false;
+}
+
 void XMLToGLloatArr(const std::string value, GLfloat(&array)[4])
 {
     // Удаляем круглые скобки

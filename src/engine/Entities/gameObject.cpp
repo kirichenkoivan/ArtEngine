@@ -109,17 +109,17 @@ std::vector<GLuint> GameObject::GetIndices() {
     return indices;
 }
 
-CollisionBox GameObject::GetCollider(){
+CollisionBox* GameObject::GetCollider(){
     return collider;
 }
 
-void GameObject::SetCollider(CollisionBox newCollider){
+void GameObject::SetCollider(CollisionBox* newCollider){
     this->collider = newCollider;
 }
 
 void GameObject::UpdateColliderPos(){
-    this->collider.SetPosX(posX);
-    this->collider.SetPosY(posY);
+    this->collider->SetPosX(posX);
+    this->collider->SetPosY(posY);
 }
 
 void GameObject::SetPosZ(float z) {

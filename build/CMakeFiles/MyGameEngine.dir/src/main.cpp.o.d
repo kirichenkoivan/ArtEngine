@@ -1095,6 +1095,8 @@ CMakeFiles/MyGameEngine.dir/src/main.cpp.o: \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Entities/camera.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Factories/gameObjectFactory.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Factories/../Entities/gameObject.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Factories/collisionBoxFactory.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Factories/../Entities/Colliders/collisionBox.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Factories/sceneFactory.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Factories/../Entities/scene.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/../include/engine/Factories/dynamicActorFactory.h \

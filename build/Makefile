@@ -297,6 +297,30 @@ src/engine/Factories/cameraFactory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/cameraFactory.cpp.s
 .PHONY : src/engine/Factories/cameraFactory.cpp.s
 
+src/engine/Factories/collisionBoxFactory.o: src/engine/Factories/collisionBoxFactory.cpp.o
+.PHONY : src/engine/Factories/collisionBoxFactory.o
+
+# target to build an object file
+src/engine/Factories/collisionBoxFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/collisionBoxFactory.cpp.o
+.PHONY : src/engine/Factories/collisionBoxFactory.cpp.o
+
+src/engine/Factories/collisionBoxFactory.i: src/engine/Factories/collisionBoxFactory.cpp.i
+.PHONY : src/engine/Factories/collisionBoxFactory.i
+
+# target to preprocess a source file
+src/engine/Factories/collisionBoxFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/collisionBoxFactory.cpp.i
+.PHONY : src/engine/Factories/collisionBoxFactory.cpp.i
+
+src/engine/Factories/collisionBoxFactory.s: src/engine/Factories/collisionBoxFactory.cpp.s
+.PHONY : src/engine/Factories/collisionBoxFactory.s
+
+# target to generate assembly for a file
+src/engine/Factories/collisionBoxFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/collisionBoxFactory.cpp.s
+.PHONY : src/engine/Factories/collisionBoxFactory.cpp.s
+
 src/engine/Factories/dynamicActorFactory.o: src/engine/Factories/dynamicActorFactory.cpp.o
 .PHONY : src/engine/Factories/dynamicActorFactory.o
 
@@ -591,6 +615,9 @@ help:
 	@echo "... src/engine/Factories/cameraFactory.o"
 	@echo "... src/engine/Factories/cameraFactory.i"
 	@echo "... src/engine/Factories/cameraFactory.s"
+	@echo "... src/engine/Factories/collisionBoxFactory.o"
+	@echo "... src/engine/Factories/collisionBoxFactory.i"
+	@echo "... src/engine/Factories/collisionBoxFactory.s"
 	@echo "... src/engine/Factories/dynamicActorFactory.o"
 	@echo "... src/engine/Factories/dynamicActorFactory.i"
 	@echo "... src/engine/Factories/dynamicActorFactory.s"

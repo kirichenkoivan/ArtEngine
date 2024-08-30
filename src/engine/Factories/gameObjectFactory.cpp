@@ -2,6 +2,7 @@
 
 GameObjectFactory::GameObjectFactory(){
     matFactory = new MaterialFactory(); 
+    collisionBoxFactory = new CollisionBoxFactory();
 }
 
 GameObject* GameObjectFactory::CreateGameObjectFromXML(std::string fileName)
@@ -9,7 +10,7 @@ GameObject* GameObjectFactory::CreateGameObjectFromXML(std::string fileName)
     std::filesystem::path filePath = FindXMLFile(fileName, "/FileSystem");
 
     if(!filePath.empty()){
-        std::vector<std::string> attributes = {"name", "sizeX", "sizeY", "posX", "posY", "rotation", "material"};
+        std::vector<std::string> attributes = {"name", "sizeX", "sizeY", "posX", "posY", "rotation", "material", "needCollider"};
         std::unique_ptr<tinyxml2::XMLDocument> doc = LoadXMLFile(filePath);
         std::vector<std::pair<std::string, std::string>> attrs = GetAttributesValues(*doc, attributes);
 
@@ -20,6 +21,7 @@ GameObject* GameObjectFactory::CreateGameObjectFromXML(std::string fileName)
         float posY = 0.0f;
         float rotation = 0.0f;
         std::string matPath;
+        bool needCollider = false;
 
         std::vector<GLfloat> vertices = {
             -0.5f, -0.5f, -1.0f, // Bottom-left
@@ -62,6 +64,9 @@ GameObject* GameObjectFactory::CreateGameObjectFromXML(std::string fileName)
             else if (pair.first == "material") {
                 matPath = pair.second;
             }
+            else if (pair.first == "needCollider"){
+                needCollider = XMLToBool(pair.second);
+            }
         }
 
         Material* mat = matFactory->CreateMaterialFromXML(matPath);
@@ -88,6 +93,11 @@ GameObject* GameObjectFactory::CreateGameObjectFromXML(std::string fileName)
 
         if(rotation != 0.0f){
             obj->SetRotation(rotation);
+        }
+
+        if (needCollider){
+            CollisionBox* box = collisionBoxFactory->CreateCollisionBoxFromXML(obj->GetPosX(), obj->GetPosY(), std::fabs(obj->GetSizeX()), std::fabs(obj->GetSizeY()));
+            obj->SetCollider(box);
         }
 
         obj->SetPosZ(0.0f);

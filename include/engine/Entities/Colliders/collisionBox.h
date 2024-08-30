@@ -26,7 +26,7 @@ class CollisionBox{
 
     //Methods
 
-    bool Intersects(const CollisionBox& other) const;
+    bool Intersects(const CollisionBox* other) const;
 
     private:
     

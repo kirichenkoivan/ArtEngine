@@ -24,6 +24,7 @@ std::vector<std::pair<std::string, std::string>> GetAttributesValues(tinyxml2::X
 
 float XMLToFloat(const std::string value);
 int XMLToInt(const std::string value);
+bool XMLToBool(const std::string value);
 void XMLToGLloatArr(const std::string value, GLfloat(&array)[4]);
 const char* ConvertStringToCStr(const std::string& input);
 

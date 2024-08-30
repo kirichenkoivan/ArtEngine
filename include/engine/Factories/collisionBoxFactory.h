@@ -1,7 +1,7 @@
 #ifndef COLLISION_BOX_FACTORY
 #define COLLISION_BOX_FACTORY
 
-#include "../Colliders/collisionBox.h"
+#include "../Entities/Colliders/collisionBox.h"
 #include <string>
 
 class CollisionBoxFactory{

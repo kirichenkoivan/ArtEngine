@@ -46,18 +46,17 @@ void main_loop() {
         }
     }
 
-    /*
     auto gameObjects = scene->GetGameObjects();
     for (auto it1 = gameObjects.begin(); it1 != gameObjects.end(); ++it1) {
         for (auto it2 = std::next(it1); it2 != gameObjects.end(); ++it2) {
             GameObject* obj1 = it1->second;
             GameObject* obj2 = it2->second;
-            if (obj1->GetCollider().Intersects(obj2->GetCollider())) {
+            if (obj1->GetCollider()->Intersects(obj2->GetCollider())) {
                 std::cout << "Collision detected between " << obj1->GetName() << " and " << obj2->GetName() << std::endl;
                 // Здесь можно добавить обработку коллизии, например, изменение состояния объектов
             }
         }
-    } */
+    } 
 
 float cameraSpeed = 1.0f; // Скорость перемещения камеры
     if (InputManager::GetInstance().IsKeyPressed(KEYBOARD_BTN_D)) {
@@ -76,16 +75,8 @@ float cameraSpeed = 1.0f; // Скорость перемещения камер�
 int main() {
 
     InputManager::GetInstance().Initialize();
-    sceneFactory = new SceneFactory();
-    matFactory = new MaterialFactory();
 
     scene = sceneFactory->CreateSceneFromXML("scene1.xml");
-
-
-    CollisionBox coll1(0.5f, 0.0f, 0.5, 0.5);
-  
-
-    CollisionBox coll2(0.0f, 0.0f, 0.5f, 0.25f);
 
     initRenderer(*scene);
     emscripten_set_main_loop(main_loop, 0, 1);
