@@ -27,6 +27,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.o"
   "CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.o.d"
+  "CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.o"
+  "CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o"
   "CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o"

@@ -13,6 +13,7 @@
 #include "../include/engine/Entities/camera.h"
 #include "../include/engine/Factories/gameObjectFactory.h"
 #include "../include/engine/Factories/sceneFactory.h"
+#include "../include/engine/Managers/collisionsManager.h"
 #include <GLES2/gl2.h>
 #include <EGL/egl.h>
 #include <string>
@@ -21,12 +22,9 @@
 #include <iostream>
 #include <vector>
 
-GameObject* gameObject;
-DynamicActor* actor;
 Scene* scene;
-MaterialFactory* matFactory;
-GameObjectFactory* objFactory;
 SceneFactory* sceneFactory;
+CollisionManager* collisionManager;
 
 
 void main_loop() {
@@ -41,22 +39,13 @@ void main_loop() {
         gameObject->Move(deltaTime);
         gameObject->UpdateColliderPos();
         if (InputManager::GetInstance().IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
-            GLfloat color1[4] = {1.0f, 0.0f, 0.0f, 1.0f};
-            gameObject->GetMaterial()->SetColor(color1);
+            std::cout << "Click!" << std::endl;
         }
     }
 
-    auto gameObjects = scene->GetGameObjects();
-    for (auto it1 = gameObjects.begin(); it1 != gameObjects.end(); ++it1) {
-        for (auto it2 = std::next(it1); it2 != gameObjects.end(); ++it2) {
-            GameObject* obj1 = it1->second;
-            GameObject* obj2 = it2->second;
-            if (obj1->GetCollider()->Intersects(obj2->GetCollider())) {
-                std::cout << "Collision detected between " << obj1->GetName() << " and " << obj2->GetName() << std::endl;
-                // Здесь можно добавить обработку коллизии, например, изменение состояния объектов
-            }
-        }
-    } 
+    if (collisionManager->IsCollidesWith("obj1", "actor")){
+        std::cout << "bruh moment" << std::endl;
+    }
 
 float cameraSpeed = 1.0f; // Скорость перемещения камеры
     if (InputManager::GetInstance().IsKeyPressed(KEYBOARD_BTN_D)) {
@@ -77,6 +66,7 @@ int main() {
     InputManager::GetInstance().Initialize();
 
     scene = sceneFactory->CreateSceneFromXML("scene1.xml");
+    collisionManager = new CollisionManager(scene);
 
     initRenderer(*scene);
     emscripten_set_main_loop(main_loop, 0, 1);

@@ -40,6 +40,7 @@ add_executable(MyGameEngine
     src/engine/Tools/fileLoader.cpp
     src/engine/Entities/Colliders/collisionBox.cpp
     src/engine/Entities/camera.cpp
+    src/engine/Managers/collisionsManager.cpp
 )
 
 target_include_directories(MyGameEngine PRIVATE include)

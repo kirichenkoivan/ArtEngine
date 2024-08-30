@@ -465,6 +465,30 @@ src/engine/Inputs/inputManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.s
 .PHONY : src/engine/Inputs/inputManager.cpp.s
 
+src/engine/Managers/collisionsManager.o: src/engine/Managers/collisionsManager.cpp.o
+.PHONY : src/engine/Managers/collisionsManager.o
+
+# target to build an object file
+src/engine/Managers/collisionsManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.o
+.PHONY : src/engine/Managers/collisionsManager.cpp.o
+
+src/engine/Managers/collisionsManager.i: src/engine/Managers/collisionsManager.cpp.i
+.PHONY : src/engine/Managers/collisionsManager.i
+
+# target to preprocess a source file
+src/engine/Managers/collisionsManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.i
+.PHONY : src/engine/Managers/collisionsManager.cpp.i
+
+src/engine/Managers/collisionsManager.s: src/engine/Managers/collisionsManager.cpp.s
+.PHONY : src/engine/Managers/collisionsManager.s
+
+# target to generate assembly for a file
+src/engine/Managers/collisionsManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.s
+.PHONY : src/engine/Managers/collisionsManager.cpp.s
+
 src/engine/Tools/fileLoader.o: src/engine/Tools/fileLoader.cpp.o
 .PHONY : src/engine/Tools/fileLoader.o
 
@@ -636,6 +660,9 @@ help:
 	@echo "... src/engine/Inputs/inputManager.o"
 	@echo "... src/engine/Inputs/inputManager.i"
 	@echo "... src/engine/Inputs/inputManager.s"
+	@echo "... src/engine/Managers/collisionsManager.o"
+	@echo "... src/engine/Managers/collisionsManager.i"
+	@echo "... src/engine/Managers/collisionsManager.s"
 	@echo "... src/engine/Tools/fileLoader.o"
 	@echo "... src/engine/Tools/fileLoader.i"
 	@echo "... src/engine/Tools/fileLoader.s"
