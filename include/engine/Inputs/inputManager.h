@@ -18,6 +18,7 @@ public:
     bool IsMouseButtonPressed(int button) const;
     std::pair<int, int> GetMousePosition() const;
 
+
 private:
     InputManager() = default;
     ~InputManager() = default;

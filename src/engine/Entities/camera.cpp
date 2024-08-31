@@ -12,9 +12,13 @@ void Camera::SetPositionX(float x) {
     positionX = x;
 }
 
+void Camera::SetPositionY(float y) {
+    positionY = y;
+}
+
 glm::mat4 Camera::GetViewMatrix() const {
     // Создаём матрицу вида, перемещая камеру по оси X
-    return glm::translate(glm::mat4(1.0f), glm::vec3(-positionX, 0.0f, 0.0f));
+    return glm::translate(glm::mat4(1.0f), glm::vec3(-positionX, -positionY, 0.0f));
 }
 
 glm::mat4 Camera::GetProjectionMatrix() const {

@@ -54,6 +54,12 @@ float cameraSpeed = 1.0f; // Скорость перемещения камер�
     if (InputManager::GetInstance().IsKeyPressed(KEYBOARD_BTN_A)) {
         scene->GetCamera()->SetPositionX(scene->GetCamera()->GetPositionX() - cameraSpeed * deltaTime);
     }
+    if (InputManager::GetInstance().IsKeyPressed(KEYBOARD_BTN_W)) {
+        scene->GetCamera()->SetPositionY(scene->GetCamera()->GetPositionY() + cameraSpeed * deltaTime);
+    }
+    if (InputManager::GetInstance().IsKeyPressed(KEYBOARD_BTN_S)) {
+        scene->GetCamera()->SetPositionY(scene->GetCamera()->GetPositionY() - cameraSpeed * deltaTime);
+    }
     if (InputManager::GetInstance().IsKeyPressed(KEYBOARD_BTN_G)) {
         scene->RemoveGameObject("obj1");
     }

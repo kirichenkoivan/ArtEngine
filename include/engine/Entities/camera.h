@@ -12,9 +12,14 @@ class Camera {
 public:
     Camera(float screenWidth, float screenHeight);
 
+    //Setters
     void SetScreenSize(float width, float height);
     void SetPositionX(float x);
+    void SetPositionY(float y);
+
+    //Getters
     float GetPositionX() const { return positionX; }
+    float GetPositionY() const { return positionY; }
     glm::mat4 GetViewMatrix() const;
     glm::mat4 GetProjectionMatrix() const;
 
@@ -22,6 +27,7 @@ private:
     float screenWidth;
     float screenHeight;
     float positionX;
+    float positionY;
 };
 
 

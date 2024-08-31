@@ -17,6 +17,7 @@ bool InputManager::IsKeyPressed(int keyCode) const {
     return false;
 }
 
+
 bool InputManager::IsMouseButtonPressed(int button) const {
     auto it = mouseState.find(button);
     return it != mouseState.end() && it->second;
