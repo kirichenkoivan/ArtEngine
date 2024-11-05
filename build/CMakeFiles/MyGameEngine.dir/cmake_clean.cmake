@@ -1,4 +1,22 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o"
+  "CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o.d"
+  "CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o"
+  "CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o.d"
+  "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o"
+  "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o.d"
+  "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o"
+  "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o.d"
+  "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o"
+  "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o.d"
+  "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o"
+  "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o.d"
+  "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o"
+  "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o.d"
+  "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o"
+  "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o.d"
+  "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o"
+  "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o.d"
   "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.o"
   "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o"
@@ -29,6 +47,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.o"
   "CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.o.d"
+  "CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o"
+  "CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o"
   "CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o.d"
   "CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o"
@@ -44,6 +64,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang C CXX)
   include(CMakeFiles/MyGameEngine.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

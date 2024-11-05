@@ -12,3 +12,12 @@ std::string readFile(const std::string& filePath) {
     file.close();
     return buffer.str();
 }
+
+std::filesystem::path findFile(const std::string& fileName, const std::filesystem::path& searchDirectory) {
+    for (const auto& entry : std::filesystem::recursive_directory_iterator(searchDirectory)) {
+        if (entry.is_regular_file() && entry.path().filename() == fileName) {
+            return entry.path();
+        }
+    }
+    return std::filesystem::path(); // Вернуть пустой путь, если файл не найден
+}

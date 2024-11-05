@@ -118,5 +118,65 @@
   "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Managers/collisionsManager.cpp\"",
   "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Managers/collisionsManager.cpp",
   "output": "CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Managers/scriptsManager.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Managers/scriptsManager.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/emcc  @CMakeFiles/MyGameEngine.dir/includes_C.rsp -g -o CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/optional/wren_opt_meta.c\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/optional/wren_opt_meta.c",
+  "output": "CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/emcc  @CMakeFiles/MyGameEngine.dir/includes_C.rsp -g -o CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/optional/wren_opt_random.c\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/optional/wren_opt_random.c",
+  "output": "CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/emcc  @CMakeFiles/MyGameEngine.dir/includes_C.rsp -g -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_compiler.c\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_compiler.c",
+  "output": "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/emcc  @CMakeFiles/MyGameEngine.dir/includes_C.rsp -g -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_core.c\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_core.c",
+  "output": "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/emcc  @CMakeFiles/MyGameEngine.dir/includes_C.rsp -g -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_debug.c\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_debug.c",
+  "output": "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/emcc  @CMakeFiles/MyGameEngine.dir/includes_C.rsp -g -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_primitive.c\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_primitive.c",
+  "output": "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/emcc  @CMakeFiles/MyGameEngine.dir/includes_C.rsp -g -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_utils.c\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_utils.c",
+  "output": "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/emcc  @CMakeFiles/MyGameEngine.dir/includes_C.rsp -g -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_value.c\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_value.c",
+  "output": "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/emcc  @CMakeFiles/MyGameEngine.dir/includes_C.rsp -g -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_vm.c\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_vm.c",
+  "output": "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o"
 }
 ]

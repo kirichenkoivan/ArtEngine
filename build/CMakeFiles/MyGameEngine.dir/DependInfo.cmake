@@ -8,6 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/optional/wren_opt_meta.c" "CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o" "gcc" "CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o.d"
+  "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/optional/wren_opt_random.c" "CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o" "gcc" "CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o.d"
+  "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_compiler.c" "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o" "gcc" "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o.d"
+  "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_core.c" "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o" "gcc" "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o.d"
+  "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_debug.c" "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o" "gcc" "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o.d"
+  "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_primitive.c" "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o" "gcc" "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o.d"
+  "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_utils.c" "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o" "gcc" "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o.d"
+  "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_value.c" "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o" "gcc" "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o.d"
+  "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_vm.c" "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o" "gcc" "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/Actors/dynamicActor.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/Colliders/collisionBox.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/camera.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/camera.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Entities/camera.cpp.o.d"
@@ -23,6 +32,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/renderer.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Inputs/inputManager.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Managers/collisionsManager.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.o.d"
+  "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Managers/scriptsManager.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/fileLoader.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/shaderLoader.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o.d"
   "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/tinyxml2.cpp" "CMakeFiles/MyGameEngine.dir/src/engine/Tools/tinyxml2.cpp.o" "gcc" "CMakeFiles/MyGameEngine.dir/src/engine/Tools/tinyxml2.cpp.o.d"

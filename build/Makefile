@@ -129,6 +129,222 @@ MyGameEngine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/build
 .PHONY : MyGameEngine/fast
 
+WrenVM/optional/wren_opt_meta.o: WrenVM/optional/wren_opt_meta.c.o
+.PHONY : WrenVM/optional/wren_opt_meta.o
+
+# target to build an object file
+WrenVM/optional/wren_opt_meta.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o
+.PHONY : WrenVM/optional/wren_opt_meta.c.o
+
+WrenVM/optional/wren_opt_meta.i: WrenVM/optional/wren_opt_meta.c.i
+.PHONY : WrenVM/optional/wren_opt_meta.i
+
+# target to preprocess a source file
+WrenVM/optional/wren_opt_meta.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.i
+.PHONY : WrenVM/optional/wren_opt_meta.c.i
+
+WrenVM/optional/wren_opt_meta.s: WrenVM/optional/wren_opt_meta.c.s
+.PHONY : WrenVM/optional/wren_opt_meta.s
+
+# target to generate assembly for a file
+WrenVM/optional/wren_opt_meta.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.s
+.PHONY : WrenVM/optional/wren_opt_meta.c.s
+
+WrenVM/optional/wren_opt_random.o: WrenVM/optional/wren_opt_random.c.o
+.PHONY : WrenVM/optional/wren_opt_random.o
+
+# target to build an object file
+WrenVM/optional/wren_opt_random.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o
+.PHONY : WrenVM/optional/wren_opt_random.c.o
+
+WrenVM/optional/wren_opt_random.i: WrenVM/optional/wren_opt_random.c.i
+.PHONY : WrenVM/optional/wren_opt_random.i
+
+# target to preprocess a source file
+WrenVM/optional/wren_opt_random.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.i
+.PHONY : WrenVM/optional/wren_opt_random.c.i
+
+WrenVM/optional/wren_opt_random.s: WrenVM/optional/wren_opt_random.c.s
+.PHONY : WrenVM/optional/wren_opt_random.s
+
+# target to generate assembly for a file
+WrenVM/optional/wren_opt_random.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.s
+.PHONY : WrenVM/optional/wren_opt_random.c.s
+
+WrenVM/vm/wren_compiler.o: WrenVM/vm/wren_compiler.c.o
+.PHONY : WrenVM/vm/wren_compiler.o
+
+# target to build an object file
+WrenVM/vm/wren_compiler.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o
+.PHONY : WrenVM/vm/wren_compiler.c.o
+
+WrenVM/vm/wren_compiler.i: WrenVM/vm/wren_compiler.c.i
+.PHONY : WrenVM/vm/wren_compiler.i
+
+# target to preprocess a source file
+WrenVM/vm/wren_compiler.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.i
+.PHONY : WrenVM/vm/wren_compiler.c.i
+
+WrenVM/vm/wren_compiler.s: WrenVM/vm/wren_compiler.c.s
+.PHONY : WrenVM/vm/wren_compiler.s
+
+# target to generate assembly for a file
+WrenVM/vm/wren_compiler.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.s
+.PHONY : WrenVM/vm/wren_compiler.c.s
+
+WrenVM/vm/wren_core.o: WrenVM/vm/wren_core.c.o
+.PHONY : WrenVM/vm/wren_core.o
+
+# target to build an object file
+WrenVM/vm/wren_core.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o
+.PHONY : WrenVM/vm/wren_core.c.o
+
+WrenVM/vm/wren_core.i: WrenVM/vm/wren_core.c.i
+.PHONY : WrenVM/vm/wren_core.i
+
+# target to preprocess a source file
+WrenVM/vm/wren_core.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.i
+.PHONY : WrenVM/vm/wren_core.c.i
+
+WrenVM/vm/wren_core.s: WrenVM/vm/wren_core.c.s
+.PHONY : WrenVM/vm/wren_core.s
+
+# target to generate assembly for a file
+WrenVM/vm/wren_core.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.s
+.PHONY : WrenVM/vm/wren_core.c.s
+
+WrenVM/vm/wren_debug.o: WrenVM/vm/wren_debug.c.o
+.PHONY : WrenVM/vm/wren_debug.o
+
+# target to build an object file
+WrenVM/vm/wren_debug.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o
+.PHONY : WrenVM/vm/wren_debug.c.o
+
+WrenVM/vm/wren_debug.i: WrenVM/vm/wren_debug.c.i
+.PHONY : WrenVM/vm/wren_debug.i
+
+# target to preprocess a source file
+WrenVM/vm/wren_debug.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.i
+.PHONY : WrenVM/vm/wren_debug.c.i
+
+WrenVM/vm/wren_debug.s: WrenVM/vm/wren_debug.c.s
+.PHONY : WrenVM/vm/wren_debug.s
+
+# target to generate assembly for a file
+WrenVM/vm/wren_debug.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.s
+.PHONY : WrenVM/vm/wren_debug.c.s
+
+WrenVM/vm/wren_primitive.o: WrenVM/vm/wren_primitive.c.o
+.PHONY : WrenVM/vm/wren_primitive.o
+
+# target to build an object file
+WrenVM/vm/wren_primitive.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o
+.PHONY : WrenVM/vm/wren_primitive.c.o
+
+WrenVM/vm/wren_primitive.i: WrenVM/vm/wren_primitive.c.i
+.PHONY : WrenVM/vm/wren_primitive.i
+
+# target to preprocess a source file
+WrenVM/vm/wren_primitive.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.i
+.PHONY : WrenVM/vm/wren_primitive.c.i
+
+WrenVM/vm/wren_primitive.s: WrenVM/vm/wren_primitive.c.s
+.PHONY : WrenVM/vm/wren_primitive.s
+
+# target to generate assembly for a file
+WrenVM/vm/wren_primitive.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.s
+.PHONY : WrenVM/vm/wren_primitive.c.s
+
+WrenVM/vm/wren_utils.o: WrenVM/vm/wren_utils.c.o
+.PHONY : WrenVM/vm/wren_utils.o
+
+# target to build an object file
+WrenVM/vm/wren_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o
+.PHONY : WrenVM/vm/wren_utils.c.o
+
+WrenVM/vm/wren_utils.i: WrenVM/vm/wren_utils.c.i
+.PHONY : WrenVM/vm/wren_utils.i
+
+# target to preprocess a source file
+WrenVM/vm/wren_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.i
+.PHONY : WrenVM/vm/wren_utils.c.i
+
+WrenVM/vm/wren_utils.s: WrenVM/vm/wren_utils.c.s
+.PHONY : WrenVM/vm/wren_utils.s
+
+# target to generate assembly for a file
+WrenVM/vm/wren_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.s
+.PHONY : WrenVM/vm/wren_utils.c.s
+
+WrenVM/vm/wren_value.o: WrenVM/vm/wren_value.c.o
+.PHONY : WrenVM/vm/wren_value.o
+
+# target to build an object file
+WrenVM/vm/wren_value.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o
+.PHONY : WrenVM/vm/wren_value.c.o
+
+WrenVM/vm/wren_value.i: WrenVM/vm/wren_value.c.i
+.PHONY : WrenVM/vm/wren_value.i
+
+# target to preprocess a source file
+WrenVM/vm/wren_value.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.i
+.PHONY : WrenVM/vm/wren_value.c.i
+
+WrenVM/vm/wren_value.s: WrenVM/vm/wren_value.c.s
+.PHONY : WrenVM/vm/wren_value.s
+
+# target to generate assembly for a file
+WrenVM/vm/wren_value.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.s
+.PHONY : WrenVM/vm/wren_value.c.s
+
+WrenVM/vm/wren_vm.o: WrenVM/vm/wren_vm.c.o
+.PHONY : WrenVM/vm/wren_vm.o
+
+# target to build an object file
+WrenVM/vm/wren_vm.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o
+.PHONY : WrenVM/vm/wren_vm.c.o
+
+WrenVM/vm/wren_vm.i: WrenVM/vm/wren_vm.c.i
+.PHONY : WrenVM/vm/wren_vm.i
+
+# target to preprocess a source file
+WrenVM/vm/wren_vm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.i
+.PHONY : WrenVM/vm/wren_vm.c.i
+
+WrenVM/vm/wren_vm.s: WrenVM/vm/wren_vm.c.s
+.PHONY : WrenVM/vm/wren_vm.s
+
+# target to generate assembly for a file
+WrenVM/vm/wren_vm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.s
+.PHONY : WrenVM/vm/wren_vm.c.s
+
 src/engine/Entities/Actors/dynamicActor.o: src/engine/Entities/Actors/dynamicActor.cpp.o
 .PHONY : src/engine/Entities/Actors/dynamicActor.o
 
@@ -489,6 +705,30 @@ src/engine/Managers/collisionsManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.s
 .PHONY : src/engine/Managers/collisionsManager.cpp.s
 
+src/engine/Managers/scriptsManager.o: src/engine/Managers/scriptsManager.cpp.o
+.PHONY : src/engine/Managers/scriptsManager.o
+
+# target to build an object file
+src/engine/Managers/scriptsManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o
+.PHONY : src/engine/Managers/scriptsManager.cpp.o
+
+src/engine/Managers/scriptsManager.i: src/engine/Managers/scriptsManager.cpp.i
+.PHONY : src/engine/Managers/scriptsManager.i
+
+# target to preprocess a source file
+src/engine/Managers/scriptsManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.i
+.PHONY : src/engine/Managers/scriptsManager.cpp.i
+
+src/engine/Managers/scriptsManager.s: src/engine/Managers/scriptsManager.cpp.s
+.PHONY : src/engine/Managers/scriptsManager.s
+
+# target to generate assembly for a file
+src/engine/Managers/scriptsManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.s
+.PHONY : src/engine/Managers/scriptsManager.cpp.s
+
 src/engine/Tools/fileLoader.o: src/engine/Tools/fileLoader.cpp.o
 .PHONY : src/engine/Tools/fileLoader.o
 
@@ -618,6 +858,33 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyGameEngine"
+	@echo "... WrenVM/optional/wren_opt_meta.o"
+	@echo "... WrenVM/optional/wren_opt_meta.i"
+	@echo "... WrenVM/optional/wren_opt_meta.s"
+	@echo "... WrenVM/optional/wren_opt_random.o"
+	@echo "... WrenVM/optional/wren_opt_random.i"
+	@echo "... WrenVM/optional/wren_opt_random.s"
+	@echo "... WrenVM/vm/wren_compiler.o"
+	@echo "... WrenVM/vm/wren_compiler.i"
+	@echo "... WrenVM/vm/wren_compiler.s"
+	@echo "... WrenVM/vm/wren_core.o"
+	@echo "... WrenVM/vm/wren_core.i"
+	@echo "... WrenVM/vm/wren_core.s"
+	@echo "... WrenVM/vm/wren_debug.o"
+	@echo "... WrenVM/vm/wren_debug.i"
+	@echo "... WrenVM/vm/wren_debug.s"
+	@echo "... WrenVM/vm/wren_primitive.o"
+	@echo "... WrenVM/vm/wren_primitive.i"
+	@echo "... WrenVM/vm/wren_primitive.s"
+	@echo "... WrenVM/vm/wren_utils.o"
+	@echo "... WrenVM/vm/wren_utils.i"
+	@echo "... WrenVM/vm/wren_utils.s"
+	@echo "... WrenVM/vm/wren_value.o"
+	@echo "... WrenVM/vm/wren_value.i"
+	@echo "... WrenVM/vm/wren_value.s"
+	@echo "... WrenVM/vm/wren_vm.o"
+	@echo "... WrenVM/vm/wren_vm.i"
+	@echo "... WrenVM/vm/wren_vm.s"
 	@echo "... src/engine/Entities/Actors/dynamicActor.o"
 	@echo "... src/engine/Entities/Actors/dynamicActor.i"
 	@echo "... src/engine/Entities/Actors/dynamicActor.s"
@@ -663,6 +930,9 @@ help:
 	@echo "... src/engine/Managers/collisionsManager.o"
 	@echo "... src/engine/Managers/collisionsManager.i"
 	@echo "... src/engine/Managers/collisionsManager.s"
+	@echo "... src/engine/Managers/scriptsManager.o"
+	@echo "... src/engine/Managers/scriptsManager.i"
+	@echo "... src/engine/Managers/scriptsManager.s"
 	@echo "... src/engine/Tools/fileLoader.o"
 	@echo "... src/engine/Tools/fileLoader.i"
 	@echo "... src/engine/Tools/fileLoader.s"

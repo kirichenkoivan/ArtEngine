@@ -369,6 +369,156 @@ CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.s"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Managers/collisionsManager.cpp" -o CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.s
 
+CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o: CMakeFiles/MyGameEngine.dir/flags.make
+CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o: CMakeFiles/MyGameEngine.dir/includes_CXX.rsp
+CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/Managers/scriptsManager.cpp
+CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o -MF CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o.d -o CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Managers/scriptsManager.cpp"
+
+CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.i"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Managers/scriptsManager.cpp" > CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.i
+
+CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.s"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Managers/scriptsManager.cpp" -o CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.s
+
+CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o: CMakeFiles/MyGameEngine.dir/flags.make
+CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o: CMakeFiles/MyGameEngine.dir/includes_C.rsp
+CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/optional/wren_opt_meta.c
+CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o -MF CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o.d -o CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/optional/wren_opt_meta.c"
+
+CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.i"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/optional/wren_opt_meta.c" > CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.i
+
+CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.s"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/optional/wren_opt_meta.c" -o CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.s
+
+CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o: CMakeFiles/MyGameEngine.dir/flags.make
+CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o: CMakeFiles/MyGameEngine.dir/includes_C.rsp
+CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/optional/wren_opt_random.c
+CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o -MF CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o.d -o CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/optional/wren_opt_random.c"
+
+CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.i"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/optional/wren_opt_random.c" > CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.i
+
+CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.s"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/optional/wren_opt_random.c" -o CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.s
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o: CMakeFiles/MyGameEngine.dir/flags.make
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o: CMakeFiles/MyGameEngine.dir/includes_C.rsp
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_compiler.c
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o -MF CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o.d -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_compiler.c"
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.i"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_compiler.c" > CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.i
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.s"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_compiler.c" -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.s
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o: CMakeFiles/MyGameEngine.dir/flags.make
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o: CMakeFiles/MyGameEngine.dir/includes_C.rsp
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_core.c
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o -MF CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o.d -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_core.c"
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.i"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_core.c" > CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.i
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.s"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_core.c" -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.s
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o: CMakeFiles/MyGameEngine.dir/flags.make
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o: CMakeFiles/MyGameEngine.dir/includes_C.rsp
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_debug.c
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o -MF CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o.d -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_debug.c"
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.i"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_debug.c" > CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.i
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.s"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_debug.c" -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.s
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o: CMakeFiles/MyGameEngine.dir/flags.make
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o: CMakeFiles/MyGameEngine.dir/includes_C.rsp
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_primitive.c
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o -MF CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o.d -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_primitive.c"
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.i"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_primitive.c" > CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.i
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.s"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_primitive.c" -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.s
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o: CMakeFiles/MyGameEngine.dir/flags.make
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o: CMakeFiles/MyGameEngine.dir/includes_C.rsp
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_utils.c
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o -MF CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o.d -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_utils.c"
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.i"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_utils.c" > CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.i
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.s"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_utils.c" -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.s
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o: CMakeFiles/MyGameEngine.dir/flags.make
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o: CMakeFiles/MyGameEngine.dir/includes_C.rsp
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_value.c
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o -MF CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o.d -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_value.c"
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.i"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_value.c" > CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.i
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.s"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_value.c" -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.s
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o: CMakeFiles/MyGameEngine.dir/flags.make
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o: CMakeFiles/MyGameEngine.dir/includes_C.rsp
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_vm.c
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o -MF CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o.d -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_vm.c"
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.i"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_vm.c" > CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.i
+
+CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.s"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_vm.c" -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.s
+
 # Object files for target MyGameEngine
 MyGameEngine_OBJECTS = \
 "CMakeFiles/MyGameEngine.dir/src/main.cpp.o" \
@@ -390,7 +540,17 @@ MyGameEngine_OBJECTS = \
 "CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.o" \
 "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o" \
 "CMakeFiles/MyGameEngine.dir/src/engine/Entities/camera.cpp.o" \
-"CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.o"
+"CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.o" \
+"CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o" \
+"CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o" \
+"CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o" \
+"CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o" \
+"CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o" \
+"CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o" \
+"CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o" \
+"CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o" \
+"CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o" \
+"CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o"
 
 # External object files for target MyGameEngine
 MyGameEngine_EXTERNAL_OBJECTS =
@@ -415,10 +575,20 @@ build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Tools/f
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Entities/camera.cpp.o
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.o
+build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o
+build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o
+build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o
+build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o
+build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o
+build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o
+build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o
+build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o
+build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o
+build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/build.make
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/objects1.rsp
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable build_output/my_game_engine.html"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable build_output/my_game_engine.html"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyGameEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

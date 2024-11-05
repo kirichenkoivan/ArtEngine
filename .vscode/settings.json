@@ -80,6 +80,7 @@
         "codecvt": "cpp",
         "future": "cpp",
         "map": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "*.inc": "c"
     }
 }

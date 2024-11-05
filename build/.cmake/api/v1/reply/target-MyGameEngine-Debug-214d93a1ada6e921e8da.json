@@ -32,19 +32,19 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 15,
+				"line" : 16,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 21,
+				"line" : 20,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 46,
+				"line" : 59,
 				"parent" : 0
 			}
 		]
@@ -71,6 +71,18 @@
 				{
 					"backtrace" : 4,
 					"path" : "/Users/ivankiricenko/Desktop/Main project/ArtEngine/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/optional"
 				}
 			],
 			"language" : "CXX",
@@ -103,7 +115,56 @@
 				16,
 				17,
 				18,
-				19
+				19,
+				20
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/usr/local/Cellar/glm/1.0.1/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/ivankiricenko/Desktop/Main project/ArtEngine/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/optional"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29
 			]
 		}
 	],
@@ -162,7 +223,17 @@
 				16,
 				17,
 				18,
-				19
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29
 			]
 		}
 	],
@@ -286,6 +357,66 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/engine/Managers/collisionsManager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/Managers/scriptsManager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "WrenVM/optional/wren_opt_meta.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "WrenVM/optional/wren_opt_random.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "WrenVM/vm/wren_compiler.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "WrenVM/vm/wren_core.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "WrenVM/vm/wren_debug.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "WrenVM/vm/wren_primitive.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "WrenVM/vm/wren_utils.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "WrenVM/vm/wren_value.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "WrenVM/vm/wren_vm.c",
 			"sourceGroupIndex" : 0
 		}
 	],
