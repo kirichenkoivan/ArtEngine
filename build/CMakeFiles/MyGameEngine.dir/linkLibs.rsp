@@ -1,1 +1,1 @@
- -lwren 
+  -L/usr/local/Cellar/glfw/3.3.8/lib  -lglfw libglad.a 

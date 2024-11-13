@@ -15,33 +15,46 @@ include_directories(${EMSCRIPTEN_ROOT_PATH}/cache/sysroot/include)
 # Путь к заголовочным файлам tinyxml2
 include_directories(${CMAKE_SOURCE_DIR}/src/engine/Tools)
 
+set(IMGUI_DIR ${CMAKE_SOURCE_DIR}/Imgui)
+include_directories(${IMGUI_DIR})
+
+set(IMGUI_SOURCES
+    ${IMGUI_DIR}/imgui.cpp
+    ${IMGUI_DIR}/imgui_draw.cpp
+    ${IMGUI_DIR}/imgui_tables.cpp
+    ${IMGUI_DIR}/imgui_widgets.cpp
+    ${IMGUI_DIR}/backends/imgui_impl_glfw.cpp
+    ${IMGUI_DIR}/backends/imgui_impl_opengl3.cpp
+)
 # Путь к glm
 set(glm_DIR /usr/local/Cellar/glm/1.0.1/lib/cmake/glm)
 include_directories(/usr/local/Cellar/glm/1.0.1/include)
 
+# Путь к GLFW
+include_directories(/usr/local/Cellar/glfw/3.3.8/include)  # Заголовочные файлы GLFW
+link_directories(/usr/local/Cellar/glfw/3.3.8/lib)  # Библиотеки GLFW
+
 # Источники проекта
 add_executable(MyGameEngine
     src/main.cpp
-    src/engine/Graphics/renderer.cpp
-    src/engine/Entities/gameObject.cpp
-    src/engine/Entities/scene.cpp
     src/engine/Inputs/inputManager.cpp
-    src/engine/Entities/Actors/dynamicActor.cpp
-    src/engine/Entities/material.cpp
     src/engine/Tools/shaderLoader.cpp
     src/engine/Tools/tinyxml2.cpp
-    src/engine/Factories/materialFactory.cpp
-    src/engine/Factories/gameObjectFactory.cpp
-    src/engine/Factories/dynamicActorFactory.cpp
-    src/engine/Factories/cameraFactory.cpp
-    src/engine/Factories/collisionBoxFactory.cpp
-    src/engine/Factories/sceneFactory.cpp
     src/engine/Tools/xmlReader.cpp
     src/engine/Tools/fileLoader.cpp
-    src/engine/Entities/Colliders/collisionBox.cpp
-    src/engine/Entities/camera.cpp
-    src/engine/Managers/collisionsManager.cpp
     src/engine/Managers/scriptsManager.cpp
+    src/engine/Core/LayerStack.cpp
+    src/engine/Tools/logger.cpp
+    src/engine/Core/Application.cpp
+    src/engine/Core/ImGui/ImGuiLayer.cpp
+    src/engine/Layers/RenderLayer.cpp
+    src/engine/Graphics/Shader.cpp
+    src/engine/Graphics/Cameras/OrthographicCamera.cpp
+    src/engine/Graphics/Cameras/OrthographicCameraController.cpp
+    src/engine/Graphics/Meshes/Mesh.cpp
+    src/engine/Graphics/ArtGraphics.cpp
+    src/engine/Graphics/Texture.cpp
+    src/engine/Core/ArtCore.cpp
 
     # Wren VM sources
     WrenVM/optional/wren_opt_meta.c
@@ -53,6 +66,12 @@ add_executable(MyGameEngine
     WrenVM/vm/wren_utils.c
     WrenVM/vm/wren_value.c
     WrenVM/vm/wren_vm.c
+
+    #Imgui sources
+    ${IMGUI_SOURCES}
+
+    #OpenGL sources
+    
 )
 
 # Указываем директорию заголовочных файлов
@@ -63,10 +82,17 @@ target_include_directories(MyGameEngine
     PRIVATE WrenVM/optional
 )
 
-# Установите параметры компиляции для WebAssembly, если используется Emscripten
+# Линкуем с GLFW
+target_link_libraries(MyGameEngine glfw)
+
+add_library(glad STATIC ${CMAKE_CURRENT_SOURCE_DIR}/src/engine/Core/Glad/glad.c)
+target_link_libraries(MyGameEngine glad)
+
+
+# Устанавливаем параметры компиляции для WebAssembly, если используется Emscripten
 if (CMAKE_TOOLCHAIN_FILE MATCHES "Emscripten.cmake")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -s")
-    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -s USE_WEBGL2=1 -s WASM=1 -s ALLOW_MEMORY_GROWTH=1 -O3 -s --preload-file ../src/shaders@/shaders --preload-file ../src/textures@/textures --preload-file ../FileSystem@/FileSystem")
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -s USE_GLFW=3 -s USE_WEBGL2=1 -s WASM=1 -s ALLOW_MEMORY_GROWTH=1 -O3 --preload-file ../FileSystem@/FileSystem --shell-file=\"${CMAKE_SOURCE_DIR}/templates/template.html\"")
 endif()
 
 # Устанавливаем имя и суффикс выходного файла

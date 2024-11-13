@@ -1,8 +1,0 @@
-<GameEntity>
-    <info 
-        name = "mat1"
-        vertexShader = "/shaders/vertex/vertex_shader.glsl"
-        fragmentShader = "/shaders/fragment/fragment_shader.glsl"
-        texture = "/textures/amog.png"
-    />
-</GameEntity>

@@ -129,6 +129,163 @@ MyGameEngine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/build
 .PHONY : MyGameEngine/fast
 
+#=============================================================================
+# Target rules for targets named glad
+
+# Build rule for target.
+glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
+.PHONY : glad
+
+# fast build rule for target.
+glad/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
+.PHONY : glad/fast
+
+Imgui/backends/imgui_impl_glfw.o: Imgui/backends/imgui_impl_glfw.cpp.o
+.PHONY : Imgui/backends/imgui_impl_glfw.o
+
+# target to build an object file
+Imgui/backends/imgui_impl_glfw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_glfw.cpp.o
+.PHONY : Imgui/backends/imgui_impl_glfw.cpp.o
+
+Imgui/backends/imgui_impl_glfw.i: Imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : Imgui/backends/imgui_impl_glfw.i
+
+# target to preprocess a source file
+Imgui/backends/imgui_impl_glfw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : Imgui/backends/imgui_impl_glfw.cpp.i
+
+Imgui/backends/imgui_impl_glfw.s: Imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : Imgui/backends/imgui_impl_glfw.s
+
+# target to generate assembly for a file
+Imgui/backends/imgui_impl_glfw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : Imgui/backends/imgui_impl_glfw.cpp.s
+
+Imgui/backends/imgui_impl_opengl3.o: Imgui/backends/imgui_impl_opengl3.cpp.o
+.PHONY : Imgui/backends/imgui_impl_opengl3.o
+
+# target to build an object file
+Imgui/backends/imgui_impl_opengl3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_opengl3.cpp.o
+.PHONY : Imgui/backends/imgui_impl_opengl3.cpp.o
+
+Imgui/backends/imgui_impl_opengl3.i: Imgui/backends/imgui_impl_opengl3.cpp.i
+.PHONY : Imgui/backends/imgui_impl_opengl3.i
+
+# target to preprocess a source file
+Imgui/backends/imgui_impl_opengl3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_opengl3.cpp.i
+.PHONY : Imgui/backends/imgui_impl_opengl3.cpp.i
+
+Imgui/backends/imgui_impl_opengl3.s: Imgui/backends/imgui_impl_opengl3.cpp.s
+.PHONY : Imgui/backends/imgui_impl_opengl3.s
+
+# target to generate assembly for a file
+Imgui/backends/imgui_impl_opengl3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_opengl3.cpp.s
+.PHONY : Imgui/backends/imgui_impl_opengl3.cpp.s
+
+Imgui/imgui.o: Imgui/imgui.cpp.o
+.PHONY : Imgui/imgui.o
+
+# target to build an object file
+Imgui/imgui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/Imgui/imgui.cpp.o
+.PHONY : Imgui/imgui.cpp.o
+
+Imgui/imgui.i: Imgui/imgui.cpp.i
+.PHONY : Imgui/imgui.i
+
+# target to preprocess a source file
+Imgui/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/Imgui/imgui.cpp.i
+.PHONY : Imgui/imgui.cpp.i
+
+Imgui/imgui.s: Imgui/imgui.cpp.s
+.PHONY : Imgui/imgui.s
+
+# target to generate assembly for a file
+Imgui/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/Imgui/imgui.cpp.s
+.PHONY : Imgui/imgui.cpp.s
+
+Imgui/imgui_draw.o: Imgui/imgui_draw.cpp.o
+.PHONY : Imgui/imgui_draw.o
+
+# target to build an object file
+Imgui/imgui_draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/Imgui/imgui_draw.cpp.o
+.PHONY : Imgui/imgui_draw.cpp.o
+
+Imgui/imgui_draw.i: Imgui/imgui_draw.cpp.i
+.PHONY : Imgui/imgui_draw.i
+
+# target to preprocess a source file
+Imgui/imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/Imgui/imgui_draw.cpp.i
+.PHONY : Imgui/imgui_draw.cpp.i
+
+Imgui/imgui_draw.s: Imgui/imgui_draw.cpp.s
+.PHONY : Imgui/imgui_draw.s
+
+# target to generate assembly for a file
+Imgui/imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/Imgui/imgui_draw.cpp.s
+.PHONY : Imgui/imgui_draw.cpp.s
+
+Imgui/imgui_tables.o: Imgui/imgui_tables.cpp.o
+.PHONY : Imgui/imgui_tables.o
+
+# target to build an object file
+Imgui/imgui_tables.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/Imgui/imgui_tables.cpp.o
+.PHONY : Imgui/imgui_tables.cpp.o
+
+Imgui/imgui_tables.i: Imgui/imgui_tables.cpp.i
+.PHONY : Imgui/imgui_tables.i
+
+# target to preprocess a source file
+Imgui/imgui_tables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/Imgui/imgui_tables.cpp.i
+.PHONY : Imgui/imgui_tables.cpp.i
+
+Imgui/imgui_tables.s: Imgui/imgui_tables.cpp.s
+.PHONY : Imgui/imgui_tables.s
+
+# target to generate assembly for a file
+Imgui/imgui_tables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/Imgui/imgui_tables.cpp.s
+.PHONY : Imgui/imgui_tables.cpp.s
+
+Imgui/imgui_widgets.o: Imgui/imgui_widgets.cpp.o
+.PHONY : Imgui/imgui_widgets.o
+
+# target to build an object file
+Imgui/imgui_widgets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/Imgui/imgui_widgets.cpp.o
+.PHONY : Imgui/imgui_widgets.cpp.o
+
+Imgui/imgui_widgets.i: Imgui/imgui_widgets.cpp.i
+.PHONY : Imgui/imgui_widgets.i
+
+# target to preprocess a source file
+Imgui/imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/Imgui/imgui_widgets.cpp.i
+.PHONY : Imgui/imgui_widgets.cpp.i
+
+Imgui/imgui_widgets.s: Imgui/imgui_widgets.cpp.s
+.PHONY : Imgui/imgui_widgets.s
+
+# target to generate assembly for a file
+Imgui/imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/Imgui/imgui_widgets.cpp.s
+.PHONY : Imgui/imgui_widgets.cpp.s
+
 WrenVM/optional/wren_opt_meta.o: WrenVM/optional/wren_opt_meta.c.o
 .PHONY : WrenVM/optional/wren_opt_meta.o
 
@@ -345,317 +502,269 @@ WrenVM/vm/wren_vm.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.s
 .PHONY : WrenVM/vm/wren_vm.c.s
 
-src/engine/Entities/Actors/dynamicActor.o: src/engine/Entities/Actors/dynamicActor.cpp.o
-.PHONY : src/engine/Entities/Actors/dynamicActor.o
+src/engine/Core/Application.o: src/engine/Core/Application.cpp.o
+.PHONY : src/engine/Core/Application.o
 
 # target to build an object file
-src/engine/Entities/Actors/dynamicActor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.o
-.PHONY : src/engine/Entities/Actors/dynamicActor.cpp.o
+src/engine/Core/Application.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Core/Application.cpp.o
+.PHONY : src/engine/Core/Application.cpp.o
 
-src/engine/Entities/Actors/dynamicActor.i: src/engine/Entities/Actors/dynamicActor.cpp.i
-.PHONY : src/engine/Entities/Actors/dynamicActor.i
+src/engine/Core/Application.i: src/engine/Core/Application.cpp.i
+.PHONY : src/engine/Core/Application.i
 
 # target to preprocess a source file
-src/engine/Entities/Actors/dynamicActor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.i
-.PHONY : src/engine/Entities/Actors/dynamicActor.cpp.i
+src/engine/Core/Application.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Core/Application.cpp.i
+.PHONY : src/engine/Core/Application.cpp.i
 
-src/engine/Entities/Actors/dynamicActor.s: src/engine/Entities/Actors/dynamicActor.cpp.s
-.PHONY : src/engine/Entities/Actors/dynamicActor.s
+src/engine/Core/Application.s: src/engine/Core/Application.cpp.s
+.PHONY : src/engine/Core/Application.s
 
 # target to generate assembly for a file
-src/engine/Entities/Actors/dynamicActor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.s
-.PHONY : src/engine/Entities/Actors/dynamicActor.cpp.s
+src/engine/Core/Application.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Core/Application.cpp.s
+.PHONY : src/engine/Core/Application.cpp.s
 
-src/engine/Entities/Colliders/collisionBox.o: src/engine/Entities/Colliders/collisionBox.cpp.o
-.PHONY : src/engine/Entities/Colliders/collisionBox.o
+src/engine/Core/ArtCore.o: src/engine/Core/ArtCore.cpp.o
+.PHONY : src/engine/Core/ArtCore.o
 
 # target to build an object file
-src/engine/Entities/Colliders/collisionBox.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o
-.PHONY : src/engine/Entities/Colliders/collisionBox.cpp.o
+src/engine/Core/ArtCore.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Core/ArtCore.cpp.o
+.PHONY : src/engine/Core/ArtCore.cpp.o
 
-src/engine/Entities/Colliders/collisionBox.i: src/engine/Entities/Colliders/collisionBox.cpp.i
-.PHONY : src/engine/Entities/Colliders/collisionBox.i
+src/engine/Core/ArtCore.i: src/engine/Core/ArtCore.cpp.i
+.PHONY : src/engine/Core/ArtCore.i
 
 # target to preprocess a source file
-src/engine/Entities/Colliders/collisionBox.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.i
-.PHONY : src/engine/Entities/Colliders/collisionBox.cpp.i
+src/engine/Core/ArtCore.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Core/ArtCore.cpp.i
+.PHONY : src/engine/Core/ArtCore.cpp.i
 
-src/engine/Entities/Colliders/collisionBox.s: src/engine/Entities/Colliders/collisionBox.cpp.s
-.PHONY : src/engine/Entities/Colliders/collisionBox.s
+src/engine/Core/ArtCore.s: src/engine/Core/ArtCore.cpp.s
+.PHONY : src/engine/Core/ArtCore.s
 
 # target to generate assembly for a file
-src/engine/Entities/Colliders/collisionBox.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.s
-.PHONY : src/engine/Entities/Colliders/collisionBox.cpp.s
+src/engine/Core/ArtCore.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Core/ArtCore.cpp.s
+.PHONY : src/engine/Core/ArtCore.cpp.s
 
-src/engine/Entities/camera.o: src/engine/Entities/camera.cpp.o
-.PHONY : src/engine/Entities/camera.o
+src/engine/Core/Glad/glad.o: src/engine/Core/Glad/glad.c.o
+.PHONY : src/engine/Core/Glad/glad.o
 
 # target to build an object file
-src/engine/Entities/camera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/camera.cpp.o
-.PHONY : src/engine/Entities/camera.cpp.o
+src/engine/Core/Glad/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/src/engine/Core/Glad/glad.c.o
+.PHONY : src/engine/Core/Glad/glad.c.o
 
-src/engine/Entities/camera.i: src/engine/Entities/camera.cpp.i
-.PHONY : src/engine/Entities/camera.i
+src/engine/Core/Glad/glad.i: src/engine/Core/Glad/glad.c.i
+.PHONY : src/engine/Core/Glad/glad.i
 
 # target to preprocess a source file
-src/engine/Entities/camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/camera.cpp.i
-.PHONY : src/engine/Entities/camera.cpp.i
+src/engine/Core/Glad/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/src/engine/Core/Glad/glad.c.i
+.PHONY : src/engine/Core/Glad/glad.c.i
 
-src/engine/Entities/camera.s: src/engine/Entities/camera.cpp.s
-.PHONY : src/engine/Entities/camera.s
+src/engine/Core/Glad/glad.s: src/engine/Core/Glad/glad.c.s
+.PHONY : src/engine/Core/Glad/glad.s
 
 # target to generate assembly for a file
-src/engine/Entities/camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/camera.cpp.s
-.PHONY : src/engine/Entities/camera.cpp.s
+src/engine/Core/Glad/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/src/engine/Core/Glad/glad.c.s
+.PHONY : src/engine/Core/Glad/glad.c.s
 
-src/engine/Entities/gameObject.o: src/engine/Entities/gameObject.cpp.o
-.PHONY : src/engine/Entities/gameObject.o
+src/engine/Core/ImGui/ImGuiLayer.o: src/engine/Core/ImGui/ImGuiLayer.cpp.o
+.PHONY : src/engine/Core/ImGui/ImGuiLayer.o
 
 # target to build an object file
-src/engine/Entities/gameObject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.o
-.PHONY : src/engine/Entities/gameObject.cpp.o
+src/engine/Core/ImGui/ImGuiLayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Core/ImGui/ImGuiLayer.cpp.o
+.PHONY : src/engine/Core/ImGui/ImGuiLayer.cpp.o
 
-src/engine/Entities/gameObject.i: src/engine/Entities/gameObject.cpp.i
-.PHONY : src/engine/Entities/gameObject.i
+src/engine/Core/ImGui/ImGuiLayer.i: src/engine/Core/ImGui/ImGuiLayer.cpp.i
+.PHONY : src/engine/Core/ImGui/ImGuiLayer.i
 
 # target to preprocess a source file
-src/engine/Entities/gameObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.i
-.PHONY : src/engine/Entities/gameObject.cpp.i
+src/engine/Core/ImGui/ImGuiLayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Core/ImGui/ImGuiLayer.cpp.i
+.PHONY : src/engine/Core/ImGui/ImGuiLayer.cpp.i
 
-src/engine/Entities/gameObject.s: src/engine/Entities/gameObject.cpp.s
-.PHONY : src/engine/Entities/gameObject.s
+src/engine/Core/ImGui/ImGuiLayer.s: src/engine/Core/ImGui/ImGuiLayer.cpp.s
+.PHONY : src/engine/Core/ImGui/ImGuiLayer.s
 
 # target to generate assembly for a file
-src/engine/Entities/gameObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.s
-.PHONY : src/engine/Entities/gameObject.cpp.s
+src/engine/Core/ImGui/ImGuiLayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Core/ImGui/ImGuiLayer.cpp.s
+.PHONY : src/engine/Core/ImGui/ImGuiLayer.cpp.s
 
-src/engine/Entities/material.o: src/engine/Entities/material.cpp.o
-.PHONY : src/engine/Entities/material.o
+src/engine/Core/LayerStack.o: src/engine/Core/LayerStack.cpp.o
+.PHONY : src/engine/Core/LayerStack.o
 
 # target to build an object file
-src/engine/Entities/material.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o
-.PHONY : src/engine/Entities/material.cpp.o
+src/engine/Core/LayerStack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Core/LayerStack.cpp.o
+.PHONY : src/engine/Core/LayerStack.cpp.o
 
-src/engine/Entities/material.i: src/engine/Entities/material.cpp.i
-.PHONY : src/engine/Entities/material.i
+src/engine/Core/LayerStack.i: src/engine/Core/LayerStack.cpp.i
+.PHONY : src/engine/Core/LayerStack.i
 
 # target to preprocess a source file
-src/engine/Entities/material.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.i
-.PHONY : src/engine/Entities/material.cpp.i
+src/engine/Core/LayerStack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Core/LayerStack.cpp.i
+.PHONY : src/engine/Core/LayerStack.cpp.i
 
-src/engine/Entities/material.s: src/engine/Entities/material.cpp.s
-.PHONY : src/engine/Entities/material.s
+src/engine/Core/LayerStack.s: src/engine/Core/LayerStack.cpp.s
+.PHONY : src/engine/Core/LayerStack.s
 
 # target to generate assembly for a file
-src/engine/Entities/material.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.s
-.PHONY : src/engine/Entities/material.cpp.s
+src/engine/Core/LayerStack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Core/LayerStack.cpp.s
+.PHONY : src/engine/Core/LayerStack.cpp.s
 
-src/engine/Entities/scene.o: src/engine/Entities/scene.cpp.o
-.PHONY : src/engine/Entities/scene.o
+src/engine/Graphics/ArtGraphics.o: src/engine/Graphics/ArtGraphics.cpp.o
+.PHONY : src/engine/Graphics/ArtGraphics.o
 
 # target to build an object file
-src/engine/Entities/scene.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o
-.PHONY : src/engine/Entities/scene.cpp.o
+src/engine/Graphics/ArtGraphics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/ArtGraphics.cpp.o
+.PHONY : src/engine/Graphics/ArtGraphics.cpp.o
 
-src/engine/Entities/scene.i: src/engine/Entities/scene.cpp.i
-.PHONY : src/engine/Entities/scene.i
+src/engine/Graphics/ArtGraphics.i: src/engine/Graphics/ArtGraphics.cpp.i
+.PHONY : src/engine/Graphics/ArtGraphics.i
 
 # target to preprocess a source file
-src/engine/Entities/scene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.i
-.PHONY : src/engine/Entities/scene.cpp.i
+src/engine/Graphics/ArtGraphics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/ArtGraphics.cpp.i
+.PHONY : src/engine/Graphics/ArtGraphics.cpp.i
 
-src/engine/Entities/scene.s: src/engine/Entities/scene.cpp.s
-.PHONY : src/engine/Entities/scene.s
+src/engine/Graphics/ArtGraphics.s: src/engine/Graphics/ArtGraphics.cpp.s
+.PHONY : src/engine/Graphics/ArtGraphics.s
 
 # target to generate assembly for a file
-src/engine/Entities/scene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.s
-.PHONY : src/engine/Entities/scene.cpp.s
+src/engine/Graphics/ArtGraphics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/ArtGraphics.cpp.s
+.PHONY : src/engine/Graphics/ArtGraphics.cpp.s
 
-src/engine/Factories/cameraFactory.o: src/engine/Factories/cameraFactory.cpp.o
-.PHONY : src/engine/Factories/cameraFactory.o
+src/engine/Graphics/Cameras/OrthographicCamera.o: src/engine/Graphics/Cameras/OrthographicCamera.cpp.o
+.PHONY : src/engine/Graphics/Cameras/OrthographicCamera.o
 
 # target to build an object file
-src/engine/Factories/cameraFactory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/cameraFactory.cpp.o
-.PHONY : src/engine/Factories/cameraFactory.cpp.o
+src/engine/Graphics/Cameras/OrthographicCamera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Cameras/OrthographicCamera.cpp.o
+.PHONY : src/engine/Graphics/Cameras/OrthographicCamera.cpp.o
 
-src/engine/Factories/cameraFactory.i: src/engine/Factories/cameraFactory.cpp.i
-.PHONY : src/engine/Factories/cameraFactory.i
+src/engine/Graphics/Cameras/OrthographicCamera.i: src/engine/Graphics/Cameras/OrthographicCamera.cpp.i
+.PHONY : src/engine/Graphics/Cameras/OrthographicCamera.i
 
 # target to preprocess a source file
-src/engine/Factories/cameraFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/cameraFactory.cpp.i
-.PHONY : src/engine/Factories/cameraFactory.cpp.i
+src/engine/Graphics/Cameras/OrthographicCamera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Cameras/OrthographicCamera.cpp.i
+.PHONY : src/engine/Graphics/Cameras/OrthographicCamera.cpp.i
 
-src/engine/Factories/cameraFactory.s: src/engine/Factories/cameraFactory.cpp.s
-.PHONY : src/engine/Factories/cameraFactory.s
+src/engine/Graphics/Cameras/OrthographicCamera.s: src/engine/Graphics/Cameras/OrthographicCamera.cpp.s
+.PHONY : src/engine/Graphics/Cameras/OrthographicCamera.s
 
 # target to generate assembly for a file
-src/engine/Factories/cameraFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/cameraFactory.cpp.s
-.PHONY : src/engine/Factories/cameraFactory.cpp.s
+src/engine/Graphics/Cameras/OrthographicCamera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Cameras/OrthographicCamera.cpp.s
+.PHONY : src/engine/Graphics/Cameras/OrthographicCamera.cpp.s
 
-src/engine/Factories/collisionBoxFactory.o: src/engine/Factories/collisionBoxFactory.cpp.o
-.PHONY : src/engine/Factories/collisionBoxFactory.o
+src/engine/Graphics/Cameras/OrthographicCameraController.o: src/engine/Graphics/Cameras/OrthographicCameraController.cpp.o
+.PHONY : src/engine/Graphics/Cameras/OrthographicCameraController.o
 
 # target to build an object file
-src/engine/Factories/collisionBoxFactory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/collisionBoxFactory.cpp.o
-.PHONY : src/engine/Factories/collisionBoxFactory.cpp.o
+src/engine/Graphics/Cameras/OrthographicCameraController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Cameras/OrthographicCameraController.cpp.o
+.PHONY : src/engine/Graphics/Cameras/OrthographicCameraController.cpp.o
 
-src/engine/Factories/collisionBoxFactory.i: src/engine/Factories/collisionBoxFactory.cpp.i
-.PHONY : src/engine/Factories/collisionBoxFactory.i
+src/engine/Graphics/Cameras/OrthographicCameraController.i: src/engine/Graphics/Cameras/OrthographicCameraController.cpp.i
+.PHONY : src/engine/Graphics/Cameras/OrthographicCameraController.i
 
 # target to preprocess a source file
-src/engine/Factories/collisionBoxFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/collisionBoxFactory.cpp.i
-.PHONY : src/engine/Factories/collisionBoxFactory.cpp.i
+src/engine/Graphics/Cameras/OrthographicCameraController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Cameras/OrthographicCameraController.cpp.i
+.PHONY : src/engine/Graphics/Cameras/OrthographicCameraController.cpp.i
 
-src/engine/Factories/collisionBoxFactory.s: src/engine/Factories/collisionBoxFactory.cpp.s
-.PHONY : src/engine/Factories/collisionBoxFactory.s
+src/engine/Graphics/Cameras/OrthographicCameraController.s: src/engine/Graphics/Cameras/OrthographicCameraController.cpp.s
+.PHONY : src/engine/Graphics/Cameras/OrthographicCameraController.s
 
 # target to generate assembly for a file
-src/engine/Factories/collisionBoxFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/collisionBoxFactory.cpp.s
-.PHONY : src/engine/Factories/collisionBoxFactory.cpp.s
+src/engine/Graphics/Cameras/OrthographicCameraController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Cameras/OrthographicCameraController.cpp.s
+.PHONY : src/engine/Graphics/Cameras/OrthographicCameraController.cpp.s
 
-src/engine/Factories/dynamicActorFactory.o: src/engine/Factories/dynamicActorFactory.cpp.o
-.PHONY : src/engine/Factories/dynamicActorFactory.o
+src/engine/Graphics/Meshes/Mesh.o: src/engine/Graphics/Meshes/Mesh.cpp.o
+.PHONY : src/engine/Graphics/Meshes/Mesh.o
 
 # target to build an object file
-src/engine/Factories/dynamicActorFactory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/dynamicActorFactory.cpp.o
-.PHONY : src/engine/Factories/dynamicActorFactory.cpp.o
+src/engine/Graphics/Meshes/Mesh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Meshes/Mesh.cpp.o
+.PHONY : src/engine/Graphics/Meshes/Mesh.cpp.o
 
-src/engine/Factories/dynamicActorFactory.i: src/engine/Factories/dynamicActorFactory.cpp.i
-.PHONY : src/engine/Factories/dynamicActorFactory.i
+src/engine/Graphics/Meshes/Mesh.i: src/engine/Graphics/Meshes/Mesh.cpp.i
+.PHONY : src/engine/Graphics/Meshes/Mesh.i
 
 # target to preprocess a source file
-src/engine/Factories/dynamicActorFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/dynamicActorFactory.cpp.i
-.PHONY : src/engine/Factories/dynamicActorFactory.cpp.i
+src/engine/Graphics/Meshes/Mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Meshes/Mesh.cpp.i
+.PHONY : src/engine/Graphics/Meshes/Mesh.cpp.i
 
-src/engine/Factories/dynamicActorFactory.s: src/engine/Factories/dynamicActorFactory.cpp.s
-.PHONY : src/engine/Factories/dynamicActorFactory.s
+src/engine/Graphics/Meshes/Mesh.s: src/engine/Graphics/Meshes/Mesh.cpp.s
+.PHONY : src/engine/Graphics/Meshes/Mesh.s
 
 # target to generate assembly for a file
-src/engine/Factories/dynamicActorFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/dynamicActorFactory.cpp.s
-.PHONY : src/engine/Factories/dynamicActorFactory.cpp.s
+src/engine/Graphics/Meshes/Mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Meshes/Mesh.cpp.s
+.PHONY : src/engine/Graphics/Meshes/Mesh.cpp.s
 
-src/engine/Factories/gameObjectFactory.o: src/engine/Factories/gameObjectFactory.cpp.o
-.PHONY : src/engine/Factories/gameObjectFactory.o
+src/engine/Graphics/Shader.o: src/engine/Graphics/Shader.cpp.o
+.PHONY : src/engine/Graphics/Shader.o
 
 # target to build an object file
-src/engine/Factories/gameObjectFactory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.o
-.PHONY : src/engine/Factories/gameObjectFactory.cpp.o
+src/engine/Graphics/Shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Shader.cpp.o
+.PHONY : src/engine/Graphics/Shader.cpp.o
 
-src/engine/Factories/gameObjectFactory.i: src/engine/Factories/gameObjectFactory.cpp.i
-.PHONY : src/engine/Factories/gameObjectFactory.i
+src/engine/Graphics/Shader.i: src/engine/Graphics/Shader.cpp.i
+.PHONY : src/engine/Graphics/Shader.i
 
 # target to preprocess a source file
-src/engine/Factories/gameObjectFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.i
-.PHONY : src/engine/Factories/gameObjectFactory.cpp.i
+src/engine/Graphics/Shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Shader.cpp.i
+.PHONY : src/engine/Graphics/Shader.cpp.i
 
-src/engine/Factories/gameObjectFactory.s: src/engine/Factories/gameObjectFactory.cpp.s
-.PHONY : src/engine/Factories/gameObjectFactory.s
+src/engine/Graphics/Shader.s: src/engine/Graphics/Shader.cpp.s
+.PHONY : src/engine/Graphics/Shader.s
 
 # target to generate assembly for a file
-src/engine/Factories/gameObjectFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.s
-.PHONY : src/engine/Factories/gameObjectFactory.cpp.s
+src/engine/Graphics/Shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Shader.cpp.s
+.PHONY : src/engine/Graphics/Shader.cpp.s
 
-src/engine/Factories/materialFactory.o: src/engine/Factories/materialFactory.cpp.o
-.PHONY : src/engine/Factories/materialFactory.o
+src/engine/Graphics/Texture.o: src/engine/Graphics/Texture.cpp.o
+.PHONY : src/engine/Graphics/Texture.o
 
 # target to build an object file
-src/engine/Factories/materialFactory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/materialFactory.cpp.o
-.PHONY : src/engine/Factories/materialFactory.cpp.o
+src/engine/Graphics/Texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Texture.cpp.o
+.PHONY : src/engine/Graphics/Texture.cpp.o
 
-src/engine/Factories/materialFactory.i: src/engine/Factories/materialFactory.cpp.i
-.PHONY : src/engine/Factories/materialFactory.i
-
-# target to preprocess a source file
-src/engine/Factories/materialFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/materialFactory.cpp.i
-.PHONY : src/engine/Factories/materialFactory.cpp.i
-
-src/engine/Factories/materialFactory.s: src/engine/Factories/materialFactory.cpp.s
-.PHONY : src/engine/Factories/materialFactory.s
-
-# target to generate assembly for a file
-src/engine/Factories/materialFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/materialFactory.cpp.s
-.PHONY : src/engine/Factories/materialFactory.cpp.s
-
-src/engine/Factories/sceneFactory.o: src/engine/Factories/sceneFactory.cpp.o
-.PHONY : src/engine/Factories/sceneFactory.o
-
-# target to build an object file
-src/engine/Factories/sceneFactory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/sceneFactory.cpp.o
-.PHONY : src/engine/Factories/sceneFactory.cpp.o
-
-src/engine/Factories/sceneFactory.i: src/engine/Factories/sceneFactory.cpp.i
-.PHONY : src/engine/Factories/sceneFactory.i
+src/engine/Graphics/Texture.i: src/engine/Graphics/Texture.cpp.i
+.PHONY : src/engine/Graphics/Texture.i
 
 # target to preprocess a source file
-src/engine/Factories/sceneFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/sceneFactory.cpp.i
-.PHONY : src/engine/Factories/sceneFactory.cpp.i
+src/engine/Graphics/Texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Texture.cpp.i
+.PHONY : src/engine/Graphics/Texture.cpp.i
 
-src/engine/Factories/sceneFactory.s: src/engine/Factories/sceneFactory.cpp.s
-.PHONY : src/engine/Factories/sceneFactory.s
-
-# target to generate assembly for a file
-src/engine/Factories/sceneFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Factories/sceneFactory.cpp.s
-.PHONY : src/engine/Factories/sceneFactory.cpp.s
-
-src/engine/Graphics/renderer.o: src/engine/Graphics/renderer.cpp.o
-.PHONY : src/engine/Graphics/renderer.o
-
-# target to build an object file
-src/engine/Graphics/renderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o
-.PHONY : src/engine/Graphics/renderer.cpp.o
-
-src/engine/Graphics/renderer.i: src/engine/Graphics/renderer.cpp.i
-.PHONY : src/engine/Graphics/renderer.i
-
-# target to preprocess a source file
-src/engine/Graphics/renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.i
-.PHONY : src/engine/Graphics/renderer.cpp.i
-
-src/engine/Graphics/renderer.s: src/engine/Graphics/renderer.cpp.s
-.PHONY : src/engine/Graphics/renderer.s
+src/engine/Graphics/Texture.s: src/engine/Graphics/Texture.cpp.s
+.PHONY : src/engine/Graphics/Texture.s
 
 # target to generate assembly for a file
-src/engine/Graphics/renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.s
-.PHONY : src/engine/Graphics/renderer.cpp.s
+src/engine/Graphics/Texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Texture.cpp.s
+.PHONY : src/engine/Graphics/Texture.cpp.s
 
 src/engine/Inputs/inputManager.o: src/engine/Inputs/inputManager.cpp.o
 .PHONY : src/engine/Inputs/inputManager.o
@@ -681,29 +790,29 @@ src/engine/Inputs/inputManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.s
 .PHONY : src/engine/Inputs/inputManager.cpp.s
 
-src/engine/Managers/collisionsManager.o: src/engine/Managers/collisionsManager.cpp.o
-.PHONY : src/engine/Managers/collisionsManager.o
+src/engine/Layers/RenderLayer.o: src/engine/Layers/RenderLayer.cpp.o
+.PHONY : src/engine/Layers/RenderLayer.o
 
 # target to build an object file
-src/engine/Managers/collisionsManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.o
-.PHONY : src/engine/Managers/collisionsManager.cpp.o
+src/engine/Layers/RenderLayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Layers/RenderLayer.cpp.o
+.PHONY : src/engine/Layers/RenderLayer.cpp.o
 
-src/engine/Managers/collisionsManager.i: src/engine/Managers/collisionsManager.cpp.i
-.PHONY : src/engine/Managers/collisionsManager.i
+src/engine/Layers/RenderLayer.i: src/engine/Layers/RenderLayer.cpp.i
+.PHONY : src/engine/Layers/RenderLayer.i
 
 # target to preprocess a source file
-src/engine/Managers/collisionsManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.i
-.PHONY : src/engine/Managers/collisionsManager.cpp.i
+src/engine/Layers/RenderLayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Layers/RenderLayer.cpp.i
+.PHONY : src/engine/Layers/RenderLayer.cpp.i
 
-src/engine/Managers/collisionsManager.s: src/engine/Managers/collisionsManager.cpp.s
-.PHONY : src/engine/Managers/collisionsManager.s
+src/engine/Layers/RenderLayer.s: src/engine/Layers/RenderLayer.cpp.s
+.PHONY : src/engine/Layers/RenderLayer.s
 
 # target to generate assembly for a file
-src/engine/Managers/collisionsManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.s
-.PHONY : src/engine/Managers/collisionsManager.cpp.s
+src/engine/Layers/RenderLayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Layers/RenderLayer.cpp.s
+.PHONY : src/engine/Layers/RenderLayer.cpp.s
 
 src/engine/Managers/scriptsManager.o: src/engine/Managers/scriptsManager.cpp.o
 .PHONY : src/engine/Managers/scriptsManager.o
@@ -752,6 +861,30 @@ src/engine/Tools/fileLoader.s: src/engine/Tools/fileLoader.cpp.s
 src/engine/Tools/fileLoader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/fileLoader.cpp.s
 .PHONY : src/engine/Tools/fileLoader.cpp.s
+
+src/engine/Tools/logger.o: src/engine/Tools/logger.cpp.o
+.PHONY : src/engine/Tools/logger.o
+
+# target to build an object file
+src/engine/Tools/logger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/logger.cpp.o
+.PHONY : src/engine/Tools/logger.cpp.o
+
+src/engine/Tools/logger.i: src/engine/Tools/logger.cpp.i
+.PHONY : src/engine/Tools/logger.i
+
+# target to preprocess a source file
+src/engine/Tools/logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/logger.cpp.i
+.PHONY : src/engine/Tools/logger.cpp.i
+
+src/engine/Tools/logger.s: src/engine/Tools/logger.cpp.s
+.PHONY : src/engine/Tools/logger.s
+
+# target to generate assembly for a file
+src/engine/Tools/logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/logger.cpp.s
+.PHONY : src/engine/Tools/logger.cpp.s
 
 src/engine/Tools/shaderLoader.o: src/engine/Tools/shaderLoader.cpp.o
 .PHONY : src/engine/Tools/shaderLoader.o
@@ -858,6 +991,25 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyGameEngine"
+	@echo "... glad"
+	@echo "... Imgui/backends/imgui_impl_glfw.o"
+	@echo "... Imgui/backends/imgui_impl_glfw.i"
+	@echo "... Imgui/backends/imgui_impl_glfw.s"
+	@echo "... Imgui/backends/imgui_impl_opengl3.o"
+	@echo "... Imgui/backends/imgui_impl_opengl3.i"
+	@echo "... Imgui/backends/imgui_impl_opengl3.s"
+	@echo "... Imgui/imgui.o"
+	@echo "... Imgui/imgui.i"
+	@echo "... Imgui/imgui.s"
+	@echo "... Imgui/imgui_draw.o"
+	@echo "... Imgui/imgui_draw.i"
+	@echo "... Imgui/imgui_draw.s"
+	@echo "... Imgui/imgui_tables.o"
+	@echo "... Imgui/imgui_tables.i"
+	@echo "... Imgui/imgui_tables.s"
+	@echo "... Imgui/imgui_widgets.o"
+	@echo "... Imgui/imgui_widgets.i"
+	@echo "... Imgui/imgui_widgets.s"
 	@echo "... WrenVM/optional/wren_opt_meta.o"
 	@echo "... WrenVM/optional/wren_opt_meta.i"
 	@echo "... WrenVM/optional/wren_opt_meta.s"
@@ -885,57 +1037,54 @@ help:
 	@echo "... WrenVM/vm/wren_vm.o"
 	@echo "... WrenVM/vm/wren_vm.i"
 	@echo "... WrenVM/vm/wren_vm.s"
-	@echo "... src/engine/Entities/Actors/dynamicActor.o"
-	@echo "... src/engine/Entities/Actors/dynamicActor.i"
-	@echo "... src/engine/Entities/Actors/dynamicActor.s"
-	@echo "... src/engine/Entities/Colliders/collisionBox.o"
-	@echo "... src/engine/Entities/Colliders/collisionBox.i"
-	@echo "... src/engine/Entities/Colliders/collisionBox.s"
-	@echo "... src/engine/Entities/camera.o"
-	@echo "... src/engine/Entities/camera.i"
-	@echo "... src/engine/Entities/camera.s"
-	@echo "... src/engine/Entities/gameObject.o"
-	@echo "... src/engine/Entities/gameObject.i"
-	@echo "... src/engine/Entities/gameObject.s"
-	@echo "... src/engine/Entities/material.o"
-	@echo "... src/engine/Entities/material.i"
-	@echo "... src/engine/Entities/material.s"
-	@echo "... src/engine/Entities/scene.o"
-	@echo "... src/engine/Entities/scene.i"
-	@echo "... src/engine/Entities/scene.s"
-	@echo "... src/engine/Factories/cameraFactory.o"
-	@echo "... src/engine/Factories/cameraFactory.i"
-	@echo "... src/engine/Factories/cameraFactory.s"
-	@echo "... src/engine/Factories/collisionBoxFactory.o"
-	@echo "... src/engine/Factories/collisionBoxFactory.i"
-	@echo "... src/engine/Factories/collisionBoxFactory.s"
-	@echo "... src/engine/Factories/dynamicActorFactory.o"
-	@echo "... src/engine/Factories/dynamicActorFactory.i"
-	@echo "... src/engine/Factories/dynamicActorFactory.s"
-	@echo "... src/engine/Factories/gameObjectFactory.o"
-	@echo "... src/engine/Factories/gameObjectFactory.i"
-	@echo "... src/engine/Factories/gameObjectFactory.s"
-	@echo "... src/engine/Factories/materialFactory.o"
-	@echo "... src/engine/Factories/materialFactory.i"
-	@echo "... src/engine/Factories/materialFactory.s"
-	@echo "... src/engine/Factories/sceneFactory.o"
-	@echo "... src/engine/Factories/sceneFactory.i"
-	@echo "... src/engine/Factories/sceneFactory.s"
-	@echo "... src/engine/Graphics/renderer.o"
-	@echo "... src/engine/Graphics/renderer.i"
-	@echo "... src/engine/Graphics/renderer.s"
+	@echo "... src/engine/Core/Application.o"
+	@echo "... src/engine/Core/Application.i"
+	@echo "... src/engine/Core/Application.s"
+	@echo "... src/engine/Core/ArtCore.o"
+	@echo "... src/engine/Core/ArtCore.i"
+	@echo "... src/engine/Core/ArtCore.s"
+	@echo "... src/engine/Core/Glad/glad.o"
+	@echo "... src/engine/Core/Glad/glad.i"
+	@echo "... src/engine/Core/Glad/glad.s"
+	@echo "... src/engine/Core/ImGui/ImGuiLayer.o"
+	@echo "... src/engine/Core/ImGui/ImGuiLayer.i"
+	@echo "... src/engine/Core/ImGui/ImGuiLayer.s"
+	@echo "... src/engine/Core/LayerStack.o"
+	@echo "... src/engine/Core/LayerStack.i"
+	@echo "... src/engine/Core/LayerStack.s"
+	@echo "... src/engine/Graphics/ArtGraphics.o"
+	@echo "... src/engine/Graphics/ArtGraphics.i"
+	@echo "... src/engine/Graphics/ArtGraphics.s"
+	@echo "... src/engine/Graphics/Cameras/OrthographicCamera.o"
+	@echo "... src/engine/Graphics/Cameras/OrthographicCamera.i"
+	@echo "... src/engine/Graphics/Cameras/OrthographicCamera.s"
+	@echo "... src/engine/Graphics/Cameras/OrthographicCameraController.o"
+	@echo "... src/engine/Graphics/Cameras/OrthographicCameraController.i"
+	@echo "... src/engine/Graphics/Cameras/OrthographicCameraController.s"
+	@echo "... src/engine/Graphics/Meshes/Mesh.o"
+	@echo "... src/engine/Graphics/Meshes/Mesh.i"
+	@echo "... src/engine/Graphics/Meshes/Mesh.s"
+	@echo "... src/engine/Graphics/Shader.o"
+	@echo "... src/engine/Graphics/Shader.i"
+	@echo "... src/engine/Graphics/Shader.s"
+	@echo "... src/engine/Graphics/Texture.o"
+	@echo "... src/engine/Graphics/Texture.i"
+	@echo "... src/engine/Graphics/Texture.s"
 	@echo "... src/engine/Inputs/inputManager.o"
 	@echo "... src/engine/Inputs/inputManager.i"
 	@echo "... src/engine/Inputs/inputManager.s"
-	@echo "... src/engine/Managers/collisionsManager.o"
-	@echo "... src/engine/Managers/collisionsManager.i"
-	@echo "... src/engine/Managers/collisionsManager.s"
+	@echo "... src/engine/Layers/RenderLayer.o"
+	@echo "... src/engine/Layers/RenderLayer.i"
+	@echo "... src/engine/Layers/RenderLayer.s"
 	@echo "... src/engine/Managers/scriptsManager.o"
 	@echo "... src/engine/Managers/scriptsManager.i"
 	@echo "... src/engine/Managers/scriptsManager.s"
 	@echo "... src/engine/Tools/fileLoader.o"
 	@echo "... src/engine/Tools/fileLoader.i"
 	@echo "... src/engine/Tools/fileLoader.s"
+	@echo "... src/engine/Tools/logger.o"
+	@echo "... src/engine/Tools/logger.i"
+	@echo "... src/engine/Tools/logger.s"
 	@echo "... src/engine/Tools/shaderLoader.o"
 	@echo "... src/engine/Tools/shaderLoader.i"
 	@echo "... src/engine/Tools/shaderLoader.s"

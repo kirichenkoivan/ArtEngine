@@ -1,45 +1,21 @@
 [
 {
   "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/emcc  @CMakeFiles/glad.dir/includes_C.rsp -g -o CMakeFiles/glad.dir/src/engine/Core/Glad/glad.c.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Core/Glad/glad.c\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Core/Glad/glad.c",
+  "output": "CMakeFiles/glad.dir/src/engine/Core/Glad/glad.c.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
   "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/main.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/main.cpp\"",
   "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/main.cpp",
   "output": "CMakeFiles/MyGameEngine.dir/src/main.cpp.o"
 },
 {
   "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
-  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/renderer.cpp\"",
-  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/renderer.cpp",
-  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/renderer.cpp.o"
-},
-{
-  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
-  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/gameObject.cpp\"",
-  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/gameObject.cpp",
-  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Entities/gameObject.cpp.o"
-},
-{
-  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
-  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/scene.cpp\"",
-  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/scene.cpp",
-  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Entities/scene.cpp.o"
-},
-{
-  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
   "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Inputs/inputManager.cpp\"",
   "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Inputs/inputManager.cpp",
   "output": "CMakeFiles/MyGameEngine.dir/src/engine/Inputs/inputManager.cpp.o"
-},
-{
-  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
-  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/Actors/dynamicActor.cpp\"",
-  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/Actors/dynamicActor.cpp",
-  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Actors/dynamicActor.cpp.o"
-},
-{
-  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
-  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/material.cpp\"",
-  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/material.cpp",
-  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Entities/material.cpp.o"
 },
 {
   "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
@@ -55,42 +31,6 @@
 },
 {
   "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
-  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Factories/materialFactory.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/materialFactory.cpp\"",
-  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/materialFactory.cpp",
-  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Factories/materialFactory.cpp.o"
-},
-{
-  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
-  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/gameObjectFactory.cpp\"",
-  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/gameObjectFactory.cpp",
-  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Factories/gameObjectFactory.cpp.o"
-},
-{
-  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
-  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Factories/dynamicActorFactory.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/dynamicActorFactory.cpp\"",
-  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/dynamicActorFactory.cpp",
-  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Factories/dynamicActorFactory.cpp.o"
-},
-{
-  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
-  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Factories/cameraFactory.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/cameraFactory.cpp\"",
-  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/cameraFactory.cpp",
-  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Factories/cameraFactory.cpp.o"
-},
-{
-  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
-  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Factories/collisionBoxFactory.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/collisionBoxFactory.cpp\"",
-  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/collisionBoxFactory.cpp",
-  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Factories/collisionBoxFactory.cpp.o"
-},
-{
-  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
-  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Factories/sceneFactory.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/sceneFactory.cpp\"",
-  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Factories/sceneFactory.cpp",
-  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Factories/sceneFactory.cpp.o"
-},
-{
-  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
   "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/xmlReader.cpp\"",
   "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/xmlReader.cpp",
   "output": "CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o"
@@ -103,27 +43,81 @@
 },
 {
   "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
-  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/Colliders/collisionBox.cpp\"",
-  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/Colliders/collisionBox.cpp",
-  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Entities/Colliders/collisionBox.cpp.o"
-},
-{
-  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
-  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Entities/camera.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/camera.cpp\"",
-  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Entities/camera.cpp",
-  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Entities/camera.cpp.o"
-},
-{
-  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
-  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Managers/collisionsManager.cpp\"",
-  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Managers/collisionsManager.cpp",
-  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Managers/collisionsManager.cpp.o"
-},
-{
-  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
   "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Managers/scriptsManager.cpp\"",
   "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Managers/scriptsManager.cpp",
   "output": "CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Core/LayerStack.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Core/LayerStack.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Core/LayerStack.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Core/LayerStack.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Tools/logger.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/logger.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Tools/logger.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Tools/logger.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Core/Application.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Core/Application.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Core/Application.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Core/Application.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Core/ImGui/ImGuiLayer.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Core/ImGui/ImGuiLayer.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Core/ImGui/ImGuiLayer.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Core/ImGui/ImGuiLayer.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Layers/RenderLayer.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Layers/RenderLayer.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Layers/RenderLayer.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Layers/RenderLayer.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Shader.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/Shader.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/Shader.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Shader.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Cameras/OrthographicCamera.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/Cameras/OrthographicCamera.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/Cameras/OrthographicCamera.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Cameras/OrthographicCamera.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Cameras/OrthographicCameraController.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/Cameras/OrthographicCameraController.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/Cameras/OrthographicCameraController.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Cameras/OrthographicCameraController.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Meshes/Mesh.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/Meshes/Mesh.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/Meshes/Mesh.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Meshes/Mesh.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Graphics/ArtGraphics.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/ArtGraphics.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/ArtGraphics.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/ArtGraphics.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Texture.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/Texture.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/Texture.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Texture.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/src/engine/Core/ArtCore.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Core/ArtCore.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Core/ArtCore.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/src/engine/Core/ArtCore.cpp.o"
 },
 {
   "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
@@ -178,5 +172,41 @@
   "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/emcc  @CMakeFiles/MyGameEngine.dir/includes_C.rsp -g -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_vm.c\"",
   "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_vm.c",
   "output": "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/Imgui/imgui.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/Imgui/imgui.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/Imgui/imgui.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/Imgui/imgui.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/Imgui/imgui_draw.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/Imgui/imgui_draw.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/Imgui/imgui_draw.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/Imgui/imgui_draw.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/Imgui/imgui_tables.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/Imgui/imgui_tables.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/Imgui/imgui_tables.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/Imgui/imgui_tables.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/Imgui/imgui_widgets.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/Imgui/imgui_widgets.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/Imgui/imgui_widgets.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/Imgui/imgui_widgets.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_glfw.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/Imgui/backends/imgui_impl_glfw.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/Imgui/backends/imgui_impl_glfw.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_glfw.cpp.o"
+},
+{
+  "directory": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build",
+  "command": "/Users/ivankiricenko/emsdk/upstream/emscripten/em++  @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp  -O3 -s -g -std=gnu++17 -o CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_opengl3.cpp.o -c \"/Users/ivankiricenko/Desktop/Main project/ArtEngine/Imgui/backends/imgui_impl_opengl3.cpp\"",
+  "file": "/Users/ivankiricenko/Desktop/Main project/ArtEngine/Imgui/backends/imgui_impl_opengl3.cpp",
+  "output": "CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_opengl3.cpp.o"
 }
 ]

@@ -1,6 +1,6 @@
 CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o: \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/Managers/scriptsManager.cpp \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Managers/scriptsManager.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Managers/scriptsManager.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/iostream \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__assert \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__assertion_handler \
@@ -847,7 +847,7 @@ CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/year_month_weekday.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/literals.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/forward_list \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Managers/../Tools/fileLoader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Managers/../Tools/fileLoader.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/fstream \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/filesystem \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/copy_options.h \
@@ -867,8 +867,8 @@ CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/path_iterator.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/u8path.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../WrenVM/include/wren.hpp \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../WrenVM/include/wren.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../WrenVM/include/wren.hpp \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../WrenVM/include/wren.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdbool.h \
   /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/stdbool.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stdbool.h

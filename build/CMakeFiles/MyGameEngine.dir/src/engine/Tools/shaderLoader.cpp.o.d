@@ -1,6 +1,6 @@
 CMakeFiles/MyGameEngine.dir/src/engine/Tools/shaderLoader.cpp.o: \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/Tools/shaderLoader.cpp \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Tools/shaderLoader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Tools/shaderLoader.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/string \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/max.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/comp.h \

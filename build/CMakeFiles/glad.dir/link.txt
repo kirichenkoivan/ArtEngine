@@ -1,0 +1,2 @@
+/Users/ivankiricenko/emsdk/upstream/emscripten/emar qc libglad.a CMakeFiles/glad.dir/src/engine/Core/Glad/glad.c.o
+/Users/ivankiricenko/emsdk/upstream/emscripten/emranlib libglad.a

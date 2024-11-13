@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        /* Убираем отступы и делаем canvas на 70% экрана */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        canvas {
+            display: block;
+            width: 100vw; /* 70% от ширины экрана */
+            height: 100vh; /* 70% от высоты экрана */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Create the canvas that the C++ code will draw into -->
+    <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+
+    <!-- Allow the C++ to access the canvas element --> 
+    <script type='text/javascript'>
+        var Module = {
+            canvas: (function() {
+                // Получаем canvas элемент
+                var canvas = document.getElementById('canvas');
+                
+                // Функция для установки размеров canvas
+                function resizeCanvas() {
+                    // Устанавливаем ширину и высоту в 70% от окна
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+                }
+
+                window.addEventListener('resize', resizeCanvas);
+                resizeCanvas();  // Устанавливаем начальные размеры
+
+                return canvas;
+            })()
+        };
+    </script>
+
+    <!-- Placeholder for Emscripten's generated JavaScript code -->
+    {{{ SCRIPT }}}
+    
+</body>
+</html>

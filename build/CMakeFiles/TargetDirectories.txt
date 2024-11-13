@@ -1,3 +1,4 @@
 /Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles/MyGameEngine.dir
+/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles/glad.dir
 /Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles/edit_cache.dir
 /Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles/rebuild_cache.dir

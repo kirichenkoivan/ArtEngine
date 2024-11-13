@@ -211,15 +211,6 @@ MyGameEngine_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 MyGameEngine_SOURCE_DIR:STATIC=/Users/ivankiricenko/Desktop/Main project/ArtEngine
 
-//The directory containing a CMake configuration file for glm.
-glm_DIR:PATH=glm_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for pugixml.
-pugixml_DIR:PATH=pugixml_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for tinyxml2.
-tinyxml2_DIR:PATH=tinyxml2_DIR-NOTFOUND
-
 
 ########################
 # INTERNAL cache entries

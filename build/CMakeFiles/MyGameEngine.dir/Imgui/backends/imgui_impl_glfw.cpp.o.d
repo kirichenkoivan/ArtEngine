@@ -1,0 +1,72 @@
+CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_glfw.cpp.o: \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/backends/imgui_impl_glfw.cpp \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/imgui.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/imconfig.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/float.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__config \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__config_site \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/float.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/float.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/compat/stdarg.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/stdarg.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stdarg.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stdarg_header_macro.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stdarg_va_list.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stdarg_va_arg.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stdarg___va_copy.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stdarg_va_copy.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stddef.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/stddef.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stddef.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_header_macro.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_size_t.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_wchar_t.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_null.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_nullptr_t.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_max_align_t.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_offsetof.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/compat/string.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/string.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/string.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/features.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/strings.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/assert.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/backends/imgui_impl_glfw.h \
+  /usr/local/Cellar/glfw/3.3.8/include/GLFW/glfw3.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdint.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/stdint.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/GL/gl.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/GL/glext.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/KHR/khrplatform.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/unistd.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/wasi/api.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/bits/posix.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/emscripten.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_asm.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_macros.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_types.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdbool.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/stdbool.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stdbool.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_js.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/promise.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdlib.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/wget.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/version.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/html5.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/pthread.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/sched.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/compat/time.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/time.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/eventloop.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/console.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/html5_webgl.h

@@ -1,6 +1,6 @@
 CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o: \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/Tools/xmlReader.cpp \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Tools/xmlReader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Tools/xmlReader.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/iostream \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__assert \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__assertion_handler \
@@ -818,7 +818,7 @@ CMakeFiles/MyGameEngine.dir/src/engine/Tools/xmlReader.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/formatter_tuple.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/print \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/unistd.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/../include/engine/Tools/tinyxml2.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Tools/tinyxml2.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/filesystem \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/copy_options.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/directory_entry.h \
