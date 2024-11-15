@@ -32,9 +32,7 @@ class RenderLayer : public Layer{
         const std::string CATEGORY = "Layers/RenderLayer";
 
         OrthographicCameraController m_CameraController;
-        Shader* m_Shader;
-        Mesh* m_Mesh;
-        Texture* m_Texture;
+        std::shared_ptr<Shader> m_Shader;
         GLuint m_QuadVA, m_QuadVB, m_QuadIB;
         glm::vec4 m_SquareBaseColor = { 0.8f, 0.2f, 0.3f, 1.0f };
         glm::vec4 m_SquareAlternativeColor = { 0.2f, 0.3f, 0.8f, 1.0f };
@@ -44,6 +42,10 @@ class RenderLayer : public Layer{
         const size_t MAX_QUAD_COUNT = 1000;
         const size_t MAX_VERTEX_COUNT = MAX_QUAD_COUNT * 4;
         const size_t MAX_INDEX_COUNT = MAX_QUAD_COUNT * 6; 
+
+        std::shared_ptr<Mesh> m_Mesh;
+        std::shared_ptr<Material> m_Material;
+        std::shared_ptr<Texture> m_Texture;
         
 };
 

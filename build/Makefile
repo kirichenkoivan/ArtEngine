@@ -694,6 +694,30 @@ src/engine/Graphics/Cameras/OrthographicCameraController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Cameras/OrthographicCameraController.cpp.s
 .PHONY : src/engine/Graphics/Cameras/OrthographicCameraController.cpp.s
 
+src/engine/Graphics/Material.o: src/engine/Graphics/Material.cpp.o
+.PHONY : src/engine/Graphics/Material.o
+
+# target to build an object file
+src/engine/Graphics/Material.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.o
+.PHONY : src/engine/Graphics/Material.cpp.o
+
+src/engine/Graphics/Material.i: src/engine/Graphics/Material.cpp.i
+.PHONY : src/engine/Graphics/Material.i
+
+# target to preprocess a source file
+src/engine/Graphics/Material.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.i
+.PHONY : src/engine/Graphics/Material.cpp.i
+
+src/engine/Graphics/Material.s: src/engine/Graphics/Material.cpp.s
+.PHONY : src/engine/Graphics/Material.s
+
+# target to generate assembly for a file
+src/engine/Graphics/Material.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.s
+.PHONY : src/engine/Graphics/Material.cpp.s
+
 src/engine/Graphics/Meshes/Mesh.o: src/engine/Graphics/Meshes/Mesh.cpp.o
 .PHONY : src/engine/Graphics/Meshes/Mesh.o
 
@@ -1061,6 +1085,9 @@ help:
 	@echo "... src/engine/Graphics/Cameras/OrthographicCameraController.o"
 	@echo "... src/engine/Graphics/Cameras/OrthographicCameraController.i"
 	@echo "... src/engine/Graphics/Cameras/OrthographicCameraController.s"
+	@echo "... src/engine/Graphics/Material.o"
+	@echo "... src/engine/Graphics/Material.i"
+	@echo "... src/engine/Graphics/Material.s"
 	@echo "... src/engine/Graphics/Meshes/Mesh.o"
 	@echo "... src/engine/Graphics/Meshes/Mesh.i"
 	@echo "... src/engine/Graphics/Meshes/Mesh.s"

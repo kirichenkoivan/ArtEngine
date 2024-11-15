@@ -1,15 +1,5 @@
 #include "../include/engine/Graphics/ArtGraphics.h"
 
-Texture *CreateTexture(const std::string& path, TextureType type)
-{
-    return new Texture(path, type);
-}
-
-Mesh *CreateMesh(const std::string& name, std::vector<Vertex> verts, std::vector<uint32_t> ind, const Texture* texture)
-{
-    return new Mesh(name, verts, ind, texture);
-}
-
 GLuint LoadTexture(const std::string &path)
 {
     int w, h, bits;

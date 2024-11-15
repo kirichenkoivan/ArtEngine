@@ -1,7 +1,8 @@
-CMakeFiles/MyGameEngine.dir/src/engine/Layers/RenderLayer.cpp.o: \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/Layers/RenderLayer.cpp \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Layers/RenderLayer.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/ArtCore.h \
+CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.o: \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/Graphics/Material.cpp \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/Material.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/Texture.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/ArtCore.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/emscripten.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_asm.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/emscripten/em_macros.h \
@@ -44,8 +45,8 @@ CMakeFiles/MyGameEngine.dir/src/engine/Layers/RenderLayer.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/stdint.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/Glad/glad.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/Glad/khrplatform.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/Glad/glad.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/Glad/khrplatform.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/EGL/egl.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/EGL/eglplatform.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/KHR/khrplatform.h \
@@ -750,7 +751,7 @@ CMakeFiles/MyGameEngine.dir/src/engine/Layers/RenderLayer.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/unreachable_sentinel.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__iterator/wrap_iter.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/stdexcept \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/LayerStack.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/LayerStack.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/vector \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/equal.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__algorithm/fill_n.h \
@@ -1085,7 +1086,7 @@ CMakeFiles/MyGameEngine.dir/src/engine/Layers/RenderLayer.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/cstdarg \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__memory/temp_value.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__split_buffer \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/Layer.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/Layer.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/iostream \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/istream \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/ostream \
@@ -1140,20 +1141,20 @@ CMakeFiles/MyGameEngine.dir/src/engine/Layers/RenderLayer.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__format/formatter_tuple.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/print \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/unistd.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/Timestep.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/ImGui/ImGuiLayer.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/ImGui/../Layer.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/ImGui/../ArtCore.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/Timestep.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/ImGui/ImGuiLayer.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/ImGui/../Layer.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/ImGui/../ArtCore.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../Imgui/imgui.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../Imgui/imconfig.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../Imgui/backends/imgui_impl_glfw.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/imgui.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../Imgui/backends/imgui_impl_opengl3.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/../Inputs/inputManager.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/../Inputs/KeyCodes/keyboard.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/../Inputs/KeyCodes/mouse.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/ArtCoreUtils.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/../Tools/logger.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/../Inputs/inputManager.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/../Inputs/KeyCodes/keyboard.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/../Inputs/KeyCodes/mouse.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/ArtCoreUtils.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/../Tools/logger.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/chrono \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/calendar.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/convert_to_tm.h \
@@ -1171,7 +1172,7 @@ CMakeFiles/MyGameEngine.dir/src/engine/Layers/RenderLayer.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/year_month_weekday.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__chrono/literals.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/forward_list \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/../Tools/fileLoader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/../Tools/fileLoader.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/fstream \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/filesystem \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/copy_options.h \
@@ -1192,12 +1193,12 @@ CMakeFiles/MyGameEngine.dir/src/engine/Layers/RenderLayer.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__filesystem/u8path.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/sstream \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/../Tools/shaderLoader.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/../Tools/xmlReader.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/../Tools/tinyxml2.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/../Tools/shaderLoader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/../Tools/xmlReader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/../Tools/tinyxml2.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/GLES2/gl2.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/GLES2/gl2platform.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/../../libs/json.hpp \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Core/../../libs/json.hpp \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/map \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__tree \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/valarray \
@@ -1217,21 +1218,5 @@ CMakeFiles/MyGameEngine.dir/src/engine/Layers/RenderLayer.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__numeric/transform_exclusive_scan.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__numeric/transform_inclusive_scan.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/any \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/ArtGraphics.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Shader.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Core/Glad/glad.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Core/ArtCoreUtils.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Texture.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Core/ArtCore.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../../libs/stb_image.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Cameras/OrthographicCamera.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Cameras/../../Core/ArtCore.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Cameras/../../Core/ArtCoreUtils.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Cameras/OrthographicCameraController.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Meshes/Mesh.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Meshes/../../Core/ArtCore.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Meshes/../../Core/ArtCoreUtils.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Meshes/../Material.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Meshes/../Texture.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Meshes/../Shader.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Material.h
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../../libs/stb_image.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/Shader.h

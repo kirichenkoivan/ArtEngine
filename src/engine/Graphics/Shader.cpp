@@ -15,9 +15,9 @@ Shader::~Shader()
     glDeleteProgram(m_RendererID);
 }
 
-Shader *Shader::FromGLSLTextFile(const std::string &vertexShaderPath, const std::string &fragmentShaderPath)
+std::shared_ptr<Shader> Shader::FromGLSLTextFile(const std::string &vertexShaderPath, const std::string &fragmentShaderPath)
 {
-    Shader* shader = new Shader();
+    std::shared_ptr<Shader> shader(new Shader());
     shader->LoadFromGLSLTextFiles(vertexShaderPath, fragmentShaderPath);
     return shader;
 }

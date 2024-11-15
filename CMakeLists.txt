@@ -55,6 +55,7 @@ add_executable(MyGameEngine
     src/engine/Graphics/ArtGraphics.cpp
     src/engine/Graphics/Texture.cpp
     src/engine/Core/ArtCore.cpp
+    src/engine/Graphics/Material.cpp
 
     # Wren VM sources
     WrenVM/optional/wren_opt_meta.c

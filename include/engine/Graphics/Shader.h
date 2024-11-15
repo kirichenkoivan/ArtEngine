@@ -24,7 +24,7 @@ class Shader{
     public:
         ~Shader();
         GLuint GetRendererID() { return m_RendererID; }
-        static Shader* FromGLSLTextFile(const std::string& vertexShaderPath, const std::string& fragmentShaderPath);
+        static std::shared_ptr<Shader> FromGLSLTextFile(const std::string& vertexShaderPath, const std::string& fragmentShaderPath);
 
     private:
         Shader() = default;

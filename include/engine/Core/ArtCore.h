@@ -10,6 +10,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <cmath>
+#include <memory>
 
 #include "LayerStack.h"
 #include "ImGui/ImGuiLayer.h"

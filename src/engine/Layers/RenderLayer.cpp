@@ -55,9 +55,14 @@ void RenderLayer::OnAttach()
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-    m_Shader = Shader::FromGLSLTextFile("/FileSystem/Shaders/vertex.glsl", "/FileSystem/Shaders/fragment.glsl");
-    glUseProgram(m_Shader->GetRendererID());
-    auto loc = glGetUniformLocation(m_Shader->GetRendererID(), "u_Textures");
+   m_Shader = Shader::FromGLSLTextFile("/FileSystem/Shaders/vertex.glsl", "/FileSystem/Shaders/fragment.glsl");
+
+    m_Texture = Texture::CreateTexture("/FileSystem/Textures/image.png");
+    m_Material = Material::CreateMaterial("mat1", m_Shader, m_Texture);
+    m_Mesh = Mesh::CreateMesh("obj", CreateQuad(1, 1, m_Material->GetTexture()->GetTexture()), {0, 1, 2, 0, 2, 3}, m_Material);
+
+    glUseProgram(m_Mesh->GetMaterial()->GetShader()->GetRendererID());
+    auto loc = glGetUniformLocation(m_Mesh->GetMaterial()->GetShader()->GetRendererID(), "u_Textures");
     int samplers[2] = {0 , 1};
     glUniform1iv(loc, 2, samplers);
 
@@ -85,11 +90,12 @@ void RenderLayer::OnAttach()
      };
     glGenBuffers(1, &m_QuadIB);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_QuadIB);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, m_Mesh->GetIndices().size() * sizeof(uint32_t), m_Mesh->GetIndices().data(), GL_STATIC_DRAW);
+
 
     m_SquareColor = glm::vec4(1.0f, 0.0f, 0.0f, 1.0f);
 
-    m_TextureID = LoadTexture("FileSystem/Textures/image.png");
+    //m_TextureID = LoadTexture("FileSystem/Textures/image.png");
 
     Logger::GetInstance().Info(CATEGORY, "RenderLayer Attached");
 }
@@ -107,10 +113,8 @@ void RenderLayer::OnUpdate(Timestep ts)
 {
     m_CameraController.OnUpdate(ts);
 
-    auto q0 = CreateQuad(-1.5f, -0.5f, 0);
-
     Vertex verts[4];
-    memcpy(verts, q0.data(), q0.size() * sizeof(Vertex));
+    memcpy(verts, m_Mesh->GetVertices().data(), m_Mesh->GetVertices().size() * sizeof(Vertex));
 
     glBindBuffer(GL_ARRAY_BUFFER, m_QuadVB);
     glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(verts), verts);
@@ -118,13 +122,13 @@ void RenderLayer::OnUpdate(Timestep ts)
     glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    glUseProgram(m_Shader->GetRendererID());
-    glBindTexture(0, m_TextureID);
+    glUseProgram(m_Mesh->GetMaterial()->GetShader()->GetRendererID());
+    glBindTexture(GL_TEXTURE_2D, m_Mesh->GetMaterial()->GetTexture()->GetTexture());
 
     auto vp = m_CameraController.GetCamera().GetViewProjectionMatrix();
 
-    SetUniformMat4(m_Shader->GetRendererID(), "u_ViewProjection", vp);
-    SetUniformMat4(m_Shader->GetRendererID(), "u_Model", glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.0f)));
+    SetUniformMat4(m_Mesh->GetMaterial()->GetShader()->GetRendererID(), "u_ViewProjection", vp);
+    SetUniformMat4(m_Mesh->GetMaterial()->GetShader()->GetRendererID(), "u_Model", m_Mesh->GetMeshMatrix());
 
     glBindVertexArray(m_QuadVA);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);

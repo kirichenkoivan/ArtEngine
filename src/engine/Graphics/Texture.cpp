@@ -1,7 +1,18 @@
 #include "../include/engine/Graphics/Texture.h"
 
+std::shared_ptr<Texture> Texture::CreateTexture(const std::string &path, const TextureType type)
+{
+    if (path == ""){
+        Logger::GetInstance().Error("Graphics/Texture", "Texture Creation Is Failed - Path Is Null!");
+        assert(false && "Texture Creation Is Failed - Path Is Null!");
+    }
 
-Texture::Texture(const std::string & path, const TextureType type) : m_Type(type)
+    std::shared_ptr<Texture> texture(new Texture());
+    texture->FromImage(path, type);
+    return texture;
+}
+
+void Texture::FromImage(const std::string &path, const TextureType type)
 {
     int w, h, bits;
 

@@ -354,11 +354,26 @@ CMakeFiles/MyGameEngine.dir/src/engine/Core/ArtCore.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyGameEngine.dir/src/engine/Core/ArtCore.cpp.s"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Core/ArtCore.cpp" -o CMakeFiles/MyGameEngine.dir/src/engine/Core/ArtCore.cpp.s
 
+CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.o: CMakeFiles/MyGameEngine.dir/flags.make
+CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.o: CMakeFiles/MyGameEngine.dir/includes_CXX.rsp
+CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/src/engine/Graphics/Material.cpp
+CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.o"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.o -MF CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.o.d -o CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/Material.cpp"
+
+CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.i"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/Material.cpp" > CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.i
+
+CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.s"
+	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/ivankiricenko/Desktop/Main project/ArtEngine/src/engine/Graphics/Material.cpp" -o CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.s
+
 CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o: CMakeFiles/MyGameEngine.dir/flags.make
 CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o: CMakeFiles/MyGameEngine.dir/includes_C.rsp
 CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/optional/wren_opt_meta.c
 CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o -MF CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o.d -o CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/optional/wren_opt_meta.c"
 
 CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.i: cmake_force
@@ -373,7 +388,7 @@ CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o: CMakeFiles/MyGa
 CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o: CMakeFiles/MyGameEngine.dir/includes_C.rsp
 CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/optional/wren_opt_random.c
 CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o -MF CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o.d -o CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/optional/wren_opt_random.c"
 
 CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.i: cmake_force
@@ -388,7 +403,7 @@ CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o: CMakeFiles/MyGameEngine
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o: CMakeFiles/MyGameEngine.dir/includes_C.rsp
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_compiler.c
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o -MF CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o.d -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_compiler.c"
 
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.i: cmake_force
@@ -403,7 +418,7 @@ CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o: CMakeFiles/MyGameEngine.dir
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o: CMakeFiles/MyGameEngine.dir/includes_C.rsp
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_core.c
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o -MF CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o.d -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_core.c"
 
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.i: cmake_force
@@ -418,7 +433,7 @@ CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o: CMakeFiles/MyGameEngine.di
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o: CMakeFiles/MyGameEngine.dir/includes_C.rsp
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_debug.c
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o -MF CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o.d -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_debug.c"
 
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_debug.c.i: cmake_force
@@ -433,7 +448,7 @@ CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o: CMakeFiles/MyGameEngin
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o: CMakeFiles/MyGameEngine.dir/includes_C.rsp
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_primitive.c
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o -MF CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o.d -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_primitive.c"
 
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_primitive.c.i: cmake_force
@@ -448,7 +463,7 @@ CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o: CMakeFiles/MyGameEngine.di
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o: CMakeFiles/MyGameEngine.dir/includes_C.rsp
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_utils.c
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o -MF CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o.d -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_utils.c"
 
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.i: cmake_force
@@ -463,7 +478,7 @@ CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o: CMakeFiles/MyGameEngine.di
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o: CMakeFiles/MyGameEngine.dir/includes_C.rsp
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_value.c
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o -MF CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o.d -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_value.c"
 
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_value.c.i: cmake_force
@@ -478,7 +493,7 @@ CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o: CMakeFiles/MyGameEngine.dir/f
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o: CMakeFiles/MyGameEngine.dir/includes_C.rsp
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_vm.c
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/emcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o -MF CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o.d -o CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/WrenVM/vm/wren_vm.c"
 
 CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_vm.c.i: cmake_force
@@ -493,7 +508,7 @@ CMakeFiles/MyGameEngine.dir/Imgui/imgui.cpp.o: CMakeFiles/MyGameEngine.dir/flags
 CMakeFiles/MyGameEngine.dir/Imgui/imgui.cpp.o: CMakeFiles/MyGameEngine.dir/includes_CXX.rsp
 CMakeFiles/MyGameEngine.dir/Imgui/imgui.cpp.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/imgui.cpp
 CMakeFiles/MyGameEngine.dir/Imgui/imgui.cpp.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/MyGameEngine.dir/Imgui/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/MyGameEngine.dir/Imgui/imgui.cpp.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/Imgui/imgui.cpp.o -MF CMakeFiles/MyGameEngine.dir/Imgui/imgui.cpp.o.d -o CMakeFiles/MyGameEngine.dir/Imgui/imgui.cpp.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/Imgui/imgui.cpp"
 
 CMakeFiles/MyGameEngine.dir/Imgui/imgui.cpp.i: cmake_force
@@ -508,7 +523,7 @@ CMakeFiles/MyGameEngine.dir/Imgui/imgui_draw.cpp.o: CMakeFiles/MyGameEngine.dir/
 CMakeFiles/MyGameEngine.dir/Imgui/imgui_draw.cpp.o: CMakeFiles/MyGameEngine.dir/includes_CXX.rsp
 CMakeFiles/MyGameEngine.dir/Imgui/imgui_draw.cpp.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/imgui_draw.cpp
 CMakeFiles/MyGameEngine.dir/Imgui/imgui_draw.cpp.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/MyGameEngine.dir/Imgui/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/MyGameEngine.dir/Imgui/imgui_draw.cpp.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/Imgui/imgui_draw.cpp.o -MF CMakeFiles/MyGameEngine.dir/Imgui/imgui_draw.cpp.o.d -o CMakeFiles/MyGameEngine.dir/Imgui/imgui_draw.cpp.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/Imgui/imgui_draw.cpp"
 
 CMakeFiles/MyGameEngine.dir/Imgui/imgui_draw.cpp.i: cmake_force
@@ -523,7 +538,7 @@ CMakeFiles/MyGameEngine.dir/Imgui/imgui_tables.cpp.o: CMakeFiles/MyGameEngine.di
 CMakeFiles/MyGameEngine.dir/Imgui/imgui_tables.cpp.o: CMakeFiles/MyGameEngine.dir/includes_CXX.rsp
 CMakeFiles/MyGameEngine.dir/Imgui/imgui_tables.cpp.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/imgui_tables.cpp
 CMakeFiles/MyGameEngine.dir/Imgui/imgui_tables.cpp.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/MyGameEngine.dir/Imgui/imgui_tables.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/MyGameEngine.dir/Imgui/imgui_tables.cpp.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/Imgui/imgui_tables.cpp.o -MF CMakeFiles/MyGameEngine.dir/Imgui/imgui_tables.cpp.o.d -o CMakeFiles/MyGameEngine.dir/Imgui/imgui_tables.cpp.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/Imgui/imgui_tables.cpp"
 
 CMakeFiles/MyGameEngine.dir/Imgui/imgui_tables.cpp.i: cmake_force
@@ -538,7 +553,7 @@ CMakeFiles/MyGameEngine.dir/Imgui/imgui_widgets.cpp.o: CMakeFiles/MyGameEngine.d
 CMakeFiles/MyGameEngine.dir/Imgui/imgui_widgets.cpp.o: CMakeFiles/MyGameEngine.dir/includes_CXX.rsp
 CMakeFiles/MyGameEngine.dir/Imgui/imgui_widgets.cpp.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/imgui_widgets.cpp
 CMakeFiles/MyGameEngine.dir/Imgui/imgui_widgets.cpp.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/MyGameEngine.dir/Imgui/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/MyGameEngine.dir/Imgui/imgui_widgets.cpp.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/Imgui/imgui_widgets.cpp.o -MF CMakeFiles/MyGameEngine.dir/Imgui/imgui_widgets.cpp.o.d -o CMakeFiles/MyGameEngine.dir/Imgui/imgui_widgets.cpp.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/Imgui/imgui_widgets.cpp"
 
 CMakeFiles/MyGameEngine.dir/Imgui/imgui_widgets.cpp.i: cmake_force
@@ -553,7 +568,7 @@ CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/MyG
 CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/MyGameEngine.dir/includes_CXX.rsp
 CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_glfw.cpp.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/backends/imgui_impl_glfw.cpp
 CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_glfw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_glfw.cpp.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_glfw.cpp.o -MF CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_glfw.cpp.o.d -o CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_glfw.cpp.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/Imgui/backends/imgui_impl_glfw.cpp"
 
 CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_glfw.cpp.i: cmake_force
@@ -568,7 +583,7 @@ CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/
 CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/MyGameEngine.dir/includes_CXX.rsp
 CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_opengl3.cpp.o: /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/backends/imgui_impl_opengl3.cpp
 CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/MyGameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_opengl3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_opengl3.cpp.o"
 	/Users/ivankiricenko/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_opengl3.cpp.o -c "/Users/ivankiricenko/Desktop/Main project/ArtEngine/Imgui/backends/imgui_impl_opengl3.cpp"
 
 CMakeFiles/MyGameEngine.dir/Imgui/backends/imgui_impl_opengl3.cpp.i: cmake_force
@@ -600,6 +615,7 @@ MyGameEngine_OBJECTS = \
 "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/ArtGraphics.cpp.o" \
 "CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Texture.cpp.o" \
 "CMakeFiles/MyGameEngine.dir/src/engine/Core/ArtCore.cpp.o" \
+"CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.o" \
 "CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o" \
 "CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o" \
 "CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o" \
@@ -638,6 +654,7 @@ build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Graphic
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Graphics/ArtGraphics.cpp.o
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Texture.cpp.o
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Core/ArtCore.cpp.o
+build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Material.cpp.o
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_meta.c.o
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/WrenVM/optional/wren_opt_random.c.o
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_compiler.c.o
@@ -658,7 +675,7 @@ build_output/my_game_engine.html: libglad.a
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/linkLibs.rsp
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/objects1.rsp
 build_output/my_game_engine.html: CMakeFiles/MyGameEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Linking CXX executable build_output/my_game_engine.html"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Linking CXX executable build_output/my_game_engine.html"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyGameEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

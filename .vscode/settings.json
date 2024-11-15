@@ -81,6 +81,8 @@
         "future": "cpp",
         "map": "cpp",
         "set": "cpp",
-        "*.inc": "c"
+        "*.inc": "c",
+        "filesystem": "cpp",
+        "span": "cpp"
     }
 }

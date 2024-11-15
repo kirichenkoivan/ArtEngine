@@ -7,11 +7,11 @@ C_DEFINES =
 
 C_INCLUDES = @CMakeFiles/MyGameEngine.dir/includes_C.rsp
 
-C_FLAGS = -g
+C_FLAGS = 
 
 CXX_DEFINES = 
 
 CXX_INCLUDES = @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp
 
-CXX_FLAGS =  -O3 -s -g -std=gnu++17
+CXX_FLAGS =  -O3 -s -std=gnu++17
 
