@@ -12,59 +12,23 @@ RenderLayer::RenderLayer() : Layer("RenderLayer"), m_CameraController(16.0f / 9.
     Logger::GetInstance().Info(CATEGORY, "RenderLayer Created");
 }
 
-
-static std::vector<Vertex> CreateQuad(float x, float y, GLuint texID){
-    
-    float size = 1.0f;
-    std::vector<Vertex> res;
-
-    Vertex v0;
-    v0.position = {x, y, 0.0f};
-    v0.texCoords = {0.0f, 0.0f};
-    v0.color = {0.18f, 0.6f, 0.96f, 1.0f};
-    v0.texID = texID;
-    res.push_back(v0);
-
-    Vertex v1;
-    v1.position = { x + size, y, 0.0f };
-    v1.texCoords = { 1.0f, 0.0f };
-    v1.color = {0.18f, 0.6f, 0.96f, 1.0f};
-    v1.texID = texID;
-    res.push_back(v1);
-
-    Vertex v2;
-    v2.position = { x + size, y + size, 0.0f };
-    v2.texCoords = { 1.0f, 1.0f };
-    v2.color = {0.18f, 0.6f, 0.96f, 1.0f};
-    v2.texID = texID;
-    res.push_back(v2);
-
-    Vertex v3;
-    v3.position = { x, y + size, 0.0f };
-    v3.texCoords = { 0.0f, 1.0f };
-    v3.color = {0.18f, 0.6f, 0.96f, 1.0f};
-    v3.texID = texID;
-    res.push_back(v3);
-
-    return res;
-}
-
 void RenderLayer::OnAttach()
 {
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-   m_Shader = Shader::FromGLSLTextFile("/FileSystem/Shaders/vertex.glsl", "/FileSystem/Shaders/fragment.glsl");
-
-    m_Texture = Texture::CreateTexture("/FileSystem/Textures/image.png");
-    m_Material = Material::CreateMaterial("mat1", m_Shader, m_Texture);
-    m_Mesh = Mesh::CreateMesh("obj", CreateQuad(1, 1, m_Material->GetTexture()->GetTexture()), {0, 1, 2, 0, 2, 3}, m_Material);
-
-    glUseProgram(m_Mesh->GetMaterial()->GetShader()->GetRendererID());
-    auto loc = glGetUniformLocation(m_Mesh->GetMaterial()->GetShader()->GetRendererID(), "u_Textures");
-    int samplers[2] = {0 , 1};
-    glUniform1iv(loc, 2, samplers);
+    float lastYPos = 0.0f;
+    for (int j = 0; j < 3; ++j){
+        float lastPos = 0.0f;
+        for (int i = 0; i <= 20; ++i){
+            auto obj = CreateMeshFromJson();
+            obj->SetPosition(lastPos, lastYPos, 0.0f);
+            m_MeshesArr.push_back(obj);
+            lastPos += 0.5f;
+        }
+        lastYPos += 0.75;
+    }
 
     glGenVertexArrays(1, &m_QuadVA);
     glBindVertexArray(m_QuadVA);
@@ -72,6 +36,16 @@ void RenderLayer::OnAttach()
     glGenBuffers(1, &m_QuadVB);
     glBindBuffer(GL_ARRAY_BUFFER, m_QuadVB);
     glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex) * 1000, nullptr, GL_DYNAMIC_DRAW);
+
+    glGenBuffers(1, &m_QuadIB);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_QuadIB);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(uint32_t) * 5000, nullptr, GL_DYNAMIC_DRAW);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
+
+    glGenBuffers(1, &m_QuadUBO);
+    glBindBuffer(GL_UNIFORM_BUFFER, m_QuadUBO);
+    glBufferData(GL_UNIFORM_BUFFER, 128 * sizeof(glm::mat4), nullptr, GL_DYNAMIC_DRAW);
+    glBindBuffer(GL_UNIFORM_BUFFER, 0);
 
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (const void*)offsetof(Vertex, position));
@@ -85,17 +59,8 @@ void RenderLayer::OnAttach()
     glEnableVertexAttribArray(3);
     glVertexAttribPointer(3, 1, GL_FLOAT, GL_FALSE, sizeof(Vertex), (const void*)offsetof(Vertex, texID));
 
-    uint32_t indices[] = { 
-        0, 1, 2, 0, 2, 3
-     };
-    glGenBuffers(1, &m_QuadIB);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_QuadIB);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, m_Mesh->GetIndices().size() * sizeof(uint32_t), m_Mesh->GetIndices().data(), GL_STATIC_DRAW);
-
-
-    m_SquareColor = glm::vec4(1.0f, 0.0f, 0.0f, 1.0f);
-
-    //m_TextureID = LoadTexture("FileSystem/Textures/image.png");
+    glEnableVertexAttribArray(4);
+    glVertexAttribIPointer(4, 1, GL_INT, sizeof(Vertex), (const void*)offsetof(Vertex, objID));
 
     Logger::GetInstance().Info(CATEGORY, "RenderLayer Attached");
 }
@@ -112,47 +77,134 @@ void RenderLayer::OnDetach()
 void RenderLayer::OnUpdate(Timestep ts)
 {
     m_CameraController.OnUpdate(ts);
-
-    Vertex verts[4];
-    memcpy(verts, m_Mesh->GetVertices().data(), m_Mesh->GetVertices().size() * sizeof(Vertex));
-
-    glBindBuffer(GL_ARRAY_BUFFER, m_QuadVB);
-    glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(verts), verts);
+    m_DrawCallsCounter = 0;
+    PackIntoBatches(m_MeshesArr);
 
     glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    glUseProgram(m_Mesh->GetMaterial()->GetShader()->GetRendererID());
-    glBindTexture(GL_TEXTURE_2D, m_Mesh->GetMaterial()->GetTexture()->GetTexture());
+    for (auto batch : m_Batches){
 
-    auto vp = m_CameraController.GetCamera().GetViewProjectionMatrix();
+        glBindBuffer(GL_ARRAY_BUFFER, m_QuadVB);
+        glBufferSubData(GL_ARRAY_BUFFER, 0, batch->vertices.size() * sizeof(Vertex), batch->vertices.data());
 
-    SetUniformMat4(m_Mesh->GetMaterial()->GetShader()->GetRendererID(), "u_ViewProjection", vp);
-    SetUniformMat4(m_Mesh->GetMaterial()->GetShader()->GetRendererID(), "u_Model", m_Mesh->GetMeshMatrix());
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_QuadIB);
+        glBufferSubData(GL_ELEMENT_ARRAY_BUFFER, 0, batch->indices.size() * sizeof(uint32_t), batch->indices.data());
 
-    glBindVertexArray(m_QuadVA);
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
+        glBindBuffer(GL_UNIFORM_BUFFER, m_QuadUBO);
+        glBufferSubData(GL_UNIFORM_BUFFER, 0, batch->modelMatrices.size() * sizeof(glm::mat4), batch->modelMatrices.data());
+
+        GLuint shaderProgramID = batch->shader->GetRendererID();
+        GLuint blockIndex = glGetUniformBlockIndex(shaderProgramID, "ModelMatrices");
+        if (blockIndex != GL_INVALID_INDEX) {
+            glUniformBlockBinding(shaderProgramID, blockIndex, 0);
+            glBindBufferBase(GL_UNIFORM_BUFFER, 0, m_QuadUBO);
+        } else {
+            Logger::GetInstance().Error(CATEGORY, "Uniform block 'ModelMatrices' not found in shader.");
+        }
+
+        glUseProgram(shaderProgramID);
+
+        auto vp = m_CameraController.GetCamera().GetViewProjectionMatrix();
+
+        SetUniformMat4(shaderProgramID, "u_ViewProjection", vp);
+
+        glBindVertexArray(m_QuadVA);
+        glDrawElements(GL_TRIANGLES, batch->indices.size(), GL_UNSIGNED_INT, nullptr);
+
+        glBindBuffer(GL_ARRAY_BUFFER, 0);
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
+        glBindBuffer(GL_UNIFORM_BUFFER, 0);
+        m_DrawCallsCounter++;
+    }
 }
 
 void RenderLayer::OnImGuiRender()
 {
     ImGui::Begin("Render Debug Menu");
-    if(ImGui::ColorEdit4("Square Base Color", glm::value_ptr(m_SquareBaseColor))){
-        m_SquareColor = m_SquareBaseColor;
-    }
-    ImGui::ColorEdit4("Square Alternative Color", glm::value_ptr(m_SquareAlternativeColor));
 
     ImGui::Text("%.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
 
+    ImGui::Text("Batches: %lu", m_Batches.size());
+    ImGui::Text("Draw Calls: %d", m_DrawCallsCounter);
+
+    for (size_t i = 0; i < m_Batches.size(); ++i) {
+        auto& batch = m_Batches[i];
+        ImGui::Separator();
+        ImGui::Text("Batch %zu", i);
+        ImGui::Text("Shader: %s", batch->shader ? batch->shader->GetName().c_str() : "None");
+        ImGui::Text("Vertices: %lu", batch->vertices.size());
+        ImGui::Text("Indices: %lu", batch->indices.size());
+
+        if (ImGui::TreeNode(("Indices##" + std::to_string(i)).c_str())) {
+            for (size_t j = 0; j < batch->indices.size(); ++j) {
+                ImGui::Text("%lu: %u", j, batch->indices[j]);
+            }
+            ImGui::TreePop();
+        }
+    }
     ImGui::End();
 }
 
 void RenderLayer::SetUniformMat4(uint32_t shader, const char* name, const glm::mat4& matrix) {
     int location = glGetUniformLocation(shader, name);
+    if (location == -1) {
+        Logger::GetInstance().Error("Renderer/", "Uniform location not found: " + std::string(name));
+        return;
+    }
     glUniformMatrix4fv(location, 1, GL_FALSE, glm::value_ptr(matrix));
 }
 
 void RenderLayer::SetUniform4fv(uint32_t shader, const char* name, const glm::vec4& vect){
     int location = glGetUniformLocation(shader, name);
+    if (location == -1) {
+        Logger::GetInstance().Error("Renderer", "Uniform location not found: " + std::string(name));
+        return;
+    }
     glUniform4fv(location, 1, glm::value_ptr(vect));
+}
+
+std::shared_ptr<Batch> RenderLayer::MakeBatch(std::vector<std::shared_ptr<Mesh>> meshes) {
+    std::shared_ptr<Batch> batch(new Batch());
+    size_t objID = 0;
+
+    for (const auto& mesh : meshes) {
+        batch->modelMatrices.push_back(mesh->GetMeshMatrix());
+
+        size_t vertexOffset = batch->vertices.size();
+
+        for (const auto& vertex : mesh->GetVertices()) {
+            Vertex batchedVertex = vertex;
+            batchedVertex.objID = objID;
+            batch->vertices.push_back(batchedVertex);
+        }
+
+        for (const auto& index : mesh->GetIndices()) {
+            batch->indices.push_back(index + static_cast<uint32_t>(vertexOffset));
+        }
+
+        if (batch->shader == nullptr) {
+            batch->shader = mesh->GetMaterial()->GetShader();
+        } else if (batch->shader != mesh->GetMaterial()->GetShader()) {
+            Logger::GetInstance().Error(CATEGORY, "Meshes with different shaders are in the same batch. This is not supported.");
+        }
+
+        ++objID;
+    }
+
+    return batch;
+}
+
+void RenderLayer::PackIntoBatches(std::vector<std::shared_ptr<Mesh>> meshes)
+{
+    m_Batches.clear();
+    std::unordered_map<std::shared_ptr<Shader>, std::vector<std::shared_ptr<Mesh>>> meshesByShaders;
+
+    for (const auto& mesh : meshes){
+        meshesByShaders[mesh->GetMaterial()->GetShader()].push_back(mesh);
+    } 
+
+    for (const auto& sortedMehes : meshesByShaders){
+        m_Batches.push_back(MakeBatch(sortedMehes.second));
+    }
 }

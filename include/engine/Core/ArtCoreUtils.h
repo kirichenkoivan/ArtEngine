@@ -10,7 +10,6 @@
 #include "../Tools/fileLoader.h"
 #include "../Tools/shaderLoader.h"
 #include "../Tools/xmlReader.h"
-#include "../../libs/json.hpp"
 
 
 #endif

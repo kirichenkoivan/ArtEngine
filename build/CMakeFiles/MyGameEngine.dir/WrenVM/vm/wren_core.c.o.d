@@ -28,6 +28,7 @@ CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_core.c.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/compat/time.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/time.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_common.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stdio.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_core.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_vm.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_compiler.h \

@@ -1,0 +1,6 @@
+{
+    "Name" : "DefaultMat",
+    "Shader": "/FileSystem/Assets/Library/Shaders/DefaultShader.json",
+    
+    "Color" : [255, 255, 255, 255]
+}

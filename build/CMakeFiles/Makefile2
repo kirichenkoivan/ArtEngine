@@ -83,12 +83,12 @@ clean: CMakeFiles/glad.dir/clean
 CMakeFiles/MyGameEngine.dir/all: CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36 "Built target MyGameEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41 "Built target MyGameEngine"
 .PHONY : CMakeFiles/MyGameEngine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MyGameEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" 38
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" 43
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MyGameEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" 0
 .PHONY : CMakeFiles/MyGameEngine.dir/rule
@@ -109,7 +109,7 @@ CMakeFiles/MyGameEngine.dir/clean:
 CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=37,38 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/ivankiricenko/Desktop/Main project/ArtEngine/build/CMakeFiles" --progress-num=42,43 "Built target glad"
 .PHONY : CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.

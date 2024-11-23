@@ -11,8 +11,17 @@ std::shared_ptr<Mesh> Mesh::CreateMesh(const std::string &name, std::vector<Vert
     mesh->m_Vertices = verts;
     mesh->m_Indices = indices;
     mesh->m_Material = material;
+    if (!mesh->m_Material->isUsingTexture()){
+        mesh->SetColorToAllVerts();
+    }
 
     return mesh;
+}
+
+void Mesh::SetPosition(float x, float y, float z){
+    this->m_Position.x = x;
+    this->m_Position.y = y;
+    this->m_Position.z = z;
 }
 
 glm::mat4 Mesh::GetMeshMatrix() const
@@ -24,4 +33,11 @@ glm::mat4 Mesh::GetMeshMatrix() const
     mesh = glm::rotate(mesh, glm::radians(m_Rotation.z), glm::vec3(0, 0, 1));
     mesh = glm::scale(mesh, m_Scale);
     return mesh;
+}
+
+void Mesh::SetColorToAllVerts() {
+    for (auto vertex : this->m_Vertices){
+        //std::cout << this->m_Material->GetColor() << std::endl;
+        vertex.color = this->m_Material->GetColor();
+    }
 }

@@ -3,15 +3,15 @@
 
 # compile C with /Users/ivankiricenko/emsdk/upstream/emscripten/emcc
 # compile CXX with /Users/ivankiricenko/emsdk/upstream/emscripten/em++
-C_DEFINES = 
+C_DEFINES = -DDEBUG
 
 C_INCLUDES = @CMakeFiles/MyGameEngine.dir/includes_C.rsp
 
-C_FLAGS = 
+C_FLAGS = -g
 
-CXX_DEFINES = 
+CXX_DEFINES = -DDEBUG
 
 CXX_INCLUDES = @CMakeFiles/MyGameEngine.dir/includes_CXX.rsp
 
-CXX_FLAGS =  -O3 -s -std=gnu++17
+CXX_FLAGS =  -g -O0 -g -std=gnu++17
 

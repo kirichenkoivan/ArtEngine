@@ -1197,7 +1197,26 @@ CMakeFiles/MyGameEngine.dir/src/engine/Layers/RenderLayer.cpp.o: \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/../Tools/tinyxml2.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/GLES2/gl2.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/GLES2/gl2platform.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Core/../../libs/json.hpp \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/ArtGraphics.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Shader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Core/Glad/glad.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Core/ArtCoreUtils.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Texture.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Core/ArtCore.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../../libs/stb_image.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Cameras/OrthographicCamera.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Cameras/../../Core/ArtCore.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Cameras/../../Core/ArtCoreUtils.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Cameras/OrthographicCameraController.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Meshes/Mesh.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Meshes/../../Core/ArtCore.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Meshes/../../Core/ArtCoreUtils.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Meshes/../Material.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Meshes/../Texture.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Meshes/../Shader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Material.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/MeshLoader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/libs/json.hpp \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/map \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__tree \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/valarray \
@@ -1217,21 +1236,16 @@ CMakeFiles/MyGameEngine.dir/src/engine/Layers/RenderLayer.cpp.o: \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__numeric/transform_exclusive_scan.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__numeric/transform_inclusive_scan.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/any \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/ArtGraphics.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Shader.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Core/Glad/glad.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Core/ArtCoreUtils.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Texture.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Core/ArtCore.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../../libs/stb_image.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Cameras/OrthographicCamera.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Cameras/../../Core/ArtCore.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Cameras/../../Core/ArtCoreUtils.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Cameras/OrthographicCameraController.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Meshes/Mesh.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Meshes/../../Core/ArtCore.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Meshes/../../Core/ArtCoreUtils.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Meshes/../Material.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Meshes/../Texture.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Meshes/../Shader.h \
-  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/Material.h
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/../../Graphics/Meshes/Mesh.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/MaterialLoader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/../logger.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/ShaderLoader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/../../Graphics/Shader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/../../Graphics/Pools/ShaderPool.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/../../Graphics/Pools/../../Core/ArtCore.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/../../Graphics/Pools/../../Core/ArtCoreUtils.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/../../Graphics/Pools/../Shader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/../fileLoader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/../../Graphics/Material.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/../../Graphics/Pools/MaterialPool.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/../../Graphics/Pools/../Material.h

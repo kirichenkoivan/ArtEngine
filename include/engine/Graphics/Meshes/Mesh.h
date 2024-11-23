@@ -5,11 +5,14 @@
 #include "../../Core/ArtCoreUtils.h"
 #include "../Material.h"
 
+#include <iostream>
+
 struct Vertex {
     glm::vec3 position;
     glm::vec4 color;
     glm::vec2 texCoords;
     GLuint texID;
+    int objID;
 };
 
 class Mesh {
@@ -24,7 +27,7 @@ class Mesh {
         std::shared_ptr<Material> GetMaterial() const { return m_Material; }
 
         // Setters
-        void SetPosition(float x, float y, float z) { m_Position = {x, y, z}; }
+        void SetPosition(float x, float y, float z);
         void SetPositionX(float x) { m_Position.x = x; }
         void SetPositionY(float y) { m_Position.y = y; }
         void SetPositionZ(float z) { m_Position.z = z; }
@@ -56,6 +59,9 @@ class Mesh {
         float GetRotationZ() const { return m_Rotation.z; }
 
         glm::mat4 GetMeshMatrix() const;
+
+    private:
+    void SetColorToAllVerts();
 
     private:
         Mesh() = default;

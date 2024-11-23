@@ -9,6 +9,10 @@ set(EMSCRIPTEN_ROOT_PATH /Users/ivankiricenko/emsdk/upstream/emscripten)
 set(CMAKE_TOOLCHAIN_FILE ${EMSCRIPTEN_ROOT_PATH}/cmake/Modules/Platform/Emscripten.cmake)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build_output)
 
+set(CMAKE_CXX_COMPILER "${EMSCRIPTEN_ROOT_PATH}/em++")
+set(CMAKE_C_COMPILER "${EMSCRIPTEN_ROOT_PATH}/emcc")
+
+
 # Установка пути к заголовочным файлам Emscripten
 include_directories(${EMSCRIPTEN_ROOT_PATH}/cache/sysroot/include)
 
@@ -56,6 +60,11 @@ add_executable(MyGameEngine
     src/engine/Graphics/Texture.cpp
     src/engine/Core/ArtCore.cpp
     src/engine/Graphics/Material.cpp
+    src/engine/Tools/GraphicsLoaders/ShaderLoader.cpp
+    src/engine/Tools/GraphicsLoaders/MaterialLoader.cpp
+    src/engine/Tools/GraphicsLoaders/MeshLoader.cpp
+    src/engine/Graphics/Pools/ShaderPool.cpp
+    src/engine/Graphics/Pools/MaterialPool.cpp
 
     # Wren VM sources
     WrenVM/optional/wren_opt_meta.c
@@ -92,12 +101,22 @@ target_link_libraries(MyGameEngine glad)
 
 # Устанавливаем параметры компиляции для WebAssembly, если используется Emscripten
 if (CMAKE_TOOLCHAIN_FILE MATCHES "Emscripten.cmake")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -s")
-    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -s USE_GLFW=3 -s USE_WEBGL2=1 -s WASM=1 -s ALLOW_MEMORY_GROWTH=1 -O3 --preload-file ../FileSystem@/FileSystem --shell-file=\"${CMAKE_SOURCE_DIR}/templates/template.html\"")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0")
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -g -O0 -s USE_GLFW=3 -s USE_WEBGL2=1 -s WASM=1 -s ALLOW_MEMORY_GROWTH=1 --source-map --source-map-base=http://localhost:8888/ --preload-file ../FileSystem@/FileSystem --shell-file=\"${CMAKE_SOURCE_DIR}/templates/template.html\"")
 endif()
+
 
 # Устанавливаем имя и суффикс выходного файла
 set_target_properties(MyGameEngine PROPERTIES
     OUTPUT_NAME "my_game_engine"
     SUFFIX ".html"
 )
+
+# Определяем макросы для разных типов сборок
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+    target_compile_definitions(MyGameEngine PRIVATE DEBUG)
+elseif(CMAKE_BUILD_TYPE STREQUAL "Release")
+    target_compile_definitions(MyGameEngine PRIVATE RELEASE)
+elseif(CMAKE_BUILD_TYPE STREQUAL "Retail")
+    target_compile_definitions(MyGameEngine PRIVATE RETAIL)
+endif()

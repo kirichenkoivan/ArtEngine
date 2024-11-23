@@ -15,14 +15,15 @@ Shader::~Shader()
     glDeleteProgram(m_RendererID);
 }
 
-std::shared_ptr<Shader> Shader::FromGLSLTextFile(const std::string &vertexShaderPath, const std::string &fragmentShaderPath)
+std::shared_ptr<Shader> Shader::FromGLSLTextFile(const std::string &vertexShaderPath, const std::string &fragmentShaderPath, std::vector<std::string> uniforms, std::string name)
 {
     std::shared_ptr<Shader> shader(new Shader());
-    shader->LoadFromGLSLTextFiles(vertexShaderPath, fragmentShaderPath);
+    shader->LoadFromGLSLTextFiles(vertexShaderPath, fragmentShaderPath, uniforms);
+    shader->m_Name = name;
     return shader;
 }
 
-void Shader::LoadFromGLSLTextFiles(const std::string &vertexShaderPath, const std::string &fragmentShaderPath)
+void Shader::LoadFromGLSLTextFiles(const std::string &vertexShaderPath, const std::string &fragmentShaderPath, std::vector<std::string> uniforms)
 {
     std::string vertexSource = readFile(vertexShaderPath);
     std::string fragmentSource = readFile(fragmentShaderPath);
@@ -60,6 +61,7 @@ void Shader::LoadFromGLSLTextFiles(const std::string &vertexShaderPath, const st
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
 
+    m_Uniforms = uniforms;
     m_RendererID = program;
 }
 

@@ -742,6 +742,54 @@ src/engine/Graphics/Meshes/Mesh.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Meshes/Mesh.cpp.s
 .PHONY : src/engine/Graphics/Meshes/Mesh.cpp.s
 
+src/engine/Graphics/Pools/MaterialPool.o: src/engine/Graphics/Pools/MaterialPool.cpp.o
+.PHONY : src/engine/Graphics/Pools/MaterialPool.o
+
+# target to build an object file
+src/engine/Graphics/Pools/MaterialPool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Pools/MaterialPool.cpp.o
+.PHONY : src/engine/Graphics/Pools/MaterialPool.cpp.o
+
+src/engine/Graphics/Pools/MaterialPool.i: src/engine/Graphics/Pools/MaterialPool.cpp.i
+.PHONY : src/engine/Graphics/Pools/MaterialPool.i
+
+# target to preprocess a source file
+src/engine/Graphics/Pools/MaterialPool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Pools/MaterialPool.cpp.i
+.PHONY : src/engine/Graphics/Pools/MaterialPool.cpp.i
+
+src/engine/Graphics/Pools/MaterialPool.s: src/engine/Graphics/Pools/MaterialPool.cpp.s
+.PHONY : src/engine/Graphics/Pools/MaterialPool.s
+
+# target to generate assembly for a file
+src/engine/Graphics/Pools/MaterialPool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Pools/MaterialPool.cpp.s
+.PHONY : src/engine/Graphics/Pools/MaterialPool.cpp.s
+
+src/engine/Graphics/Pools/ShaderPool.o: src/engine/Graphics/Pools/ShaderPool.cpp.o
+.PHONY : src/engine/Graphics/Pools/ShaderPool.o
+
+# target to build an object file
+src/engine/Graphics/Pools/ShaderPool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Pools/ShaderPool.cpp.o
+.PHONY : src/engine/Graphics/Pools/ShaderPool.cpp.o
+
+src/engine/Graphics/Pools/ShaderPool.i: src/engine/Graphics/Pools/ShaderPool.cpp.i
+.PHONY : src/engine/Graphics/Pools/ShaderPool.i
+
+# target to preprocess a source file
+src/engine/Graphics/Pools/ShaderPool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Pools/ShaderPool.cpp.i
+.PHONY : src/engine/Graphics/Pools/ShaderPool.cpp.i
+
+src/engine/Graphics/Pools/ShaderPool.s: src/engine/Graphics/Pools/ShaderPool.cpp.s
+.PHONY : src/engine/Graphics/Pools/ShaderPool.s
+
+# target to generate assembly for a file
+src/engine/Graphics/Pools/ShaderPool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Pools/ShaderPool.cpp.s
+.PHONY : src/engine/Graphics/Pools/ShaderPool.cpp.s
+
 src/engine/Graphics/Shader.o: src/engine/Graphics/Shader.cpp.o
 .PHONY : src/engine/Graphics/Shader.o
 
@@ -861,6 +909,78 @@ src/engine/Managers/scriptsManager.s: src/engine/Managers/scriptsManager.cpp.s
 src/engine/Managers/scriptsManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Managers/scriptsManager.cpp.s
 .PHONY : src/engine/Managers/scriptsManager.cpp.s
+
+src/engine/Tools/GraphicsLoaders/MaterialLoader.o: src/engine/Tools/GraphicsLoaders/MaterialLoader.cpp.o
+.PHONY : src/engine/Tools/GraphicsLoaders/MaterialLoader.o
+
+# target to build an object file
+src/engine/Tools/GraphicsLoaders/MaterialLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/GraphicsLoaders/MaterialLoader.cpp.o
+.PHONY : src/engine/Tools/GraphicsLoaders/MaterialLoader.cpp.o
+
+src/engine/Tools/GraphicsLoaders/MaterialLoader.i: src/engine/Tools/GraphicsLoaders/MaterialLoader.cpp.i
+.PHONY : src/engine/Tools/GraphicsLoaders/MaterialLoader.i
+
+# target to preprocess a source file
+src/engine/Tools/GraphicsLoaders/MaterialLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/GraphicsLoaders/MaterialLoader.cpp.i
+.PHONY : src/engine/Tools/GraphicsLoaders/MaterialLoader.cpp.i
+
+src/engine/Tools/GraphicsLoaders/MaterialLoader.s: src/engine/Tools/GraphicsLoaders/MaterialLoader.cpp.s
+.PHONY : src/engine/Tools/GraphicsLoaders/MaterialLoader.s
+
+# target to generate assembly for a file
+src/engine/Tools/GraphicsLoaders/MaterialLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/GraphicsLoaders/MaterialLoader.cpp.s
+.PHONY : src/engine/Tools/GraphicsLoaders/MaterialLoader.cpp.s
+
+src/engine/Tools/GraphicsLoaders/MeshLoader.o: src/engine/Tools/GraphicsLoaders/MeshLoader.cpp.o
+.PHONY : src/engine/Tools/GraphicsLoaders/MeshLoader.o
+
+# target to build an object file
+src/engine/Tools/GraphicsLoaders/MeshLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/GraphicsLoaders/MeshLoader.cpp.o
+.PHONY : src/engine/Tools/GraphicsLoaders/MeshLoader.cpp.o
+
+src/engine/Tools/GraphicsLoaders/MeshLoader.i: src/engine/Tools/GraphicsLoaders/MeshLoader.cpp.i
+.PHONY : src/engine/Tools/GraphicsLoaders/MeshLoader.i
+
+# target to preprocess a source file
+src/engine/Tools/GraphicsLoaders/MeshLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/GraphicsLoaders/MeshLoader.cpp.i
+.PHONY : src/engine/Tools/GraphicsLoaders/MeshLoader.cpp.i
+
+src/engine/Tools/GraphicsLoaders/MeshLoader.s: src/engine/Tools/GraphicsLoaders/MeshLoader.cpp.s
+.PHONY : src/engine/Tools/GraphicsLoaders/MeshLoader.s
+
+# target to generate assembly for a file
+src/engine/Tools/GraphicsLoaders/MeshLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/GraphicsLoaders/MeshLoader.cpp.s
+.PHONY : src/engine/Tools/GraphicsLoaders/MeshLoader.cpp.s
+
+src/engine/Tools/GraphicsLoaders/ShaderLoader.o: src/engine/Tools/GraphicsLoaders/ShaderLoader.cpp.o
+.PHONY : src/engine/Tools/GraphicsLoaders/ShaderLoader.o
+
+# target to build an object file
+src/engine/Tools/GraphicsLoaders/ShaderLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/GraphicsLoaders/ShaderLoader.cpp.o
+.PHONY : src/engine/Tools/GraphicsLoaders/ShaderLoader.cpp.o
+
+src/engine/Tools/GraphicsLoaders/ShaderLoader.i: src/engine/Tools/GraphicsLoaders/ShaderLoader.cpp.i
+.PHONY : src/engine/Tools/GraphicsLoaders/ShaderLoader.i
+
+# target to preprocess a source file
+src/engine/Tools/GraphicsLoaders/ShaderLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/GraphicsLoaders/ShaderLoader.cpp.i
+.PHONY : src/engine/Tools/GraphicsLoaders/ShaderLoader.cpp.i
+
+src/engine/Tools/GraphicsLoaders/ShaderLoader.s: src/engine/Tools/GraphicsLoaders/ShaderLoader.cpp.s
+.PHONY : src/engine/Tools/GraphicsLoaders/ShaderLoader.s
+
+# target to generate assembly for a file
+src/engine/Tools/GraphicsLoaders/ShaderLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Tools/GraphicsLoaders/ShaderLoader.cpp.s
+.PHONY : src/engine/Tools/GraphicsLoaders/ShaderLoader.cpp.s
 
 src/engine/Tools/fileLoader.o: src/engine/Tools/fileLoader.cpp.o
 .PHONY : src/engine/Tools/fileLoader.o
@@ -1091,6 +1211,12 @@ help:
 	@echo "... src/engine/Graphics/Meshes/Mesh.o"
 	@echo "... src/engine/Graphics/Meshes/Mesh.i"
 	@echo "... src/engine/Graphics/Meshes/Mesh.s"
+	@echo "... src/engine/Graphics/Pools/MaterialPool.o"
+	@echo "... src/engine/Graphics/Pools/MaterialPool.i"
+	@echo "... src/engine/Graphics/Pools/MaterialPool.s"
+	@echo "... src/engine/Graphics/Pools/ShaderPool.o"
+	@echo "... src/engine/Graphics/Pools/ShaderPool.i"
+	@echo "... src/engine/Graphics/Pools/ShaderPool.s"
 	@echo "... src/engine/Graphics/Shader.o"
 	@echo "... src/engine/Graphics/Shader.i"
 	@echo "... src/engine/Graphics/Shader.s"
@@ -1106,6 +1232,15 @@ help:
 	@echo "... src/engine/Managers/scriptsManager.o"
 	@echo "... src/engine/Managers/scriptsManager.i"
 	@echo "... src/engine/Managers/scriptsManager.s"
+	@echo "... src/engine/Tools/GraphicsLoaders/MaterialLoader.o"
+	@echo "... src/engine/Tools/GraphicsLoaders/MaterialLoader.i"
+	@echo "... src/engine/Tools/GraphicsLoaders/MaterialLoader.s"
+	@echo "... src/engine/Tools/GraphicsLoaders/MeshLoader.o"
+	@echo "... src/engine/Tools/GraphicsLoaders/MeshLoader.i"
+	@echo "... src/engine/Tools/GraphicsLoaders/MeshLoader.s"
+	@echo "... src/engine/Tools/GraphicsLoaders/ShaderLoader.o"
+	@echo "... src/engine/Tools/GraphicsLoaders/ShaderLoader.i"
+	@echo "... src/engine/Tools/GraphicsLoaders/ShaderLoader.s"
 	@echo "... src/engine/Tools/fileLoader.o"
 	@echo "... src/engine/Tools/fileLoader.i"
 	@echo "... src/engine/Tools/fileLoader.s"

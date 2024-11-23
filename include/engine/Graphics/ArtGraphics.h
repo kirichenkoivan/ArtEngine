@@ -8,6 +8,7 @@
 #include "Meshes/Mesh.h"
 #include "Material.h"
 #include "../../libs/stb_image.h"
+#include "../Tools/GraphicsLoaders/MeshLoader.h"
 
 GLuint LoadTexture(const std::string& path);
 

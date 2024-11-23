@@ -1,0 +1,9 @@
+{
+    "Name" : "DefaultVertexShader",
+    "Type" : "Default2D",
+    "ShaderPath" : "FileSystem/Assets/Library/Shaders/DefaultVertexShader.glsl",
+    "Uniforms" : [
+        "u_ViewProjection",
+        "u_Model"
+    ]
+}

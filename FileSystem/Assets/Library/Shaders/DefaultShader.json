@@ -1,0 +1,9 @@
+{
+    "Name" : "DefaultShader",
+    "FragmentShaderPath" : "/FileSystem/Assets/Library/Shaders/DefaultFragmentShader.glsl",
+    "VertexShaderPath" : "/FileSystem/Assets/Library/Shaders/DefaultVertexShader.glsl",
+    "Uniforms" : [
+        "u_ViewProjection",
+        "u_Model"
+    ]
+}

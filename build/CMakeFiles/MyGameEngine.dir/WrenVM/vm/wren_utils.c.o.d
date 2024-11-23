@@ -25,6 +25,17 @@ CMakeFiles/MyGameEngine.dir/WrenVM/vm/wren_utils.c.o: \
   /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/stdint.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stdio.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/wasi/api.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/stddef.h \
+  /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/stddef.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_header_macro.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_size_t.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_wchar_t.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_null.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_max_align_t.h \
+  /Users/ivankiricenko/emsdk/upstream/lib/clang/19/include/__stddef_offsetof.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_vm.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_compiler.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/WrenVM/vm/wren_value.h \
