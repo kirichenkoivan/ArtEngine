@@ -1,5 +1,5 @@
 # ArtEngine
-![Локальное изображение](engine_cat.png)
+![Локальное изображение](ArtEngineBanner.png)
 ## Description
 `ArtEngine` is a game engine designed to work with WebAssembly and WebGL. The engine supports working with objects, scenes, materials, collisions, and includes the ability to load shaders and textures.
 
