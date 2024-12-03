@@ -11,17 +11,11 @@ std::shared_ptr<Mesh> Mesh::CreateMesh(const std::string &name, std::vector<Vert
     mesh->m_Vertices = verts;
     mesh->m_Indices = indices;
     mesh->m_Material = material;
+    
     if (!mesh->m_Material->isUsingTexture()){
-        mesh->SetColorToAllVerts();
+        mesh->SetColorFromMaterial();
     }
-
     return mesh;
-}
-
-void Mesh::SetPosition(float x, float y, float z){
-    this->m_Position.x = x;
-    this->m_Position.y = y;
-    this->m_Position.z = z;
 }
 
 glm::mat4 Mesh::GetMeshMatrix() const
@@ -35,9 +29,25 @@ glm::mat4 Mesh::GetMeshMatrix() const
     return mesh;
 }
 
-void Mesh::SetColorToAllVerts() {
-    for (auto vertex : this->m_Vertices){
-        //std::cout << this->m_Material->GetColor() << std::endl;
+glm::mat4 Mesh::GetUvMeshMatrix() const
+{
+    glm::mat4 matrix = glm::mat4(1.0f);
+    matrix = glm::translate(matrix, glm::vec3(m_UvPosition, 1.0f));
+    matrix = glm::rotate(matrix, glm::radians(m_UvRotation), glm::vec3(0.0f, 0.0f, 1.0f));
+    matrix = glm::scale(matrix, glm::vec3(m_UvScale, 1.0f));
+    return matrix;
+}
+
+void Mesh::SetColorFromMaterial()
+{
+    for (auto& vertex : this->m_Vertices){
         vertex.color = this->m_Material->GetColor();
     }
+}
+
+bool Mesh::GetIsMeshStateChanged()
+{
+    bool isChanged = m_IsMeshStateChanged;
+    m_IsMeshStateChanged = false;
+    return isChanged|| this->m_Material->IsMaterialStateChanged();
 }

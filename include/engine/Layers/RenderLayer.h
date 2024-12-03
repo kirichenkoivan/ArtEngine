@@ -16,11 +16,21 @@
 
 #include <unordered_map>
 
+struct ObjectTransform {
+    glm::mat4 modelMatrix;
+    glm::mat4 modelUvMatrix;
+};
+
 struct Batch{
     std::vector<Vertex> vertices;
     std::vector<uint32_t> indices;
-    std::vector<glm::mat4> modelMatrices;
+    std::vector<ObjectTransform> modelTransforms;
     std::shared_ptr<Shader> shader;
+    std::vector<int> samplers;
+
+    std::vector<std::shared_ptr<Mesh>> meshes;
+    bool IsBatchChanged();
+    bool isUsingTextures = false;
 };
 
 class RenderLayer : public Layer{
@@ -38,16 +48,14 @@ class RenderLayer : public Layer{
         static void SetUniform4fv(uint32_t shader, const char* name, const glm::vec4& vect);
         std::shared_ptr<Batch> MakeBatch(std::vector<std::shared_ptr<Mesh>> meshes);
         void PackIntoBatches(std::vector<std::shared_ptr<Mesh>> meshes);
+        void UpdateBatches();
         
     private:
         const std::string CATEGORY = "Layers/RenderLayer";
 
         OrthographicCameraController m_CameraController;
         std::shared_ptr<Shader> m_Shader;
-        GLuint m_QuadVA, m_QuadVB, m_QuadIB, m_QuadUBO;
-        glm::vec4 m_SquareBaseColor = { 0.8f, 0.2f, 0.3f, 1.0f };
-        glm::vec4 m_SquareAlternativeColor = { 0.2f, 0.3f, 0.8f, 1.0f };
-        glm::vec4 m_SquareColor = m_SquareBaseColor;
+        GLuint m_QuadVA, m_QuadVB, m_QuadIB, m_QuadUBO, m_QuadUVBO;
 
         GLuint m_TextureID;
         const size_t MAX_QUAD_COUNT = 1000;
@@ -60,6 +68,7 @@ class RenderLayer : public Layer{
 
         std::vector<std::shared_ptr<Mesh>> m_MeshesArr;
         std::vector<std::shared_ptr<Batch>> m_Batches;
+        bool m_IsMeshesArrChanged = false;
         
         int m_DrawCallsCounter;
 };

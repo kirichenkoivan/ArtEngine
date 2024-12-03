@@ -1232,5 +1232,6 @@ CMakeFiles/MyGameEngine.dir/src/engine/Tools/GraphicsLoaders/MeshLoader.cpp.o: \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Tools/GraphicsLoaders/../../Graphics/Pools/../Shader.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Tools/GraphicsLoaders/../fileLoader.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Tools/GraphicsLoaders/../../Graphics/Material.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Tools/GraphicsLoaders/../../Graphics/Texture.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Tools/GraphicsLoaders/../../Graphics/Pools/MaterialPool.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Tools/GraphicsLoaders/../../Graphics/Pools/../Material.h

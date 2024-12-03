@@ -1247,5 +1247,6 @@ CMakeFiles/MyGameEngine.dir/src/engine/Layers/RenderLayer.cpp.o: \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/../../Graphics/Pools/../Shader.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/../fileLoader.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/../../Graphics/Material.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/../../Graphics/Texture.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/../../Graphics/Pools/MaterialPool.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/./engine/Graphics/../Tools/GraphicsLoaders/../../Graphics/Pools/../Material.h

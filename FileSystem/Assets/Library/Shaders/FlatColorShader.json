@@ -1,0 +1,9 @@
+{
+    "Name" : "FlatColorShader",
+    "FragmentShaderPath" : "/FileSystem/Assets/Library/Shaders/FlatColorFragmentShader.glsl",
+    "VertexShaderPath" : "/FileSystem/Assets/Library/Shaders/FlatColorVertexShader.glsl",
+    "Uniforms" : [
+        "u_ViewProjection",
+        "u_Model"
+    ]
+}

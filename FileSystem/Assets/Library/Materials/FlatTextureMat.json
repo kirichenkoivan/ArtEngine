@@ -1,0 +1,11 @@
+{
+    "Name" : "DefaultMat",
+    "Type" : "FlatTexture",
+    "Textures" : [
+        {
+            "TexturePath": "/FileSystem/Assets/Library/Textures/images.png",
+            "TextureType": "ALBEDO"
+        }
+    ],
+    "EnableTiling" : true
+}

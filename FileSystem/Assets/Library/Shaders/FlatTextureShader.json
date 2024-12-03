@@ -1,0 +1,9 @@
+{
+    "Name" : "FlatTextureShader",
+    "FragmentShaderPath" : "/FileSystem/Assets/Library/Shaders/FlatTextureFragmentShader.glsl",
+    "VertexShaderPath" : "/FileSystem/Assets/Library/Shaders/FlatTextureVertexShader.glsl",
+    "Uniforms" : [
+        "u_ViewProjection",
+        "u_Model"
+    ]
+}

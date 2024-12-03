@@ -1,0 +1,6 @@
+{
+    "Name" : "DefaultMat2",
+    "Type" : "FlatColor",
+
+    "Color" : [100, 100, 100, 255]
+}

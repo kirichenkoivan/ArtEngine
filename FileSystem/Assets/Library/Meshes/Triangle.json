@@ -1,0 +1,62 @@
+{
+    "Name" : "Triangle",
+    "Material": "/FileSystem/Assets/Library/Materials/FlatTextureMat.json",
+    "Vertices": [
+        {
+            "Position": [
+                -1.0,
+                0.6,
+                0
+            ],
+            "Color": [
+                255,
+                255,
+                255
+            ],
+            "TexCoords": [
+                0.5,
+                1.0
+            ],
+            "TexID": 1
+        },
+        {
+            "Position": [
+                0.56,
+                0.61,
+                0
+            ],
+            "Color": [
+                255,
+                255,
+                0
+            ],
+            "TexCoords": [
+                1.0,
+                0.0
+            ],
+            "TexID": 1
+        },
+        {
+            "Position": [
+                -0.15,
+                -0.6,
+                0
+            ],
+            "Color": [
+                255,
+                0,
+                255
+            ],
+            "TexCoords": [
+                0.0,
+                0.0
+            ],
+            "TexID": 1
+        }
+    ],
+    "Indices": [
+        0,
+        1,
+        2
+    ]
+}

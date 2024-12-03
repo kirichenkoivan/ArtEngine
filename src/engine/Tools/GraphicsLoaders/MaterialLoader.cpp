@@ -34,25 +34,20 @@ std::shared_ptr<Material> CreateMaterialFromJson(const std::string &filePath)
 
     try 
     {
-        std::string name = jsonData.at("Name").get<std::string>();
-        std::string shaderPath = jsonData.at("Shader").get<std::string>();
+        std::string typeStr = jsonData.at("Type").get<std::string>();
 
-        std::shared_ptr<Shader> shader = CreateShaderFromJson(shaderPath);
-
-        if (jsonData.contains("Textures")) {
-            // TODO: Need to add textures support
+        if (typeStr == "FlatColor"){
+            return CreateFlatColorMaterial(jsonData, path);
+        } 
+        else if (typeStr == "FlatTexture"){
+            return CreateFlatTextureMaterial(jsonData, path);
         }
-        else if (jsonData.contains("Color")){
-            glm::vec4 color = {
-                jsonData.at("Color")[0].get<float>() / 255.0f,
-                jsonData.at("Color")[1].get<float>() / 255.0f,
-                jsonData.at("Color")[2].get<float>() / 255.0f,
-                jsonData.at("Color")[3].get<float>() / 255.0f,
-            };
-
-            const auto material = Material::CreateMaterial(name, shader, color);
-            MaterialPool::GetInstance().AddMaterialIntoPool(path, material);
-            return material;
+        else if (typeStr == "Phong"){
+            return CreatePhongMaterial(jsonData, path);
+        } 
+        else {
+            Logger::GetInstance().Error(MATERIAL_CATEGORY, "Material Type Error");
+            assert(false && "Material Type Error");
         }
     } 
     catch (const json::out_of_range& ex) 
@@ -60,4 +55,75 @@ std::shared_ptr<Material> CreateMaterialFromJson(const std::string &filePath)
         Logger::GetInstance().Error(MATERIAL_CATEGORY, "Data Access Error");
         assert(false && "Data Access Error");
     }
+}
+
+std::shared_ptr<Material> CreateFlatColorMaterial(nlohmann::json& jsonData, std::string& path){
+    MaterialTypes type;
+    std::shared_ptr<Shader> shader;
+
+    type = FLAT_COLOR;
+    shader = CreateShaderFromJson(FLAT_COLOR_SHADER_PATH);
+
+    if (!jsonData.contains("Name")){
+        Logger::GetInstance().Error(MATERIAL_CATEGORY, "No Name Info In Material!");
+        assert(false && "No Name Info In Material!");
+    }
+    std::string name = jsonData.at("Name").get<std::string>();
+
+    if (!jsonData.contains("Color")){
+        Logger::GetInstance().Error(MATERIAL_CATEGORY, "No Color Info In Material!");
+        assert(false && "No Color Info In Material!");  
+    } 
+
+    glm::vec4 color = {
+        jsonData.at("Color")[0].get<float>() / 255.0f,
+        jsonData.at("Color")[1].get<float>() / 255.0f,
+        jsonData.at("Color")[2].get<float>() / 255.0f,
+        jsonData.at("Color")[3].get<float>() / 255.0f,
+    };
+    const auto material = Material::CreateMaterial(name, shader, color, type);
+    MaterialPool::GetInstance().AddMaterialIntoPool(path, material);
+    return material;
+}
+
+std::shared_ptr<Material> CreateFlatTextureMaterial(nlohmann::json& jsonData, std::string& path){
+    MaterialTypes type;
+    std::shared_ptr<Shader> shader;
+
+    type = FLAT_TEXTURE;
+    shader = CreateShaderFromJson(FLAT_TEXTURE_SHADER_PATH);
+
+    if (!jsonData.contains("Name")){
+        Logger::GetInstance().Error(MATERIAL_CATEGORY, "No Name Info In Material!");
+        assert(false && "No Name Info In Material!");
+    }
+    std::string name = jsonData.at("Name").get<std::string>();
+
+    if (!jsonData.contains("Textures")) {
+        Logger::GetInstance().Error(MATERIAL_CATEGORY, "No Textures Info In Material!");
+        assert(false && "No Textures Info In Material!");
+    }
+
+    std::vector<std::shared_ptr<Texture>> textures;
+    for (const auto& texture : jsonData["Textures"]){
+        textures.push_back(
+            Texture::CreateTexture(texture.at("TexturePath").get<std::string>(), ALBEDO)
+        );
+    }
+    const auto material = Material::CreateMaterial(name, shader, textures, type);
+
+    if (jsonData.contains("EnableTiling")){
+        material->EnableTextureTiling(jsonData.at("EnableTiling").get<bool>());
+    }
+
+    MaterialPool::GetInstance().AddMaterialIntoPool(path, material);
+    return material;
+}
+
+std::shared_ptr<Material> CreatePhongMaterial(nlohmann::json& jsonData, std::string& path){
+    MaterialTypes type;
+    std::shared_ptr<Shader> shader;
+
+    type = PHONG;
+    shader = CreateShaderFromJson(PHONG_SHADER_PATH);
 }

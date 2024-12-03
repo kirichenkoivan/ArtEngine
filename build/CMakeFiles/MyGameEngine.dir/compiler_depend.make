@@ -5773,6 +5773,7 @@ CMakeFiles/MyGameEngine.dir/src/engine/Graphics/ArtGraphics.cpp.o: /Users/ivanki
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Pools/MaterialPool.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Pools/ShaderPool.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Shader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Texture.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Tools/fileLoader.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Tools/logger.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Tools/GraphicsLoaders/MaterialLoader.h \
@@ -17142,6 +17143,7 @@ CMakeFiles/MyGameEngine.dir/src/engine/Layers/RenderLayer.cpp.o: /Users/ivankiri
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Pools/MaterialPool.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Pools/ShaderPool.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Shader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Texture.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Tools/fileLoader.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Tools/logger.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Tools/GraphicsLoaders/MaterialLoader.h \
@@ -20498,6 +20500,7 @@ CMakeFiles/MyGameEngine.dir/src/engine/Tools/GraphicsLoaders/MeshLoader.cpp.o: /
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Pools/MaterialPool.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Pools/ShaderPool.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Shader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Texture.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Tools/fileLoader.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Tools/logger.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Tools/GraphicsLoaders/MaterialLoader.h \
@@ -26507,6 +26510,7 @@ CMakeFiles/MyGameEngine.dir/src/main.cpp.o: /Users/ivankiricenko/Desktop/Main\ p
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Pools/MaterialPool.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Pools/ShaderPool.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Shader.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Texture.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Tools/fileLoader.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Tools/logger.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Tools/GraphicsLoaders/MaterialLoader.h \
@@ -27797,13 +27801,13 @@ CMakeFiles/MyGameEngine.dir/src/main.cpp.o: /Users/ivankiricenko/Desktop/Main\ p
 
 /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/__numeric/exclusive_scan.h:
 
-/Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Texture.h:
-
 /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Cameras/OrthographicCamera.h:
 
 /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/ArtGraphics.h:
 
 /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Tools/GraphicsLoaders/MeshLoader.h:
+
+/Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Texture.h:
 
 /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/engine/Graphics/Pools/ShaderPool.h:
 

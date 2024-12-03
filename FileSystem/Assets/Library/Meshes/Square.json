@@ -1,11 +1,11 @@
 {
-    "Name" : "DefaultMesh",
-    "Material" : "/FileSystem/Assets/Library/Materials/FlatTextureMat.json",
+    "Name" : "Square",
+    "Material" : "/FileSystem/Assets/Library/Materials/FlatColorMat.json",
     "Vertices": [
         {
             "Position": [
-                -0.8,
-                -1.37,
+                -1.01,
+                -0.84,
                 0
             ],
             "Color": [
@@ -15,75 +15,58 @@
             ],
             "TexCoords": [
                 0.0,
-                0.8
-            ],
-            "TexID": 0
-        },
-        {
-            "Position": [
-                -1.56,
-                -0.53,
-                0
-            ],
-            "Color": [
-                255,
-                255,
-                255
-            ],
-            "TexCoords": [
-                0.0,
-                0.0
-            ],
-            "TexID": 0
-        },
-        {
-            "Position": [
-                -1.18,
-                0.29,
-                0
-            ],
-            "Color": [
-                255,
-                255,
-                255
-            ],
-            "TexCoords": [
-                0.834,
-                0.0
-            ],
-            "TexID": 0
-        },
-        {
-            "Position": [
-                -0.13,
-                -0.49,
-                0
-            ],
-            "Color": [
-                255,
-                100,
-                255
-            ],
-            "TexCoords": [
-                0.834,
-                0.813
-            ],
-            "TexID": 0
-        },
-        {
-            "Position": [
-                -0.09,
-                -0.99,
-                0
-            ],
-            "Color": [
-                255,
-                255,
-                255
-            ],
-            "TexCoords": [
-                0.532,
                 1.0
+            ],
+            "TexID": 0
+        },
+        {
+            "Position": [
+                -1.03,
+                0.23,
+                0
+            ],
+            "Color": [
+                255,
+                255,
+                255
+            ],
+            "TexCoords": [
+                1.0,
+                1.0
+            ],
+            "TexID": 0
+        },
+        {
+            "Position": [
+                -0.02,
+                0.31,
+                0
+            ],
+            "Color": [
+                255,
+                255,
+                255
+            ],
+            "TexCoords": [
+                1.0,
+                0.0
+            ],
+            "TexID": 0
+        },
+        {
+            "Position": [
+                -0.01,
+                -0.79,
+                0
+            ],
+            "Color": [
+                255,
+                255,
+                255
+            ],
+            "TexCoords": [
+                0.0,
+                0.0
             ],
             "TexID": 0
         }
@@ -94,9 +77,6 @@
         2,
         0,
         2,
-        3,
-        0,
-        3,
-        4
+        3
     ]
 }

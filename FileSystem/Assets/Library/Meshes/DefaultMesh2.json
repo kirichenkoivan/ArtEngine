@@ -1,6 +1,6 @@
 {
-    "Name" : "DefaultMesh",
-    "Material" : "/FileSystem/Assets/Library/Materials/FlatTextureMat.json",
+    "Name" : "DefaultMesh2",
+    "Material": "/FileSystem/Assets/Library/Materials/DefaultMat2.json",
     "Vertices": [
         {
             "Position": [
@@ -17,7 +17,7 @@
                 0.0,
                 0.8
             ],
-            "TexID": 0
+            "TexID": 1
         },
         {
             "Position": [
@@ -34,7 +34,7 @@
                 0.0,
                 0.0
             ],
-            "TexID": 0
+            "TexID": 1
         },
         {
             "Position": [
@@ -51,7 +51,7 @@
                 0.834,
                 0.0
             ],
-            "TexID": 0
+            "TexID": 1
         },
         {
             "Position": [
@@ -68,7 +68,7 @@
                 0.834,
                 0.813
             ],
-            "TexID": 0
+            "TexID": 1
         },
         {
             "Position": [
@@ -85,7 +85,7 @@
                 0.532,
                 1.0
             ],
-            "TexID": 0
+            "TexID": 1
         }
     ],
     "Indices": [

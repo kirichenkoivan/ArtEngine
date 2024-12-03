@@ -1,0 +1,9 @@
+{
+    "Name" : "PhongShader",
+    "FragmentShaderPath" : "/FileSystem/Assets/Library/Shaders/PhongFragmentShader.glsl",
+    "VertexShaderPath" : "/FileSystem/Assets/Library/Shaders/PhongVertexShader.glsl",
+    "Uniforms" : [
+        "u_ViewProjection",
+        "u_Model"
+    ]
+}

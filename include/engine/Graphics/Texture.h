@@ -19,6 +19,10 @@ class Texture{
         ~Texture() = default;
         GLuint GetTexture() const { return m_TextureID; }
         TextureType GetTextureType() const { return m_Type; }
+
+        //Texture Params
+        void SetTiling(bool tiled) { m_IsTiled = tiled; }
+        bool IsTiled() const { return m_IsTiled; }
     private:
         void FromImage(const std::string& path, const TextureType type);
     private:
@@ -26,6 +30,7 @@ class Texture{
         const std::string CATEGORY = "Graphics/Texture";
         GLuint m_TextureID; 
         TextureType m_Type;
+        bool m_IsTiled = false;
 };
 
 #endif
