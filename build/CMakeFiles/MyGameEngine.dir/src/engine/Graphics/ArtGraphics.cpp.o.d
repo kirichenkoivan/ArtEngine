@@ -1211,6 +1211,12 @@ CMakeFiles/MyGameEngine.dir/src/engine/Graphics/ArtGraphics.cpp.o: \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/Meshes/../Texture.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/Meshes/../Shader.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/Material.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/Light/LightSource.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/Light/../../Core/ArtCore.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/Light/../../Core/ArtCoreUtils.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/Light/PointLight.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/Light/DirectLight.h \
+  /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/Light/SpotLight.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/Imgui/../include/engine/Graphics/../Tools/GraphicsLoaders/MeshLoader.h \
   /Users/ivankiricenko/Desktop/Main\ project/ArtEngine/include/libs/json.hpp \
   /Users/ivankiricenko/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1/map \

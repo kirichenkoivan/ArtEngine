@@ -1,14 +1,15 @@
 #include "../include/engine/Core/ArtCoreUtils.h"
 #include "../include/engine/Core/Application.h"
 
-Application* Application::s_Instance = nullptr;
+Application *Application::s_Instance = nullptr;
 
 Application::Application(const std::string name, uint32_t width, uint32_t height)
 {
     s_Instance = this;
 
     bool inited = glfwInit();
-    if (!inited) {
+    if (!inited)
+    {
         Logger::GetInstance().Error(CATEGORY, "Failed to Initialize GLFW!");
         assert(inited && "Failed to Initialize GLFW!");
     }
@@ -16,10 +17,11 @@ Application::Application(const std::string name, uint32_t width, uint32_t height
     Logger::GetInstance().Info(CATEGORY, "GLFW Succesefully Inited");
 
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0); 
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
 
     m_Window = glfwCreateWindow(width, height, name.c_str(), nullptr, nullptr);
-    if (m_Window == nullptr) {
+    if (m_Window == nullptr)
+    {
         Logger::GetInstance().Error(CATEGORY, "Failed to Create Window!");
         glfwTerminate();
         assert(false && "Failed to Create Window!");
@@ -27,7 +29,8 @@ Application::Application(const std::string name, uint32_t width, uint32_t height
 
     Logger::GetInstance().Info(CATEGORY, "Window Succesefully Created!");
 
-    if (!gladLoadGLES2Loader((GLADloadproc)eglGetProcAddress)) {
+    if (!gladLoadGLES2Loader((GLADloadproc)eglGetProcAddress))
+    {
         Logger::GetInstance().Error(CATEGORY, "Failed to initialize OpenGL ES 3.0 with GLAD");
         assert(false && "Failed to initialize OpenGL ES 3.0 with GLAD");
     }
@@ -39,7 +42,7 @@ Application::Application(const std::string name, uint32_t width, uint32_t height
 
     glfwMakeContextCurrent(m_Window);
     glfwSwapInterval(1);
-    
+
     m_ImGuiLayer = new ImGuiLayer();
     PushOverlay(m_ImGuiLayer);
 }
@@ -50,13 +53,15 @@ void Application::GameLoop()
     Timestep timestep = time - m_LastFrameTime;
     m_LastFrameTime = time;
 
-    for (Layer* layer : m_LayerStack){
+    for (Layer *layer : m_LayerStack)
+    {
         layer->OnUpdate(timestep);
     }
 
     m_ImGuiLayer->Begin();
 
-    for (Layer* layer : m_LayerStack){
+    for (Layer *layer : m_LayerStack)
+    {
         layer->OnImGuiRender();
     }
 
@@ -90,5 +95,5 @@ void Application::SetLastFrameTime(float time)
 
 void Application::MainLoop(void *arg)
 {
-    static_cast<Application*>(arg)->GameLoop();
+    static_cast<Application *>(arg)->GameLoop();
 }

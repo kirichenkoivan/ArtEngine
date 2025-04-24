@@ -1,7 +1,6 @@
 #ifndef KEYBOARD_H
 #define KEYBOARD_H
 
-// Макросы для кодов клавиш
 #define KEYBOARD_BTN_A 65
 #define KEYBOARD_BTN_B 66
 #define KEYBOARD_BTN_C 67
@@ -29,7 +28,6 @@
 #define KEYBOARD_BTN_Y 89
 #define KEYBOARD_BTN_Z 90
 
-// Макросы для специальных клавиш
 #define KEYBOARD_BTN_SPACE 32
 #define KEYBOARD_BTN_ENTER 13
 #define KEYBOARD_BTN_ESCAPE 27
@@ -39,10 +37,9 @@
 #define KEYBOARD_BTN_CONTROL 17
 #define KEYBOARD_BTN_ALT 18
 
-// Макросы для стрелок
 #define KEYBOARD_BTN_UP 38
 #define KEYBOARD_BTN_DOWN 40
 #define KEYBOARD_BTN_LEFT 37
 #define KEYBOARD_BTN_RIGHT 39
 
-#endif // KEYBOARD_H
+#endif

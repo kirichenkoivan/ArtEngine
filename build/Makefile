@@ -694,6 +694,78 @@ src/engine/Graphics/Cameras/OrthographicCameraController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Cameras/OrthographicCameraController.cpp.s
 .PHONY : src/engine/Graphics/Cameras/OrthographicCameraController.cpp.s
 
+src/engine/Graphics/Light/DirectLight.o: src/engine/Graphics/Light/DirectLight.cpp.o
+.PHONY : src/engine/Graphics/Light/DirectLight.o
+
+# target to build an object file
+src/engine/Graphics/Light/DirectLight.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Light/DirectLight.cpp.o
+.PHONY : src/engine/Graphics/Light/DirectLight.cpp.o
+
+src/engine/Graphics/Light/DirectLight.i: src/engine/Graphics/Light/DirectLight.cpp.i
+.PHONY : src/engine/Graphics/Light/DirectLight.i
+
+# target to preprocess a source file
+src/engine/Graphics/Light/DirectLight.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Light/DirectLight.cpp.i
+.PHONY : src/engine/Graphics/Light/DirectLight.cpp.i
+
+src/engine/Graphics/Light/DirectLight.s: src/engine/Graphics/Light/DirectLight.cpp.s
+.PHONY : src/engine/Graphics/Light/DirectLight.s
+
+# target to generate assembly for a file
+src/engine/Graphics/Light/DirectLight.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Light/DirectLight.cpp.s
+.PHONY : src/engine/Graphics/Light/DirectLight.cpp.s
+
+src/engine/Graphics/Light/PointLight.o: src/engine/Graphics/Light/PointLight.cpp.o
+.PHONY : src/engine/Graphics/Light/PointLight.o
+
+# target to build an object file
+src/engine/Graphics/Light/PointLight.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Light/PointLight.cpp.o
+.PHONY : src/engine/Graphics/Light/PointLight.cpp.o
+
+src/engine/Graphics/Light/PointLight.i: src/engine/Graphics/Light/PointLight.cpp.i
+.PHONY : src/engine/Graphics/Light/PointLight.i
+
+# target to preprocess a source file
+src/engine/Graphics/Light/PointLight.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Light/PointLight.cpp.i
+.PHONY : src/engine/Graphics/Light/PointLight.cpp.i
+
+src/engine/Graphics/Light/PointLight.s: src/engine/Graphics/Light/PointLight.cpp.s
+.PHONY : src/engine/Graphics/Light/PointLight.s
+
+# target to generate assembly for a file
+src/engine/Graphics/Light/PointLight.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Light/PointLight.cpp.s
+.PHONY : src/engine/Graphics/Light/PointLight.cpp.s
+
+src/engine/Graphics/Light/SpotLight.o: src/engine/Graphics/Light/SpotLight.cpp.o
+.PHONY : src/engine/Graphics/Light/SpotLight.o
+
+# target to build an object file
+src/engine/Graphics/Light/SpotLight.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Light/SpotLight.cpp.o
+.PHONY : src/engine/Graphics/Light/SpotLight.cpp.o
+
+src/engine/Graphics/Light/SpotLight.i: src/engine/Graphics/Light/SpotLight.cpp.i
+.PHONY : src/engine/Graphics/Light/SpotLight.i
+
+# target to preprocess a source file
+src/engine/Graphics/Light/SpotLight.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Light/SpotLight.cpp.i
+.PHONY : src/engine/Graphics/Light/SpotLight.cpp.i
+
+src/engine/Graphics/Light/SpotLight.s: src/engine/Graphics/Light/SpotLight.cpp.s
+.PHONY : src/engine/Graphics/Light/SpotLight.s
+
+# target to generate assembly for a file
+src/engine/Graphics/Light/SpotLight.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGameEngine.dir/build.make CMakeFiles/MyGameEngine.dir/src/engine/Graphics/Light/SpotLight.cpp.s
+.PHONY : src/engine/Graphics/Light/SpotLight.cpp.s
+
 src/engine/Graphics/Material.o: src/engine/Graphics/Material.cpp.o
 .PHONY : src/engine/Graphics/Material.o
 
@@ -1205,6 +1277,15 @@ help:
 	@echo "... src/engine/Graphics/Cameras/OrthographicCameraController.o"
 	@echo "... src/engine/Graphics/Cameras/OrthographicCameraController.i"
 	@echo "... src/engine/Graphics/Cameras/OrthographicCameraController.s"
+	@echo "... src/engine/Graphics/Light/DirectLight.o"
+	@echo "... src/engine/Graphics/Light/DirectLight.i"
+	@echo "... src/engine/Graphics/Light/DirectLight.s"
+	@echo "... src/engine/Graphics/Light/PointLight.o"
+	@echo "... src/engine/Graphics/Light/PointLight.i"
+	@echo "... src/engine/Graphics/Light/PointLight.s"
+	@echo "... src/engine/Graphics/Light/SpotLight.o"
+	@echo "... src/engine/Graphics/Light/SpotLight.i"
+	@echo "... src/engine/Graphics/Light/SpotLight.s"
 	@echo "... src/engine/Graphics/Material.o"
 	@echo "... src/engine/Graphics/Material.i"
 	@echo "... src/engine/Graphics/Material.s"

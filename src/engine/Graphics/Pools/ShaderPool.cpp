@@ -7,19 +7,21 @@ size_t ShaderPool::IsShaderAlreadyInPool(const std::string &vertexPath, const st
 
     size_t hashCode = HashAndCombine(vertexSource, fragSource);
 
-    if (m_LoadedShaders.find(hashCode) != m_LoadedShaders.end()) {
+    if (m_LoadedShaders.find(hashCode) != m_LoadedShaders.end())
+    {
 
-        #ifdef DEBUG
-            Logger::GetInstance().Info(CATEGORY, "Shader Found!");
-        #endif
+#ifdef DEBUG
+        Logger::GetInstance().Info(CATEGORY, "Shader Found!");
+#endif
 
         return hashCode;
-    } 
-    else {
+    }
+    else
+    {
 
-        #ifdef DEBUG
-            Logger::GetInstance().Info(CATEGORY, "Shader Not Found!");
-        #endif
+#ifdef DEBUG
+        Logger::GetInstance().Info(CATEGORY, "Shader Not Found!");
+#endif
 
         return 0;
     }
@@ -29,11 +31,12 @@ size_t ShaderPool::IsShaderAlreadyInPool(const std::string &vertexPath, const st
 
 void ShaderPool::AddShaderIntoPool(const std::string &vertexPath, const std::string &fragPath, std::shared_ptr<Shader> shader)
 {
-    if (vertexPath.empty() || fragPath.empty()){
+    if (vertexPath.empty() || fragPath.empty())
+    {
 
-        #ifdef DEBUG
-            Logger::GetInstance().Info(CATEGORY, "Fragment or Vertex Shader Path is Empty");
-        #endif
+#ifdef DEBUG
+        Logger::GetInstance().Info(CATEGORY, "Fragment or Vertex Shader Path is Empty");
+#endif
 
         assert(false && "Fragment or Vertex Shader Path is Empty");
     }
@@ -55,7 +58,7 @@ size_t ShaderPool::HashAndCombine(const std::string &vertSource, const std::stri
     return Hash(vertSource) ^ Hash(fragSource);
 }
 
-size_t ShaderPool::Hash(const std::string& shaderSource)
+size_t ShaderPool::Hash(const std::string &shaderSource)
 {
     std::hash<std::string> hasher;
     return hasher(shaderSource);

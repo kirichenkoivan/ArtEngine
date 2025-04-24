@@ -38,6 +38,16 @@ void Material::EnableTextureTiling(bool enable){
     m_IsMaterialStateChanged = true;
 }
 
+MaterialInfo& Material::GetMaterialInfo() 
+{
+    m_MaterialInfo.ambientCoeff = glm::vec4(m_Ka, 0.0f);
+    m_MaterialInfo.diffuseCoeff = glm::vec4(m_Kd, 0.0f);
+    m_MaterialInfo.specularCoeff = glm::vec4(m_Ks, 0.0f);
+    m_MaterialInfo.shininess = m_Shinines;
+    
+    return m_MaterialInfo;
+}
+
 bool Material::IsMaterialStateChanged()
 {
     bool isChanged = m_IsMaterialStateChanged;

@@ -83,6 +83,10 @@
         "set": "cpp",
         "*.inc": "c",
         "filesystem": "cpp",
-        "span": "cpp"
+        "span": "cpp",
+        "any": "cpp",
+        "compare": "cpp",
+        "numeric": "cpp",
+        "valarray": "cpp"
     }
 }

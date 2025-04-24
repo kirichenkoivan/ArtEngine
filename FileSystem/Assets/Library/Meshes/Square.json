@@ -1,6 +1,6 @@
 {
     "Name" : "Square",
-    "Material" : "/FileSystem/Assets/Library/Materials/FlatColorMat.json",
+    "Material" : "/FileSystem/Assets/Library/Materials/FlatTextureMat.json",
     "Vertices": [
         {
             "Position": [
@@ -17,6 +17,7 @@
                 0.0,
                 1.0
             ],
+            "Normal": [0.0, 0.0, 1.0],
             "TexID": 0
         },
         {
@@ -34,6 +35,7 @@
                 1.0,
                 1.0
             ],
+            "Normal": [0.0, 0.0, 1.0],
             "TexID": 0
         },
         {
@@ -51,6 +53,7 @@
                 1.0,
                 0.0
             ],
+            "Normal": [0.0, 0.0, 1.0],
             "TexID": 0
         },
         {
@@ -68,6 +71,7 @@
                 0.0,
                 0.0
             ],
+            "Normal": [0.0, 0.0, 1.0],
             "TexID": 0
         }
     ],

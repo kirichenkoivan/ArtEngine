@@ -12,6 +12,6 @@
 const std::string SHADER_CATEGORY = "Tools/ShaderLoader";
 const std::string SHADER_DEFAULT_PATH = "/FileSystem/Assets/Library/Shaders/DefaultShader.json";
 
-std::shared_ptr<Shader> CreateShaderFromJson(const std::string& filePath = SHADER_DEFAULT_PATH);
+std::shared_ptr<Shader> CreateShaderFromJson(const std::string &filePath = SHADER_DEFAULT_PATH);
 
 #endif

@@ -6,8 +6,8 @@ GLuint LoadTexture(const std::string &path)
     GLuint texture;
 
     stbi_set_flip_vertically_on_load(1);
-    auto* pixels = stbi_load(path.c_str(), &w, &h, &bits, STBI_rgb);
-    
+    auto *pixels = stbi_load(path.c_str(), &w, &h, &bits, STBI_rgb);
+
     glGenTextures(1, &texture);
     glBindTexture(GL_TEXTURE_2D, texture);
 

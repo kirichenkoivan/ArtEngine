@@ -3,16 +3,15 @@
 
 #include <string>
 
-class ShaderLoader {
+class ShaderLoader
+{
 public:
-    // Читает GLSL файл и возвращает его содержимое в формате const char*
-    const char* LoadShaderAsChar(const std::string& filePath);
+    const char *LoadShaderAsChar(const std::string &filePath);
 
-    // Деструктор освобождает память, выделенную под содержимое шейдера
     ~ShaderLoader();
 
 private:
-    char* shaderSource = nullptr; // Указатель на содержимое шейдера
+    char *shaderSource = nullptr;
 };
 
-#endif // SHADER_LOADER_H
+#endif

@@ -6,19 +6,21 @@ size_t MaterialPool::IsMaterialAlreadyInPool(const std::string &materialPath)
 
     size_t hashCode = Hash(materialSource);
 
-    if (m_LoadedMaterials.find(hashCode) != m_LoadedMaterials.end()) {
+    if (m_LoadedMaterials.find(hashCode) != m_LoadedMaterials.end())
+    {
 
-        #ifdef DEBUG
-            Logger::GetInstance().Info(CATEGORY, "Material Found!");
-        #endif
+#ifdef DEBUG
+        Logger::GetInstance().Info(CATEGORY, "Material Found!");
+#endif
 
         return hashCode;
-    } 
-    else {
+    }
+    else
+    {
 
-        #ifdef DEBUG
-            Logger::GetInstance().Info(CATEGORY, "Material Not Found!");
-        #endif
+#ifdef DEBUG
+        Logger::GetInstance().Info(CATEGORY, "Material Not Found!");
+#endif
 
         return 0;
     }
@@ -27,11 +29,12 @@ size_t MaterialPool::IsMaterialAlreadyInPool(const std::string &materialPath)
 
 void MaterialPool::AddMaterialIntoPool(const std::string &materialPath, std::shared_ptr<Material> material)
 {
-    if (materialPath.empty() || !material){
+    if (materialPath.empty() || !material)
+    {
 
-        #ifdef DEBUG
-            Logger::GetInstance().Info(CATEGORY, "Material Path or Material is Empty!");
-        #endif
+#ifdef DEBUG
+        Logger::GetInstance().Info(CATEGORY, "Material Path or Material is Empty!");
+#endif
 
         assert(false && "Material Path or Material is Empty!");
     }

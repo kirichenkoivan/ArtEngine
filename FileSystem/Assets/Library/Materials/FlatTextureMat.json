@@ -7,5 +7,9 @@
             "TextureType": "ALBEDO"
         }
     ],
-    "EnableTiling" : true
+    "EnableTiling" : true,
+    "Ka" : [1.0, 1.0, 1.0], 
+    "Ks" : [1.0, 1.0, 1.0], 
+    "Kd" : [1.0, 1.0, 1.0],
+    "Shininess" : 1.0
 }

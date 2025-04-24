@@ -6,25 +6,24 @@
 #include <chrono>
 #include <ctime>
 
-class Logger{
+class Logger
+{
 
-    public:
+public:
+    static Logger &GetInstance()
+    {
+        static Logger instance;
+        return instance;
+    };
 
-        static Logger& GetInstance() {
-                static Logger instance;
-                return instance;
-        };
+    void Log(const std::string &module, const std::string &level, const std::string &message);
+    void Info(const std::string &module, const std::string &message);
+    void Warning(const std::string &module, const std::string &message);
+    void Error(const std::string &module, const std::string &message);
 
-        void Log(const std::string& module, const std::string& level, const std::string& message);
-        void Info(const std::string& module, const std::string& message);
-        void Warning(const std::string& module, const std::string& message);
-        void Error(const std::string& module, const std::string& message);
-
-    private:
-
-        Logger() {};
-        std::string GetCurrentTime();
-
+private:
+    Logger() {};
+    std::string GetCurrentTime();
 };
 
 #endif

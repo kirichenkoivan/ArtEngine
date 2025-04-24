@@ -2,7 +2,8 @@
 
 std::shared_ptr<Mesh> Mesh::CreateMesh(const std::string &name, std::vector<Vertex> verts, std::vector<uint32_t> indices, std::shared_ptr<Material> material)
 {
-    if (verts.empty() || indices.empty() || !material){
+    if (verts.empty() || indices.empty() || !material)
+    {
         Logger::GetInstance().Error("Graphics/Mesh", "Mesh Creation Failed - Some Of Arguments Are Null");
         assert(false && "Mesh Creation Failed - Some Of Arguments Are Null");
     }
@@ -11,8 +12,9 @@ std::shared_ptr<Mesh> Mesh::CreateMesh(const std::string &name, std::vector<Vert
     mesh->m_Vertices = verts;
     mesh->m_Indices = indices;
     mesh->m_Material = material;
-    
-    if (!mesh->m_Material->isUsingTexture()){
+
+    if (!mesh->m_Material->isUsingTexture())
+    {
         mesh->SetColorFromMaterial();
     }
     return mesh;
@@ -40,7 +42,8 @@ glm::mat4 Mesh::GetUvMeshMatrix() const
 
 void Mesh::SetColorFromMaterial()
 {
-    for (auto& vertex : this->m_Vertices){
+    for (auto &vertex : this->m_Vertices)
+    {
         vertex.color = this->m_Material->GetColor();
     }
 }
@@ -49,5 +52,5 @@ bool Mesh::GetIsMeshStateChanged()
 {
     bool isChanged = m_IsMeshStateChanged;
     m_IsMeshStateChanged = false;
-    return isChanged|| this->m_Material->IsMaterialStateChanged();
+    return isChanged || this->m_Material->IsMaterialStateChanged();
 }

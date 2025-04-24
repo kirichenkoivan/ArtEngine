@@ -11,6 +11,6 @@
 const std::string MESH_CATEGORY = "Tools/MeshLoader";
 const std::string MESH_DEFAULT_PATH = "/FileSystem/Assets/Library/Meshes/DefaultMesh.json";
 
-std::shared_ptr<Mesh> CreateMeshFromJson(const std::string& filePath = MESH_DEFAULT_PATH);
+std::shared_ptr<Mesh> CreateMeshFromJson(const std::string &filePath = MESH_DEFAULT_PATH);
 
 #endif

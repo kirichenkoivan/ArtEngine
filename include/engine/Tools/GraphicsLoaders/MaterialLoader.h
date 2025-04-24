@@ -18,10 +18,10 @@ const std::string FLAT_TEXTURE_SHADER_PATH = "/FileSystem/Assets/Library/Shaders
 const std::string FLAT_COLOR_SHADER_PATH = "/FileSystem/Assets/Library/Shaders/FlatColorShader.json";
 const std::string PHONG_SHADER_PATH = "/FileSystem/Assets/Library/Shaders/PhongShader.json";
 
-std::shared_ptr<Material> CreateMaterialFromJson(const std::string& filePath = MATERIAL_DEFAULT_PATH);
+std::shared_ptr<Material> CreateMaterialFromJson(const std::string &filePath = MATERIAL_DEFAULT_PATH);
 
-std::shared_ptr<Material> CreateFlatColorMaterial(nlohmann::json& jsonData, std::string& path);
-std::shared_ptr<Material> CreateFlatTextureMaterial(nlohmann::json& jsonData, std::string& path);
-std::shared_ptr<Material> CreatePhongMaterial(nlohmann::json& jsonData, std::string& path);
+std::shared_ptr<Material> CreateFlatColorMaterial(nlohmann::json &jsonData, std::string &path);
+std::shared_ptr<Material> CreateFlatTextureMaterial(nlohmann::json &jsonData, std::string &path);
+std::shared_ptr<Material> CreatePhongMaterial(nlohmann::json &jsonData, std::string &path);
 
 #endif
